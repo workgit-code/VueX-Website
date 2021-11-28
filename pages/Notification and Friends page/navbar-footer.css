@@ -1,0 +1,239 @@
+body {
+    /* background-color: black; */
+    background-image: url(../Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.logo {
+    position: absolute;
+    width: 140px;
+    height: 53.46px;
+    left: 55px;
+    top: 39px;
+  
+    background: url(../VueX2.0.svg);
+  }
+  
+  .navigation-bar {
+    position: absolute;
+    width: 1348px;
+    height: 88px;
+    left: 55px;
+    top: 27px;
+  }
+  
+  .nav-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+  }
+  
+  .profile {
+    position: absolute;
+    left: 30.27%;
+    right: 64.61%;
+    top: 32.95%;
+    bottom: 37.5%;
+  
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+    /* identical to box height */
+  
+    /* color: #efefef; */
+  }
+  
+  .challenges {
+    position: absolute;
+    left: 47.92%;
+    right: 43.32%;
+    top: 31.82%;
+    bottom: 38.64%;
+  }
+  
+  .schedule {
+    position: absolute;
+    left: 70.27%;
+    right: 22.38%;
+    top: 32.95%;
+    bottom: 37.5%;
+  }
+  
+  .shop {
+    position: absolute;
+    left: 90.95%;
+    right: 4.97%;
+    top: 32.95%;
+    bottom: 37.5%;
+  }
+  
+  .f-about-us {
+    position: absolute;
+    width: 152px;
+    height: 25px;
+    left: 106px;
+    top: 709px;
+  
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  
+    color: #efefef;
+  }
+  
+  .f-contact-us {
+    position: absolute;
+    width: 152px;
+    height: 25px;
+    left: 112px;
+    top: 744px;
+  
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  
+    color: #efefef;
+  }
+  
+  .f-copyright {
+    position: absolute;
+    width: 15px;
+    height: 21px;
+    left: 142px;
+    top: 779px;
+  
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+  
+    text-align: center;
+  
+    color: #ffffff;
+  }
+  
+  .f-desend {
+    position: absolute;
+    width: 97px;
+    height: 25px;
+    left: 146px;
+    top: 779px;
+  
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  
+    color: #efefef;
+  }
+  
+  .f-follow-us {
+    position: absolute;
+    width: 152px;
+    height: 25px;
+    left: 720px;
+    top: 703px;
+  
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  
+    color: #efefef;
+  }
+  
+  .f-yt {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    left: 656px;
+    top: 741px;
+  }
+  
+  .f-facebook {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    left: 720px;
+    top: 741px;
+  }
+  
+  .f-insta {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    left: 784px;
+    top: 740px;
+  }
+  
+  .f-discord {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 848px;
+    top: 741px;
+  }
+  .f-twitter {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 909px;
+    top: 741px;
+  }
+  
+  .f-legal-terms {
+    position: absolute;
+    width: 104px;
+    height: 25px;
+    left: 1259px;
+    top: 715px;
+  
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  
+    color: #efefef;
+  }
+  
+  .f-privacy-policy {
+    position: absolute;
+    width: 120px;
+    height: 25px;
+    left: 1259px;
+    top: 754px;
+  
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  
+    color: #efefef;
+  }
+
+  a {
+    text-decoration: none;
+    color: #efefef;
+  }
+  
