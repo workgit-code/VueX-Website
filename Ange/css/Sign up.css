@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu;
+}
+body {
+  font-size: 14px;
+   margin: 0;
+  padding: 0;
+  background: rgba(11,12,14,1);
+  height: 150vh;
+  overflow: hidden;
+}
+.logo {
+  position: absolute;
+  width: 301px;
+  height: 114.94px;
+  left: 41%;
+  top: 4%;
+  background: url(../images/VueX2.0.svg);
+}
+.container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 460px;
+  height: 780px;
+}
+.container h1{
+  text-align: center;
+  padding: 20px 0;
+  color: #E5E5E5;
+  font-size: 30px;
+}
+.container form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #EFEFEF;
+  margin: 10px 0;
+  padding-top: 20px;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 35px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #E5E5E5;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #E5E5E5;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #4D69B1;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: 15px;
+  ;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+.Registration{
+  padding-top: 15px;
+}
+
+input[type="submit"]{
+  width: 100%;
+  height: 59px;
+  background: #8C5CA6;
+  border-radius: 10px;
+  font-size: 21px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: #4D69B1;
+  transition: .5s;
+}
+.option{
+  margin: 20px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #E5E5E5;
+}
+.option a{
+  color: #4D69B1;
+  text-decoration: none;
+}
+.option a:hover{
+  text-decoration: underline;
+}
+
+.first-row {
+  position: absolute;
+  left: 5%;
+}
+
+.f-about-us {
+  bottom: 12%;
+}
+
+.f-contact-us {
+  bottom: 7%;
+}
+
+.f-desend {
+  bottom: 2%;
+}
+
+.f-follow-us {
+  position: absolute;
+  width: 130px;
+  left: 48%;
+  bottom: 8%;
+}
+
+.social-media-logos{
+  position: absolute;
+  bottom: 2%;
+}
+
+.f-yt {
+  left: 41%;
+}
+
+.f-facebook {
+  left: 46%;
+}
+
+.f-insta {
+  left: 51%;
+}
+
+.f-discord {
+  left: 56%;
+}
+.f-twitter {
+  left: 61%;
+}
+
+.footer-left-row{
+  position: absolute;
+  right: 5%;
+}
+
+.f-legal-terms {
+  bottom: 9%;
+}
+
+.f-privacy-policy {
+  bottom: 4%;
+}
+
+.footer{
+ 
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  bottom: 0;
+  color: #efefef;
+}
+@media only screen and (max-width: 550px) {
+  .logo {
+    top: 2.5%;
+    left: 25%;
+  }
+}
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .container, .footer {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+ .f-follow-us, .social-media-logos {
+    display:none;
+  }
+}
