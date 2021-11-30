@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>      
-    
+<body>
     <div class="logo">
         <img src="./images/VueX2.0.svg" alt="Logo">
     </div>
@@ -43,6 +42,7 @@
 
     <div class="burger-menu" onclick="openNav()">&#9776;</div>
     <div class="side">
+        
         <a href="overview.html" id="current"> Overview</a> <br>
         <a href="" class="others"> Perks</a> <br>
         <a href="" class="others"> Notification</a> <br>
@@ -85,8 +85,18 @@
         <p id="reviewText">Friends: "This movie is amazing"<br>
             Dune: "Worth time and money" <br>
         </p>
+        <button class="searchMovie"><img src="./images/loupe 1.png" alt="search">       </button>
+        <!-- For locked items -->
+        <div id="ModalLock" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"><img src="./images/shop-x.png" alt=""></span>
+                <p>Unfortunately, you did not reach this level</p>
+            </div>
+        </div>
     </div>
 </div>
+<script src="script.js"></script>
 </body>
 
 </html>
