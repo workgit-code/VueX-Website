@@ -41,7 +41,7 @@ router.post('/signup', (req, res) => {
             message: "Password is too short!"
         })
     } else { //??
-        // Check if use is already existing
+        // Check if user is already existing
         User.find({email}).then(result => {
             if (result.length) {
                 //A user already exist
