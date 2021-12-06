@@ -1,10 +1,10 @@
 /* !!! EXPERIENCE PAGE !!! */
 body {
-  background-image: url(background.jpg);
+  /* background-image: url('./background.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
   /* max-width: 100%; */
   font-family: Ubuntu;
 }
@@ -14,7 +14,41 @@ body {
   flex-direction: row;
   flex-flow: column wrap;
   justify-content: center;
+ 
 }
+
+.accordion {
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border-radius: 10px;
+  padding-right: 80px;
+  text-align: right;
+  outline: none;
+  font-size: 15px;
+  font-size: 20px;
+  transition: 0.4s;
+  color: #efefef;
+  position:absolute;
+  top:105px;
+
+
+}
+ .accordion:hover {
+  background-color: #8C5CA6; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: transparent;
+  overflow: hidden;
+  color:#efefef;
+  margin-top: 175px;
+}
+
 
 .tasksBar {
   position: absolute;
@@ -28,7 +62,14 @@ body {
   border-radius: 25px;
   transform: rotate(0.56deg);
 }
-
+.taskName{
+  position: relative;
+  color:#efefef;
+}
+.starsGiven{
+    position: relative;
+  color:#efefef;
+}
 @media (max-width: 700px) {
   .tasksBar {
     position: absolute;
@@ -56,22 +97,7 @@ body {
   border: 3px solid #efefef;
   border-radius: 25px;
 }
-
-.v2_508 {
-  width: 111px;
-  height: 109px;
-  background: rgba(196, 196, 196, 1);
-  /* opacity: 1; */
-  margin-top: 100px;
-  margin-left: 30px;
-  position: absolute;
-  /* top: 554px;
-    left: 843px; */
-  border-radius: 50%;
-  box-shadow: 0px 5px 4px
-    rgba(0.04313725605607033, 0.0470588244497776, 0.054901961237192154, 1);
-}
-
+;
 @media (max-width: 700px) {
   .weeklyChallenges {
     position: absolute;

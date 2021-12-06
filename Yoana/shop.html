@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./images/VueX2.0.svg" alt="Logo">
+    </div>
+
+    <div class="navigation-bar">
+        <div class="crnt-page nav-text">
+        </div>
+        <div class="profile nav-text">
+            <a href="overview.html">Profile</a>
+        </div>
+        <div class="challenges nav-text">
+            <a href="challenges.html">Challenges</a>
+        </div>
+        <div class="schedule nav-text">
+            <a href="schedule.html">Schedule</a>
+        </div>
+        <div class="shop nav-text">
+            <a href="shop.html">Shop</a>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="overview.html">Profile</a><br><br>
+        <a href="schedule.html">Schedule</a><br><br>
+        <a href="#">Challenges</a><br><br>
+        <a href="shop.html">Shop</a>
+    </div>
+
+    <div class="burger-menu" onclick="openNav()">&#9776;</div>
+
+    <div class="balance">
+        <p class="balanceText">Balance: 900 000
+            <img src="./images/Star.png" alt="stars">
+        </p>
+    </div>
+    <div class="sorting">
+        <button class="sorting-text">Sorted by
+            <img src="./images/ExpandArrow.png" class="arrows" alt="down arrow">
+        </button>
+        <div class="dropdown-content-sort">
+            <p>Ascending</p>
+            <p>Descending</p>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div class="items">
+            <p class="itemName">Free Popcorn</p>
+            <img src="./images/popcorn.png" alt="product" class="images">
+            <p class="price">2 000
+                <img src="./images/Star.png" alt="stars">
+            </p>
+            <button class="normal">Buy</button>
+        </div>
+        <div class="items">
+            <p class="itemName">Free Popcorn</p>
+            <img src="./images/popcorn.png" alt="product" class="images">
+            <p class="price">2 000
+                <img src="./images/Star.png" alt="stars">
+            </p>
+            <button class="normal">Buy</button>
+        </div>
+        <div class="items">
+            <p class="itemName">Free Popcorn</p>
+            <img src="./images/popcorn.png" alt="product" class="images">
+            <p class="price">2 000
+                <img src="./images/Star.png" alt="stars">
+            </p>
+            <button class="normal">Buy</button>
+        </div>
+        <div class="items">
+            <p class="itemName">Free Popcorn</p>
+            <img src="./images/popcorn.png" alt="product" class="images">
+            <p class="price">2 000
+                <img src="./images/Star.png" alt="stars">
+            </p>
+            <button class="normal">Buy</button>
+            <!-- <div class="overlay">
+                <div class="text"> <b>Free popcorns!</b><br>
+                    Everybody love popcorn with their movie, but free are the best one,
+                    so what are you waiting for!Grab them while they are still hot!</div>
+            </div> -->
+        </div>
+        <div class="items">
+            <p class="itemNameL">Unlocked reward</p>
+            <img src="./images/ticket.png" alt="product" class="imagesLock">
+            <img src="./images/Lock.png" alt="product" class="lock">
+            <p class="level">Level 45</p>
+            <p class="priceLock">2 000
+                <img src="./images/Star.png" alt="stars">
+            </p>
+            <button class="locking">Buy</button>
+        </div>
+        <div class="items">
+            <p class="itemNameL">Unlocked reward</p>
+            <img src="./images/ticket.png" alt="product" class="imagesLock">
+            <img src="./images/Lock.png" alt="product" class="lock">
+            <p class="level">Level 45</p>
+            <p class="priceLock">2 000
+                <img src="./images/Star.png" alt="stars">
+            </p>
+            <button class="locking">Buy</button>
+        </div>
+
+        <div class="items">
+            <p class="itemNameL">Unlocked reward</p>
+            <img src="./images/ticket.png" alt="product" class="imagesLock">
+            <img src="./images/Lock.png" alt="product" class="lock">
+            <p class="level">Level 45</p>
+            <p class="priceLock">2 000
+                <img src="./images/Star.png" alt="stars">
+            </p>
+            <button class="locking">Buy</button>
+        </div>
+        <div class="items">
+            <p class="itemNameL">Unlocked reward</p>
+            <img src="./images/ticket.png" alt="product" class="imagesLock">
+            <img src="./images/Lock.png" alt="product" class="lock">
+            <p class="level">Level 45</p>
+            <p class="priceLock">2 000
+                <img src="./images/Star.png" alt="stars">
+            </p>
+            <button class="locking">Buy</button>
+        </div>
+
+
+        <!-- For locked items -->
+        <div id="ModalLock" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"><img src="./images/shop-x.png" alt=""></span>
+                <p>Unfortunately, you did not reach this level</p>
+            </div>
+        </div>
+        <!-- For unlock items -->
+        <div id="ModalNormal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content-normal">
+                <span class="closeN"><img src="./images/shop-x.png" alt=""></span>
+                <p class="purchase">Purchase</p>
+                <img src="./images/popcorn.png" alt="product" class="images-purchase">
+                <p class="desc-purchase">Free popcorns with your next movie!</p>
+                <p class="price-purchase">2 000
+                    <img src="./images/blackStar.png" alt="stars">
+                </p>
+                <form action="/action_page.php">
+                    <input list="browsers" name="browser" id="locations" placeholder="Choose location to take">
+                    <datalist id="browsers">
+                        <option value="Vue Alkmaar">
+                        <option value="Vue Alphen a/d Rijn">
+                        <option value="Vue Amersfoort">
+                        <option value="Vue Apeldoorn">
+                        <option value="Vue Arnhem">
+                        <option value="Vue Den Bosch">
+                        <option value=" Vue Deventer">
+                        <option value="Vue Doetinchem">
+                        <option value="Vue Eindhoven">
+                        <option value="Vue Gorinchem">
+                        <option value="Vue Heerhugowaard">
+                        <option value="Vue Hilversum">
+                        <option value="Vue Hoogeveen">
+                        <option value="Vue Hoogezand">
+                        <option value="Vue Horn">
+                        <option value="Vue Kerkrade">
+                        <option value=" Vue Deventer">
+                        <option value="Vue Nijmegen Walstraat">
+                        <option value="Vue Purmerend">
+                        <option value="Vue Vlaardingen">
+                    </datalist>
+                </form>
+                <hr id="big">
+                <p class="cb">Current Balance:</p>
+                <p class="bal"> 900 000
+                    <img src="./images/blackStar.png" alt="stars"></p>
+                <p class="money">-   2 000
+                    <img src="./images/blackStar.png" alt="stars"></p>
+                <hr id="small">
+                <p class="nb">New Balance Balance:</p>
+                <p class="left">89 800
+                    <img src="./images/blackStar.png" alt="stars"></p>
+                <button class="confirm">Confirm</button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+</body>
+
+</html>

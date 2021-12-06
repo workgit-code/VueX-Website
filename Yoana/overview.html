@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link rel="stylesheet" href="overview.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./images/VueX2.0.svg" alt="Logo">
+    </div>
+
+    <div class="navigation-bar">
+        <div class="crnt-page nav-text">
+        </div>
+        <div class="profile nav-text">
+            <a href="#">Profile</a>
+        </div>
+        <div class="challenges nav-text">
+            <a href="challenges.html">Challenges</a>
+        </div>
+        <div class="schedule nav-text">
+            <a href="schedule.html">Schedule</a>
+        </div>
+        <div class="shop nav-text">
+            <a href="shop.html">Shop</a>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Profile</a><br><br>
+        <a href="#">Schedule</a><br><br>
+        <a href="#">Challenges</a><br><br>
+        <a href="#">Shop</a>
+    </div>
+
+    <div class="burger-menu" onclick="openNav()">&#9776;</div>
+    <div class="side">
+        
+        <a href="overview.html" id="current"> Overview</a> <br>
+        <a href="" class="others"> Perks</a> <br>
+        <a href="" class="others"> Notification</a> <br>
+        <a href="" class="others"> Friends</a> 
+    </div>
+    <div class="overview">
+    <div class="profileInfo">
+        <div id="profilePic"></div>
+        <p id="user">Hendrick van Asten</p>
+        <input type="file" id="myfile" name="myfile">
+        <p id="level">Level 10</p>
+        <p id="stars">900 000 
+            <img src="./images/Star.png" alt="stars">
+        </p>
+        <div class="progress">
+            <div class="bar"></div>
+        </div>
+        <div id="horizontal"></div>
+        <div id="vertical"></div>
+    </div>
+    <div class="status">
+        <p id="skills">Movie Skills</p>
+        <img src="./images/spider-chart.png" alt="spider chart" id="spider-chart">
+    </div>
+    <div id='horizontal-1'></div>
+    <div class="bracelet">
+        <p id="smart">VueX bracelet</p>
+        <button id="smartBracelet">Disconnect</button>
+    </div>
+    <div class="favmovies">
+        <p id="favourite">Favorite Movies</p>
+        <p id="list">Titanic <br>
+            Captain America <br>
+            Mr and Ms Smith <br>
+            It
+        </p>
+    </div>
+    <div class="reviews">
+        <p id="title">Your reviews</p>
+        <p id="reviewText">Friends: "This movie is amazing"<br>
+            Dune: "Worth time and money" <br>
+        </p>
+        <button class="searchMovie"><img src="./images/loupe 1.png" alt="search">       </button>
+        <!-- For locked items -->
+        <div id="ModalLock" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"><img src="./images/shop-x.png" alt=""></span>
+                <p>Unfortunately, you did not reach this level</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
