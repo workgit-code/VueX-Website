@@ -67,7 +67,7 @@ router.post("/signup", (req, res) => {
       .status(BAD_REQUEST)
       .json({ status, message: "Invalid email entered!" });
 
-  if (repPass !== password){
+  if (repPass !== password) {
     return res
       .status(BAD_REQUEST)
       .json({ status, message: "Passwords are not matching!" });
@@ -89,11 +89,9 @@ router.post("/signup", (req, res) => {
             .status(UNPROCESSABLE_ENTITY)
             .json({ message: "User with the provided email already exists." });
         else
-          return res
-            .status(UNPROCESSABLE_ENTITY)
-            .json({
-              message: "User with the provided username already exists!",
-            });
+          return res.status(UNPROCESSABLE_ENTITY).json({
+            message: "User with the provided username already exists!",
+          });
       // Password handling
       const saltRounds = 10;
       return bcrypt.hash(password, saltRounds);
@@ -122,25 +120,21 @@ router.post("/signup", (req, res) => {
     });
 });
 
-const checkSigninFields = (res, email, password) => {
-  if (!email || !password)
+// Sign in
+router.post("/signin", (req, res) => {
+  let { username, password } = req.body;
+  username = username.trim();
+  password = password.trim();
+
+  if (!username || !password)
     return res.status(BAD_REQUEST).json({
       status: "FAILED",
       message: "Empty credentials supplied!",
     });
-};
-
-// Sign in
-router.post("/signin", (req, res) => {
-  let { email, password } = req.body;
-  email = email.trim();
-  password = password.trim();
-
-  checkSigninFields(res, email, password);
 
   // Check if user exists
   let dataHolder;
-  User.find({ email })
+  User.find({ username })
     .then((data) => {
       if (!data.length)
         return res.status(UNAUTHORIZED).json({

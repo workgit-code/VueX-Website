@@ -8,32 +8,32 @@
 // var formData = JSON.stringify($("#signUpForm").serializeArray());
 $.fn.serializeObject = function()
 {
-    var o = {};
-    var a = this.serializeArray();
-    $.each(a, function() {
-        if (o[this.name] !== undefined) {
-            if (!o[this.name].push) {
-                o[this.name] = [o[this.name]];
+    var user = {};
+    var toJson = this.serializeArray();
+    $.each(toJson, function() {
+        if (user[this.name] !== undefined) {
+            if (!user[this.name].push) {
+                user[this.name] = [user[this.name]];
             }
-            o[this.name].push(this.value || '');
+            user[this.name].push(this.value || '');
         } else {
-            o[this.name] = this.value || '';
+            user[this.name] = this.value || '';
         }
     });
-    return o;
+    return user;
 };
 
-$(function(e) {
+$(function(user) {
   $("#signUpForm").submit(function (event) {
     event.preventDefault();
-    var a = JSON.stringify($("#signUpForm").serializeObject());
+    var signUpData = JSON.stringify($("#signUpForm").serializeObject());
     $.ajax({
         type:"POST",
         url:"https://secure-coast-88070.herokuapp.com/user/signup",
         // url:"http://localhost:3000/user/signup",
-        data: a,
-        success: function(user) {
-            window.location.href = ""
+        data: signUpData,
+        success: function() {
+            window.location.href = "./LogIn.html"
         },
         error: function(err) {
             if(err.responseJSON)
@@ -42,6 +42,26 @@ $(function(e) {
         dataType: "json",
         contentType:"application/json"
     })
+  });
+
+  $("#logInForm").submit(function (event) {
+      event.preventDefault();
+      var logInData = JSON.stringify($("#logInForm").serializeObject());
+      $.ajax({
+          type:"POST",
+          url:"https://secure-coast-88070.herokuapp.com/user/signin",
+          data: logInData,
+          success: function() {
+            // add link to overview
+            window.location.href = "./test.html"
+          },
+          error: function(err) {
+              if(err.responseJSON)
+                alert(err.responseJSON.message);
+          },
+          dataType: "json",
+          contentType:"application/json"
+      })
   });
 });
 
