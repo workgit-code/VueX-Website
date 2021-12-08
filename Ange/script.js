@@ -29,7 +29,7 @@ $(function(user) {
     var signUpData = JSON.stringify($("#signUpForm").serializeObject());
     $.ajax({
         type:"POST",
-        url:"https://secure-coast-88070.herokuapp.com/user/signup",
+        url:"https://vueloyal.herokuapp.com/user/signup",
         // url:"http://localhost:3000/user/signup",
         data: signUpData,
         success: function() {
@@ -49,7 +49,7 @@ $(function(user) {
       var logInData = JSON.stringify($("#logInForm").serializeObject());
       $.ajax({
           type:"POST",
-          url:"https://secure-coast-88070.herokuapp.com/user/signin",
+          url:"https://vueloyal.herokuapp.com/user/signin",
           data: logInData,
           success: function() {
             // add link to overview
