@@ -5,8 +5,8 @@ const UserSchema = new Schema({
     username: String,
     email: String,
     password: String,
-    experience: Int32,
-    stars: Int32,
+    experience: Number,
+    stars: Number,
 })
 
 const User = mongoose.model('User', UserSchema)

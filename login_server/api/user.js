@@ -14,7 +14,9 @@ const UNAUTHORIZED = 401;
 const UNPROCESSABLE_ENTITY = 422;
 const INTERNAL_SERVER_ERROR = 500;
 const status = "FAILED";
-
+//default values for xp and stars
+const DEFUALT_XP = 0;
+const DEFUALT_STARS = 0;
 // const checkSignupFields = (res, username, email, password, repPass) => {
 
 //   if (!username || !email || !password || !repPass)
@@ -102,6 +104,8 @@ router.post("/signup", (req, res) => {
         username,
         email,
         password: hashedPassword,
+        experience: DEFUALT_XP,
+        stars: DEFUALT_STARS,
       });
 
       return newUser.save();
