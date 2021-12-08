@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="review_styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Reviews</title>
+  </head>
+  <body>
+    <!-- main body  -->
+    <main>
+      <div class="ReviewsContainer">
+        <div class="CommentsRectangle">
+          <form name="commentform" id="commentform" method="post" action="""/">
+            <input type="text" id="title" name="title" placeholder="Title..." />
+
+            <div class="star-rating">
+              <input type="radio" name="stars" id="star-a" value="5" />
+              <label for="star-a"></label>
+
+              <input type="radio" name="stars" id="star-b" value="4" />
+              <label for="star-b"></label>
+
+              <input type="radio" name="stars" id="star-c" value="3" />
+              <label for="star-c"></label>
+
+              <input type="radio" name="stars" id="star-d" value="2" />
+              <label for="star-d"></label>
+
+              <input type="radio" name="stars" id="star-e" value="1" />
+              <label for="star-e"></label>
+            </div>
+
+            <textarea
+              id="inputCommentArea"
+              name="inputCommentArea"
+              rows="10"
+              cols="30"
+              placeholder="Comment here..."
+            ></textarea>
+            <button id="button" type="submit">Publish</button>
+            <!-- </div> -->
+          </form>
+        </div>
+
+        <div class="scroll">
+          <div class="review">
+            <h3>TITANIC</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and
+            </p>
+          </div>
+
+          <div class="review">
+            <h3>TITANIC</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and
+            </p>
+          </div>
+
+          <div class="review">
+            <h3>TITANIC</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
