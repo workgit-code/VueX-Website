@@ -7,6 +7,7 @@ const UserSchema = new Schema({
     password: String,
     experience: Number,
     stars: Number,
+    level: Number
 })
 
 const User = mongoose.model('User', UserSchema)

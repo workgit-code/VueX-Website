@@ -53,7 +53,11 @@ $(function(user) {
           data: logInData,
           success: function() {
             // add link to overview
-            window.location.href = "./test.html"
+            let username = $("input[name=username]").val();
+            let password = $("input[name=password]").val();
+            sessionStorage.setItem('username', username);
+            sessionStorage.setItem('password', password);
+            window.location.href = "../Yoana/overview.html"
           },
           error: function(err) {
               if(err.responseJSON)

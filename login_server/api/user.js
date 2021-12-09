@@ -17,6 +17,7 @@ const status = "FAILED";
 //default values for xp and stars
 const DEFUALT_XP = 0;
 const DEFUALT_STARS = 0;
+const DEFAULT_LEVEL = 0;
 // const checkSignupFields = (res, username, email, password, repPass) => {
 
 //   if (!username || !email || !password || !repPass)
@@ -106,6 +107,7 @@ router.post("/signup", (req, res) => {
         password: hashedPassword,
         experience: DEFUALT_XP,
         stars: DEFUALT_STARS,
+        level: DEFAULT_LEVEL
       });
 
       return newUser.save();
