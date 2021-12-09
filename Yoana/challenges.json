@@ -309,8 +309,9 @@
             "stars": "700",
             "xp": "350"
         } 
-        ],"Tasks": [
-                {"taskName": "Validate your concept",
+        ],
+        "Tasks": [
+                {"taskName": "Validate your email",
                     "taskDescription": " Go to settings and please check if this your correct email",
                     "stars": "100",
                     "xp": "100"

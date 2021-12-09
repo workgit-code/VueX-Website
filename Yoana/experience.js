@@ -1,18 +1,3 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
 fetch("challenges.json")
   .then(function (resp) {
     return resp.json();
@@ -27,46 +12,61 @@ fetch("challenges.json")
   //     });
   // })
 
+
   .then(function (data) {
-    // let intervalID = setInterval(visualization, 8000);
-    // function visualization(values){
-    let refreshDay = new Date()(`December 9 2021  00:00:00`)
-    let currentDay = new Date()
-    console.log(currentDay)
-    // if(refreshDay -currentDay)
-    let counter = 0;
-    let values = Object.values(data.weeklyChallenges).length
-    console.log(values)
-    let randomWeekly = Math.floor(Math.random() * values)
-    let firstTask = (data["weeklyChallenges"][randomWeekly]);
-    let secondTask = (data["weeklyChallenges"][randomWeekly + 1]);
-    if (counter <= 2) {
-      document.querySelector(".weeklyChallenges").innerHTML += "<div class=\"taskName\">" + firstTask.taskName + "</div>";
-      document.querySelector(".weeklyChallenges").innerHTML += "<div class=\"starsGiven\">" + firstTask.stars + "</div>";
-      console.log(firstTask.taskName)
-      document.querySelector(".weeklyChallenges").innerHTML += "<div class=\"taskName\">" + secondTask.taskName + "</div>";
-      document.querySelector(".weeklyChallenges").innerHTML += "<div class=\"starsGiven\">" + secondTask.stars + "</div>";
+      // let intervalID = setInterval(visualization, 8000);
+      // function visualization(values){
+      let values = Object.values(data.weeklyChallenges).length
+      console.log(values)
+      let randomWeekly1 = Math.floor(Math.random() * values)
+      let randomWeekly2 = Math.floor(Math.random() * values)
+      let firstTask = (data["weeklyChallenges"][randomWeekly1]);
+      let secondTask = (data["weeklyChallenges"][randomWeekly2]);
+      document.querySelector(".weekly").innerHTML += "<div class=\"WtaskName\">" + firstTask.taskName + " </div>";
+      document.querySelector(".weekly").innerHTML += "<span class=\"WstarsGiven\">" + firstTask.stars + "</span>";
+      document.querySelector(".weekly").innerHTML += "<div class=\"panelW\">" + firstTask.taskDescription + "</div>";
+      document.querySelector(".weekly").innerHTML += "<span class=\"closeW\">&#10003;</span>"
+      document.querySelector(".weekly1").innerHTML += "<div class=\"WtaskName\">" + secondTask.taskName + " </div>";
+      document.querySelector(".weekly1").innerHTML += "<div class=\"WstarsGiven\">" + secondTask.stars + "</div>";
+      document.querySelector(".weekly1").innerHTML += "<div class=\"panelW\">" + secondTask.taskDescription + "</div>";
+      document.querySelector(".weekly1").innerHTML += "<span class=\"closeW\">&#10003;</span>"
       console.log(secondTask.taskName)
-    }else{
-      return
-    }
-    // }
+      var closebtns = document.getElementsByClassName("closeW");
+      let weekly = document.querySelector(".weekly")
+      for (let i = 0; i < closebtns.length; i++) {
+        closebtns[i].addEventListener("click", function () {
+          console.log(weekly)
+          this.parentElement.style.display = 'none';
+        });
+      }
+      let counters = 1;
+      let startPoint = 0
+      let endPoint = 3
+      // console.log(data["weeklyChallenges"][0]["taskName"]);
+      data["Tasks"].forEach(tasks => {
+        if(counters <= 3 ){
+          document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "</div>"   
+          document.querySelector(".tasks").innerHTML += "<div class=\"starsGiven\">" + tasks.stars + "</div></div>"
+          document.querySelector(".tasks").innerHTML +=  "<div class=\"panel\">" + tasks.taskDescription + "</div>" 
+          document.querySelector(".tasks").innerHTML +=   "<span class=\"close\">&#10003;</span>";
+        
+          // if (startPoint <= counters && counters < (startPoint + endPoint)) {
 
-    // console.log(data["weeklyChallenges"][0]["taskName"]);
-    // let counter = 0;
-    // data["weeklyChallenges"].forEach(tasks => {
+            // console.log(tasks);
+            console.log("jiv sum")
 
-    //   if(counter <= 2){
-    //     document.querySelector(".weeklyChallenges").innerHTML+="<div class=\"taskName\">"+tasks.taskDescription+"</div>";
-    //     document.querySelector(".weeklyChallenges").innerHTML+="<div class=\"starsGiven\">"+tasks.stars+"</div>";
-    //     console.log(tasks);
-    // document.querySelector(".weeklyChallenges").innerHTML+="<div class=\"taskName\">"+randomValue+"</div>";
-    // document.querySelector(".weeklyChallenges").innerHTML+="<div class=\"starsGiven\">"+randomValue+"</div>";
-    // console.log("jiv sum")
-    // counter++;        
-    //   } 
-    //   else{
-    //     return;
-    //   }
-    // });
-  })
+            counters++;
+          } else {
+            return;
+          }
+          var closebtn = document.getElementsByClassName("close");
+
+          for (let i = 0; i < closebtn.length; i++) {
+            startPoint = 1
+            closebtn[i].addEventListener("click", function () {
+              console.log("fwfggwghargrg")
+              this.parentElement.style.display = 'none';
+
+            });}
+      });
+      })
