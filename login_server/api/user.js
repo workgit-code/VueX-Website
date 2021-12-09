@@ -17,7 +17,7 @@ const status = "FAILED";
 //default values for xp and stars
 const DEFUALT_XP = 0;
 const DEFUALT_STARS = 0;
-const DEFAULT_LEVEL = 0;
+const DEFAULT_LEVEL = 1;
 // const checkSignupFields = (res, username, email, password, repPass) => {
 
 //   if (!username || !email || !password || !repPass)
@@ -156,12 +156,13 @@ router.post("/signin", (req, res) => {
     .then((result) => {
       // Passwords match
       console.log(result);
-      if (result)
+      if (result){
         return res.json({
           status: "SUCCESS",
           message: "Signin successful",
           data: dataHolder,
         });
+      }
 
       return res.status(UNAUTHORIZED).json({
         status: "FAILED",

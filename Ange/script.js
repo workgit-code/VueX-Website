@@ -51,12 +51,19 @@ $(function(user) {
           type:"POST",
           url:"https://vueloyal.herokuapp.com/user/signin",
           data: logInData,
-          success: function() {
-            // add link to overview
+          success: function(res) {
             let username = $("input[name=username]").val();
             let password = $("input[name=password]").val();
+            let email = res.data[0].email;
+            let experience = res.data[0].experience;
+            let stars = res.data[0].stars;
+            let level = res.data[0].level;
             sessionStorage.setItem('username', username);
             sessionStorage.setItem('password', password);
+            sessionStorage.setItem('email', email);
+            sessionStorage.setItem('experience', experience);
+            sessionStorage.setItem('stars', stars);
+            sessionStorage.setItem('level', level);
             window.location.href = "../Yoana/overview.html"
           },
           error: function(err) {
