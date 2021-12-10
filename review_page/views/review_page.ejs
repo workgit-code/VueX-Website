@@ -16,7 +16,7 @@
     <main>
       <div class="ReviewsContainer">
         <div class="CommentsRectangle">
-          <form name="commentform" id="commentform" method="post" action="""/">
+          <form name="commentform" id="commentform" method="post" action="/">
             <input type="text" id="title" name="title" placeholder="Title..." />
 
             <div class="star-rating">
@@ -78,8 +78,27 @@
               type and
             </p>
           </div>
+
+          <div class="review">
+            <h3>TITANIC</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and
+            </p>
+          </div>
         </div>
       </div>
     </main>
+
+    <script>
+      const myForm = document.getElementById("commentform");
+
+      myForm.addEventListener("submit", (e) => {
+        console.log("submitting!");
+        //e.preventDefault();
+      });
+    </script>
   </body>
 </html>

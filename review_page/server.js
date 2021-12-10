@@ -11,7 +11,9 @@ mongoose.connect(url);
 
 const formSchema = new mongoose.Schema(
   {
-    data: Object,
+    title: String,
+    stars: Number,
+    inputCommentArea: String,
   },
   { collection: "Reviews" }
 );
@@ -21,7 +23,7 @@ const Form = mongoose.model("Form", formSchema);
 
 //store the form data in a variable
 const formData = (bodyData) => {
-  Form({ data: bodyData }).save((err) => {
+  Form(bodyData).save((err) => {
     if (err) {
       throw err;
     }
@@ -41,10 +43,12 @@ app.get("/", (req, res) => {
 
 //post form data
 app.post("/", urlencodedParser, (req, res) => {
+  console.log("retrieve info");
+  console.log(req.body);
   //give the form data to the function
   formData(req.body);
-  res.render("review_page");
+  res.redirect("/");
 });
 
-//NOTE: in order to start the server again, you need to run the nodemon server.js command
+//NOTE: in order to start the server again, you need to run nodemon server.js and type localhost:3030
 server.listen(3030);
