@@ -14,5 +14,46 @@ fetch("challenges.json")
       document.querySelector(".weeklyChallenges").innerHTML+="<div class=\"taskName\">"+secondTask.taskName+"</div>";
       document.querySelector(".weeklyChallenges").innerHTML+="<div class=\"starsGiven\">"+secondTask.stars+"</div>";
       console.log(secondTask.taskName)
-  
+
 })
+
+//function for posting the xp and stars only tasks
+$('#task_button').click(function(){
+    var taskData =  JSON.stringify({"taskName":"Set a profile picture"});
+    console.log(taskData);
+    $.ajax({
+        type:"POST",
+        url:"https://vueloyal.herokuapp.com/user/task",
+        data: taskData,
+        success: function() {
+            window.location.href = "./experience.html"
+        },
+        error: function(err) {
+            if(err.responseJSON)
+                alert(err.responseJSON.message);
+        },
+        dataType: "json",
+        contentType:"application/json"
+    })
+
+});
+//function for posting the xp and stars only challenge
+$('#challenges_button').click(function(){
+    var challengeData =  JSON.stringify({"challengeName":"Set a profile picture"});
+    console.log(taskData);
+    $.ajax({
+        type:"POST",
+        url:"https://vueloyal.herokuapp.com/user/challenge",
+        data: challengeData,
+        success: function() {
+            window.location.href = "./experience.html"
+        },
+        error: function(err) {
+            if(err.responseJSON)
+                alert(err.responseJSON.message);
+        },
+        dataType: "json",
+        contentType:"application/json"
+    })
+});
+  
