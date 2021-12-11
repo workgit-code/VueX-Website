@@ -34,6 +34,17 @@ fetch("challenges.json")
     let counters = 1;
     let startPoint = 0
     let endPoint = 3
+    function taskManager(){
+      data["Tasks"].forEach(tasks => {
+        if (counters <= 3) {
+          document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "<div class=\"starsGiven\">" + tasks.stars + "</div></div><div class=\"panel\">" + tasks.taskDescription + "</div><span class=\"tasks_button\">&#10003;</span></div>";
+          counters++;
+        } else {
+          return;
+        }
+        var closebtn = document.getElementsByClassName("tasks_button");
+      });
+    }
     data["Tasks"].forEach(tasks => {
       if (counters <= 3) {
         document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "<div class=\"starsGiven\">" + tasks.stars + "</div></div><div class=\"panel\">" + tasks.taskDescription + "</div><span class=\"tasks_button\">&#10003;</span></div>";
@@ -45,10 +56,18 @@ fetch("challenges.json")
       for (let i = 0; i < closebtn.length; i++) {
         startPoint = 1
         closebtn[i].addEventListener("click", function () {
+          taskManager();
           console.log("fwfggwghargrg")
+          this.parentElement.remove();
+          counters--;
+          if (counters <= 3) {
+            document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "<div class=\"starsGiven\">" + tasks.stars + "</div></div><div class=\"panel\">" + tasks.taskDescription + "</div><span class=\"tasks_button\">&#10003;</span></div>";
+            counters++;
+          } else {
+            return;
+          }
           //Call function that updates task in datase
           //Call function for retrieving task (not completed). and render again
-          this.parentElement.style.display = 'none';
 
         });
       }

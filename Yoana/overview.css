@@ -1,3 +1,21 @@
+.searchFav{
+    width: 25px;
+    height: 25px;
+} 
+ .btn{
+    left: 455px;
+    color: #4D69B1;
+    position: absolute;
+    top: 280px;
+} 
+
+.glyphicon {
+    font-size: 25px;
+}
+#image_input{
+   
+    visibility: hidden;
+} 
 .side {
     position: relative;
     width: 159px;
@@ -82,7 +100,7 @@
     color: #EFEFEF;
 }
 
-.progress {
+.progressing {
     position: absolute;
     width: 216px;
     height: 16px;
@@ -211,7 +229,8 @@
     line-height: 18px;
     color: #EFEFEF;
     text-align: left;
-    padding-left: 45px;
+    padding-left: 100px;
+    padding-top:20px ;
 }
 
 .reviews {
@@ -269,7 +288,7 @@
         width: 450px;
         height: 2px;
         left: 327px;
-        top: 715px;
+        top: 700px;
         background: #efefef;
     }
 
@@ -334,7 +353,7 @@
         width: 350px;
         height: 2px;
         left: 150px;
-        top: 715px;
+        top: 700px;
         background: #efefef;
     }
 
@@ -374,7 +393,7 @@
 
     #stars {
         position: relative;
-        top: 210px;
+        top: 185px;
     }
 
     .bracelet {
@@ -399,7 +418,7 @@
         width: 350px;
         height: 2px;
         left: 70px;
-        top: 715px;
+        top: 700px;
         background: #efefef;
     }
 

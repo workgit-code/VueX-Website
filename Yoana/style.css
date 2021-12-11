@@ -12,7 +12,6 @@ body {
   /* overflow-x: hidden; */
 }
 
-
 .logo {
   position: absolute;
   width: 9.5%;
@@ -176,19 +175,29 @@ color: #949494;
 }
 
 @media screen and (max-height: 450px) {
+  .sidenav .downMenues{
+    padding-left: 65px;
+  }
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+  
 }
 
 @media only screen and (max-width: 700px) {
   .challenges {
     left: 40.5%;
   }
+  .sidenav .downMenues{
+    padding-left: 65px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
   .logo {
     top: 2.5%;
+  }
+  .sidenav .downMenues{
+    padding-left: 65px;
   }
 }
 
@@ -199,10 +208,15 @@ color: #949494;
   .burger-menu{
     display: block;
   }
+  .sidenav .downMenues{
+    padding-left: 65px;
+  }
 }
-
 @media only screen and (min-width: 700px) {
-  .sidenav{
+  .sidenav .downMenues{
+    padding-left: 65px;
+  }
+    .sidenav{
     width: 0;
   }
 }
