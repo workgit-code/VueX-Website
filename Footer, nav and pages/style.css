@@ -56,6 +56,11 @@ body {
   left: 85%;
 }
 
+.material-icons:hover{
+  cursor: pointer;
+  color: #7ba0ff;
+}
+
 /* .first-row {
   position: absolute;
   left: 5%;
