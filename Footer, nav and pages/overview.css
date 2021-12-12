@@ -8,14 +8,15 @@
     height: 25px;
 } 
  .btn{
-    left: 455px;
+    left: 465px;
     color: #4D69B1;
     position: absolute;
     top: 280px;
+    font-size: 36px;
 } 
 
-.glyphicon {
-    font-size: 25px;
+.material-icons {
+    font-size: 36px;
 }
 #image_input{
    
@@ -309,7 +310,7 @@
     .reviews {
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: relative;
         top: 1100px;
         left: 375px;
     }
@@ -374,13 +375,16 @@
     .reviews {
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: relative;
         top: 1100px;
         left: 150px;
     }
 }
 
 @media only screen and (max-width: 550px) {
+    .overview{
+        position: relative;
+    }
     .side {
         display: none;
     }
@@ -409,7 +413,14 @@
         top: 550px;
         left: -835px;
     }
-
+    #spider-chart {
+        position: relative;
+        width: 213px;
+        height: 213px;
+        left: 457px;
+        top: 470px;
+    }
+    
     #vertical {
         display: none
     }
@@ -428,6 +439,7 @@
         background: #efefef;
     }
 
+
     .favmovies {
         display: flex;
         flex-direction: column;
@@ -439,8 +451,8 @@
     .reviews {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 1100px;
+        position: relative;
+        top: 1180px;
         left: 50px;
     }
 }

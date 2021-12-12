@@ -594,6 +594,7 @@ main {
     top: 105px;
     left: 150px;
     right: 150px;
+    margin-bottom: 150px;
   }
 
   /* header {

@@ -386,6 +386,7 @@ main {
 @media only screen and (max-width: 900px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 150px;
     }
 
     /* header{
@@ -460,6 +461,7 @@ main {
         top: 105px;
         left: 68px;
         right: 150px;
+         /* margin-bottom: 150px; */
     }
 
     /* header {

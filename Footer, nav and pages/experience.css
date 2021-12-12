@@ -83,11 +83,10 @@ footer {
 }
 .panel {
   padding: 0 18px;
-  /* display: none; */
   background-color: transparent;
   overflow: hidden;
   color:#4D69B1;
-  position: relative;
+  position: absolute;
   top:-65px;
   font-family: Montserrat;
   font-size:15px;
