@@ -15,8 +15,8 @@ const UNPROCESSABLE_ENTITY = 422;
 const INTERNAL_SERVER_ERROR = 500;
 const status = "FAILED";
 //default values for xp and stars
-const DEFUALT_XP = 0;
-const DEFUALT_STARS = 0;
+const DEFAULT_XP = 0;
+const DEFAULT_STARS = 0;
 const DEFAULT_LEVEL = 1;
 // const checkSignupFields = (res, username, email, password, repPass) => {
 
@@ -105,8 +105,8 @@ router.post("/signup", (req, res) => {
         username,
         email,
         password: hashedPassword,
-        experience: DEFUALT_XP,
-        stars: DEFUALT_STARS,
+        xp: DEFAULT_XP,
+        stars: DEFAULT_STARS,
         level: DEFAULT_LEVEL
       });
 
