@@ -14,3 +14,23 @@ function openNav() {
     document.querySelector("#level").innerHTML += level
     document.querySelector("#stars").innerHTML = stars + '<img src="./images/Star.png" alt="stars">'
   })
+
+  const chooseFile = document.getElementById("myfile")
+  const imgPreview = document.getElementById("profilePic")
+
+  chooseFile.addEventListener("change", function(){
+    getImgData();
+  })
+
+
+  
+  function getImgData() {
+    const files = chooseFile.files[0];
+    if (files) {
+      const fileReader = new FileReader();
+      fileReader.readAsDataURL(files);
+      fileReader.addEventListener("load", function (){
+        imgPreview.style.backgroundImage = "url('" + this.result + "');"
+      })
+    } 
+  }
