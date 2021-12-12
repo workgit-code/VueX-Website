@@ -66,8 +66,6 @@ fetch("challenges.json")
           } else {
             return;
           }
-          console.log("fwfggwghargrg");
-          Completed_task();
           //Call function that updates task in datase
           //Call function for retrieving task (not completed). and render again
 
@@ -76,48 +74,6 @@ fetch("challenges.json")
     });
   })
 
-
-
-////code for the XP and STARS///
-//function for posting the xp and stars only tasks
-function Completed_task(){
-    var taskData =  JSON.stringify({"taskName":"Set a profile picture"});
-    console.log(taskData);
-    $.ajax({
-        type:"POST",
-        url:"https://vueloyal.herokuapp.com/user/task",
-        data: taskData,
-        success: function() {
-            window.location.href = "./experience.html"
-        },
-        error: function(err) {
-            if(err.responseJSON)
-                alert(err.responseJSON.message);
-        },
-        dataType: "json",
-        contentType:"application/json"
-    })
-
-};
-//function for posting the xp and stars only challenge
-function Completed_challenge(){
-    var challengeData =  JSON.stringify({"challengeName":"Set a profile picture"});
-    console.log(taskData);
-    $.ajax({
-        type:"POST",
-        url:"https://vueloyal.herokuapp.com/user/challenge",
-        data: challengeData,
-        success: function() {
-            window.location.href = "./experience.html"
-        },
-        error: function(err) {
-            if(err.responseJSON)
-                alert(err.responseJSON.message);
-        },
-        dataType: "json",
-        contentType:"application/json"
-    })
-};
 
 // .then(function (data){
 //     console.log(data["weeklyChallenges"][0]["taskName"]);

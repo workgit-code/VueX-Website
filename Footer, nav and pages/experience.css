@@ -99,11 +99,11 @@ footer {
 
 
 .weeklyChallenges {
-  position: absolute;
+  position:relative;
   width: 604px;
   height: 450px;
   left: 811px;
-  top: 150px;
+ top: 150px;
   flex: 50%;
 
   border: 3px solid #efefef;
