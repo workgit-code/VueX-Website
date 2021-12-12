@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="overview.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -58,8 +60,12 @@
         <div class="profileInfo">
             <div id="profilePic"></div>
             <p id="user">Hendrick van Asten</p>
-            <label for="image_input" class="btn"> <span class="glyphicon glyphicon-pencil"></span></label>
-            <input type="file" id="image_input">
+            <label for="image_input" class="btn"> <i class="material-icons">edit</i></label>
+            <form method="post"
+                enctype="multipart/form-data" action="/upload">
+                <input type="file" id="image_input" name="file">
+                <input type="submit" value="Submit"></input>
+            </form>
             <p id="level">Level 10</p>
             <p id="stars">900 000
                 <img src="./images/Star.png" alt="stars">
@@ -84,10 +90,10 @@
                 <a href="favMovies.html">
                     <img src="./images/loupe 2.png" class="searchFav" alt="search" ">
                 </a> </p>
-            <p id="list">Titanic <br>
-                Captain America <br>
-                Mr and Ms Smith <br>
-                It
+            <p id=" list">Titanic <br>
+                    Captain America <br>
+                    Mr and Ms Smith <br>
+                    It
             </p>
         </div>
         <div class="reviews">
@@ -96,8 +102,37 @@
                 Dune: "Worth time and money" <br>
             </p>
         </div>
+        <br>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Desend</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="#">Legal Terms</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="script.js"></script>
-        <script src="overview.js"></script>
 </body>
 
 </html>

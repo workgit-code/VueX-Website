@@ -137,7 +137,7 @@
     position: absolute;
     width: 186px;
     height: 47px;
-    top: 150px;
+    top: 95px;
     right: 150px;
     border: 1px solid #EFEFEF;
     box-sizing: border-box;
@@ -202,7 +202,7 @@
     position: absolute;
     width: 186px;
     height: 47px;
-    top: 150px;
+    top: 95px;
     right: 380px;
     border: 1px solid #EFEFEF;
     box-sizing: border-box;
@@ -277,6 +277,7 @@ main {
     width: 280px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px;
+    bottom:15px;
 }
 
 .event {
@@ -385,6 +386,7 @@ main {
 @media only screen and (max-width: 900px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 150px;
     }
 
     /* header{
@@ -459,6 +461,7 @@ main {
         top: 105px;
         left: 68px;
         right: 150px;
+         /* margin-bottom: 150px; */
     }
 
     /* header {

@@ -1,16 +1,25 @@
+ .overview{
+    /* height:1920px; */
+    height: 325px;
+
+}
+/* .profileInfo{position: absolute;
+}
+.bracelet{position:absolute;} */ 
 .searchFav{
     width: 25px;
     height: 25px;
 } 
  .btn{
-    left: 455px;
+    left: 465px;
     color: #4D69B1;
     position: absolute;
     top: 280px;
+    font-size: 36px;
 } 
 
-.glyphicon {
-    font-size: 25px;
+.material-icons {
+    font-size: 36px;
 }
 #image_input{
    
@@ -159,11 +168,11 @@
 }
 
 #spider-chart {
-    position: absolute;
+    position: relative;
     width: 213px;
     height: 213px;
     left: 457px;
-    top: 470px;
+    /* top: 470px; */
 }
 
 #smart {
@@ -219,6 +228,8 @@
     line-height: 29px;
     color: #EFEFEF;
     text-align: center;
+    padding-top: 15px;
+
 }
 
 #list {
@@ -234,11 +245,12 @@
 }
 
 .reviews {
-    position: absolute;
-    width: 351px;
+    position: relative;
+    margin-top: -80px;
     height: 150px;
+    width: 350px;
     left: 900px;
-    top: 582px;
+    /* top: 582px; */
     border: 3px solid #EFEFEF;
     border-radius: 10px;
     background-color: rgb(11, 12, 14, 0.5);
@@ -252,6 +264,7 @@
     line-height: 29px;
     color: #EFEFEF;
     text-align: center;
+    padding-top: 15px;
 }
 
 #reviewText {
@@ -263,6 +276,7 @@
     color: #EFEFEF;
     text-align: left;
     padding-left: 45px;
+    padding-top: 10px;
 }
 
 @media only screen and (max-width: 950px) {
@@ -303,7 +317,7 @@
     .reviews {
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: relative;
         top: 1100px;
         left: 375px;
     }
@@ -368,13 +382,21 @@
     .reviews {
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: relative;
         top: 1100px;
         left: 150px;
     }
 }
 
 @media only screen and (max-width: 550px) {
+    body{
+        overflow-x: hidden;
+    }
+    .overview{
+        position: relative;
+        margin-bottom: 875px;
+        top: -40px;
+    }
     .side {
         display: none;
     }
@@ -403,7 +425,14 @@
         top: 550px;
         left: -835px;
     }
-
+    #spider-chart {
+        position: relative;
+        width: 213px;
+        height: 213px;
+        left: 457px;
+        top: 470px;
+    }
+    
     #vertical {
         display: none
     }
@@ -422,6 +451,7 @@
         background: #efefef;
     }
 
+
     .favmovies {
         display: flex;
         flex-direction: column;
@@ -429,12 +459,12 @@
         top: 885px;
         left: 50px;
     }
-
     .reviews {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 1100px;
+        top: 1170px;
         left: 50px;
+        bottom: 200px;
     }
-}
+}  
