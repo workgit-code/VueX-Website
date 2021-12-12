@@ -1,5 +1,20 @@
 const express = require("express");
 const router = express.Router();
+const multer = require("multer")
+const http = require("http");
+const path = require("path");
+const fs = require("fs");
+
+const handleError = (err, res) => {
+  res
+    .status(500)
+    .contentType("text/plain")
+    .end("Oops! Something went wrong!")
+};
+
+const upload = multer({
+  dest: "../profilePictures"
+});
 
 // mongodb user model
 const User = require("./../models/user");
@@ -148,5 +163,34 @@ router.post("/signin", (req, res) => {
       });
     });
 });
+
+router.post(
+  "/upload",
+  upload.single("file"),
+  (req, res) => {
+    const tempPath = req.file.path;
+    const targetPath = path.join(__dirname, "./profilePictures/image.png")
+
+    if (path.extname(req.file.originalname).toLowerCase() === ".png") {
+      fs.rename(tempPath, targetPath, err => {
+        if (err) return handleError(err, res);
+
+        res
+          .status(200)
+          .contentType("text/plain")
+          .end("File uploaded!");
+      });
+    } else {
+      fs.unlink(tempPath, err => {
+        if (err) return handleError(err, res);
+
+        res
+          .status(403)
+          .contentType("text/plain")
+          .end("Only .png files are allowed!");
+      });
+    }
+  }
+)
 
 module.exports = router;

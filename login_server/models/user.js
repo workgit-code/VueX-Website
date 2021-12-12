@@ -8,7 +8,8 @@ const UserSchema = new Schema({
     experience: Number,
     stars: Number,
     level: Number,
-    reviews: Array
+    reviews: Array,
+    profilePic: String
 })
 
 const User = mongoose.model("User", UserSchema);

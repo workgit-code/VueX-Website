@@ -64,7 +64,7 @@ $(function(user) {
             sessionStorage.setItem('experience', experience);
             sessionStorage.setItem('stars', stars);
             sessionStorage.setItem('level', level);
-            window.location.href = "../Yoana/overview.html"
+            window.location.href = "../footer_nav_pages/overview.html"
           },
           error: function(err) {
               if(err.responseJSON)

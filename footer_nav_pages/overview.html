@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link rel="stylesheet" href="overview.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./images/VueX2.0.svg" alt="Logo">
+    </div>
+
+    <div class="navigation-bar">
+        <div class="crnt-page nav-text">
+        </div>
+        <div class="profile nav-text">
+            <a href="overview.html">Profile</a>
+        </div>
+        <div class="challenges nav-text">
+            <a href="experience.html">Challenges</a>
+        </div>
+        <div class="schedule nav-text">
+            <a href="schedule.html">Schedule</a>
+        </div>
+        <div class="shop nav-text">
+            <a href="shop.html">Shop</a>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="overview.html">Profile</a><br><br>
+        <a href="#" class="downMenues">Notification</a><br><br>
+        <a href="#" class="downMenues">Perks</a><br><br>
+        <a href="#" class="downMenues">Friends</a><br><br>
+        <a href="schedule.html">Schedule</a><br><br>
+        <a href="experience.html">Challenges</a><br><br>
+        <a href="shop.html">Shop</a>
+    </div>
+
+    <div class="burger-menu" onclick="openNav()">&#9776;</div>
+    <div class="side">
+
+        <a href="overview.html" id="current"> Overview</a> <br>
+        <a href="" class="others"> Perks</a> <br>
+        <a href="" class="others"> Notification</a> <br>
+        <a href="" class="others"> Friends</a>
+    </div>
+    <div class="overview">
+        <div class="profileInfo">
+            <div id="profilePic"></div>
+            <p id="user">Hendrick van Asten</p>
+            <label for="image_input" class="btn"> <i class="material-icons">edit</i></label>
+            <form method="post"
+                enctype="multipart/form-data" action="/upload">
+                <input type="file" id="image_input" name="file">
+                <input type="submit" value="Submit"></input>
+            </form>
+            <p id="level">Level 10</p>
+            <p id="stars">900 000
+                <img src="./images/Star.png" alt="stars">
+            </p>
+            <div class="progressing">
+                <div class="bar"></div>
+            </div>
+            <div id="horizontal"></div>
+            <div id="vertical"></div>
+        </div>
+        <div class="status">
+            <p id="skills">Movie Skills</p>
+            <img src="./images/spider-chart.png" alt="spider chart" id="spider-chart">
+        </div>
+        <div id='horizontal-1'></div>
+        <div class="bracelet">
+            <p id="smart">VueX bracelet</p>
+            <button id="smartBracelet">Disconnect</button>
+        </div>
+        <div class="favmovies">
+            <p id="favourite">Favorite Movies
+                <a href="favMovies.html">
+                    <img src="./images/loupe 2.png" class="searchFav" alt="search" ">
+                </a> </p>
+            <p id=" list">Titanic <br>
+                    Captain America <br>
+                    Mr and Ms Smith <br>
+                    It
+            </p>
+        </div>
+        <div class="reviews">
+            <p id="title">Your reviews</p>
+            <p id="reviewText">Friends: "This movie is amazing"<br>
+                Dune: "Worth time and money" <br>
+            </p>
+        </div>
+        <br>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Desend</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="#">Legal Terms</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>
