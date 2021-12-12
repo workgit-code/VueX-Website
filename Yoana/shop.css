@@ -415,6 +415,7 @@ main {
   width: 300px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 35px;
+  bottom:15px;
 }
 
 .items {
@@ -593,6 +594,7 @@ main {
     top: 105px;
     left: 150px;
     right: 150px;
+    margin-bottom: 150px;
   }
 
   /* header {
