@@ -242,12 +242,12 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: rgb(11, 12, 14);
+	background-color: #24262b;
     padding: 25px 0;
 }
 .footer-col{
    width: 25%;
-   padding: 0 15 0 ;
+   padding: 0 15px;
 }
 .footer-col h4{
 	font-size: 18px;
@@ -312,6 +312,16 @@ ul{
   .footer-col{
     width: 100%;
 }
+.footer-col ul li a {
+  text-align: center;
 }
+.social-links{
+  margin-left: 120px;
+}
+}
+
+
+
+
 
 

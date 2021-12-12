@@ -1,8 +1,11 @@
-/* .overview{
-    position: relative;
-    top: -429px;
+ .overview{
+    /* height:1920px; */
+    height: 325px;
 
-} */
+}
+/* .profileInfo{position: absolute;
+}
+.bracelet{position:absolute;} */ 
 .searchFav{
     width: 25px;
     height: 25px;
@@ -225,6 +228,8 @@
     line-height: 29px;
     color: #EFEFEF;
     text-align: center;
+    padding-top: 15px;
+
 }
 
 #list {
@@ -259,6 +264,7 @@
     line-height: 29px;
     color: #EFEFEF;
     text-align: center;
+    padding-top: 15px;
 }
 
 #reviewText {
@@ -270,6 +276,7 @@
     color: #EFEFEF;
     text-align: left;
     padding-left: 45px;
+    padding-top: 10px;
 }
 
 @media only screen and (max-width: 950px) {
@@ -382,8 +389,13 @@
 }
 
 @media only screen and (max-width: 550px) {
+    body{
+        overflow-x: hidden;
+    }
     .overview{
         position: relative;
+        margin-bottom: 875px;
+        top: -40px;
     }
     .side {
         display: none;
@@ -447,12 +459,12 @@
         top: 885px;
         left: 50px;
     }
-
     .reviews {
         display: flex;
         flex-direction: column;
-        position: relative;
-        top: 1180px;
+        position: absolute;
+        top: 1170px;
         left: 50px;
+        bottom: 200px;
     }
-}
+}  
