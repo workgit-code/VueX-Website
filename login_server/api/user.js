@@ -18,35 +18,6 @@ const status = "FAILED";
 const DEFAULT_XP = 0;
 const DEFAULT_STARS = 0;
 const DEFAULT_LEVEL = 1;
-// const checkSignupFields = (res, username, email, password, repPass) => {
-
-//   if (!username || !email || !password || !repPass)
-//     return res
-//       .status(BAD_REQUEST)
-//       .json({ status, message: "Empty input fields!" });
-
-//   if (!/^[a-zA-Z0-9._]*$/.test(username))
-//     return res
-//       .status(BAD_REQUEST)
-//       .json({ status, message: "Invalid username entered!" });
-
-//   if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email))
-//     return res
-//       .status(BAD_REQUEST)
-//       .json({ status, message: "Invalid email entered!" });
-
-//   if (repPass !== password){
-//     return res
-//       .status(BAD_REQUEST)
-//       .json({ status, message: "Passwords are not matching!" });
-//   }
-
-//   if (password.length < 8)
-//     return res
-//       .status(BAD_REQUEST)
-//       .json({ status, message: "Password should be at least 8 characters!" });
-// };
-
 // Sign up
 router.post("/signup", (req, res) => {
   let { username, email, password, repPass } = req.body;
