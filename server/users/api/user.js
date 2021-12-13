@@ -168,17 +168,18 @@ router.post(
   "/upload",
   upload.single("file"),
   (req, res) => {
+    let username = sessionStorage.getItem("username")
     const tempPath = req.file.path;
-    const targetPath = path.join(__dirname, "./profilePictures/image.png")
+    const targetPath = path.join(__dirname, "../profilePictures/" + username + ".png")
 
     if (path.extname(req.file.originalname).toLowerCase() === ".png") {
       fs.rename(tempPath, targetPath, err => {
         if (err) return handleError(err, res);
 
-        res
-          .status(200)
-          .contentType("text/plain")
-          .end("File uploaded!");
+        User.find({ username })
+          .then((data) => {
+            console.log(data)
+          })
       });
     } else {
       fs.unlink(tempPath, err => {
