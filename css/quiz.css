@@ -1,0 +1,164 @@
+.bg-img {
+  /* The image used */
+  background-image: url("../img/quiz.jpg");
+  min-height: 550px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 5px 5px;
+
+}
+#title{
+  font-family:Ubuntu;
+  color:#efefee;
+  font-size: 32px;
+}
+.back {
+  background-color: #efefee;
+  min-width: 580px;
+  /* height:400px; */
+  margin-top: 100px;
+  margin-left: 150px;
+  padding-top: 0px;
+  padding: 25px;
+  float: left;
+
+}
+
+.buttons {
+  float: left;
+  margin-left: 380px;
+  margin-top: 160px;
+}
+
+.question {
+  font-family: Ubuntu;
+  font-size: 22px;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+.answers {
+  font-family: Ubuntu;
+  padding-bottom: 20px;
+  text-align: justify;
+  display: inline-block;
+}
+
+.answers label {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+button {
+  font-family: Ubuntu;
+  font-size: 22px;
+  background-color:#4D69B1;
+  color: #efefef;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 450px;
+}
+button:hover {
+  background-color: #8C5CA6;
+}
+#next, #submit{
+  left: 650px;
+
+}
+#results {
+  font-size: 35px;
+  font-family: Ubuntu;
+  color: #efefef;
+  position: absolute;
+  top: 550px;
+}
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #efefee;
+  border-radius: 10px;
+  margin-left: 350px;
+  top: 170px;
+  padding: 25px;
+  color: #efefee;
+}
+
+.active-slide {
+  opacity: 1;
+  z-index: 2;
+}
+
+.quiz-container {
+  position: relative;
+  height: 200px;
+  border-radius: 3px;
+}
+
+#results {
+  font-size: 35px;
+  font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+  color: white
+}
+@media screen and (min-width: 500px) and (max-width:1300px) {
+  .bg-img{
+   display: flex;
+   flex-direction: column;
+    height: 900px !important;
+  }
+ }
+@media screen and (max-width: 500px) {
+  .quiz-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question {
+    font-size: 20px !important;
+  }
+
+  .answers {
+    font-size: 15px !important;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    width: 300px;
+  }
+
+  .buttons{
+    margin-top: 190px !important;
+    margin-left: 100px !important;
+  }
+  button{
+    padding:10px !important;
+  }
+  #results{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px !important;
+    text-align: center;
+  }
+  #next, #submit{
+    left: 275px;
+    display: flex;
+    flex-direction: column;
+  }
+  #previous{    display: flex;
+    flex-direction: column;
+    left: 30px;}
+}

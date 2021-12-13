@@ -1,0 +1,470 @@
+ .overview{
+    /* height:1920px; */
+    height: 325px;
+
+}
+/* .profileInfo{position: absolute;
+}
+.bracelet{position:absolute;} */ 
+.searchFav{
+    width: 25px;
+    height: 25px;
+} 
+ .btn{
+    left: 465px;
+    color: #4D69B1;
+    position: absolute;
+    top: 280px;
+    font-size: 36px;
+} 
+
+.material-icons {
+    font-size: 36px;
+}
+#image_input{
+   
+    visibility: hidden;
+} 
+.side {
+    position: relative;
+    width: 159px;
+    height: 135px;
+    background: rgba(11, 12, 14, 0.47);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 280px;
+    margin-left: 75px;
+    z-index: 1;
+}
+
+#current {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #efefef;
+    text-decoration: none;
+}
+
+.others {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+    color: #efefef;
+    text-decoration: none;
+}
+
+#profilePic {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 340px;
+    top: 160px;
+    background: url("../img/profile-pic.png");
+    background-size: cover;
+    box-shadow: 0px 5px 4px 4px rgba(0, 0, 0, 0.55);
+    border-radius: 50%;
+}
+
+#user {
+    position: absolute;
+    width: 233px;
+    height: 28px;
+    left: 520px;
+    top: 160px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #EFEFEF;
+}
+
+#level {
+    position: absolute;
+    width: 97px;
+    height: 32px;
+    left: 520px;
+    top: 210px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: #EFEFEF;
+}
+
+#stars {
+    position: absolute;
+    left: 630px;
+    top: 210px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    color: #EFEFEF;
+}
+
+.progressing {
+    position: absolute;
+    width: 216px;
+    height: 16px;
+    left: 520px;
+    top: 288px;
+    background: #4D69B1;
+    border-radius: 25px;
+}
+
+.bar {
+    width: 115px;
+    height: 6px;
+    left: 524px;
+    top: 230px;
+    background: #EFEFEF;
+    border-radius: 25px 0px 0px 25px;
+    margin: auto;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#horizontal {
+    position: absolute;
+    width: 500px;
+    height: 2px;
+    left: 327px;
+    top: 374px;
+    background: #efefef;
+}
+
+#vertical {
+    position: absolute;
+    width: 2px;
+    height: 587px;
+    left: 870px;
+    top: 150px;
+    background: #efefef;
+}
+
+#horizontal-1 {
+    display: none;
+}
+
+#skills {
+    position: absolute;
+    width: 197px;
+    height: 29px;
+    left: 490px;
+    top: 398px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: #EFEFEF;
+}
+
+#spider-chart {
+    position: relative;
+    width: 213px;
+    height: 213px;
+    left: 457px;
+    /* top: 470px; */
+}
+
+#smart {
+    position: absolute;
+    width: 167px;
+    height: 29px;
+    left: 965px;
+    top: 160px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: #EFEFEF;
+    text-align: center;
+}
+
+#smartBracelet {
+    position: absolute;
+    width: 217px;
+    height: 52px;
+    left: 945px;
+    top: 250px;
+    border: 3px solid #EFEFEF;
+    box-sizing: border-box;
+    background-color: rgb(11, 12, 14, 0.75);
+    border-radius: 10px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 25px;
+    color: #FF0000
+}
+
+.favmovies {
+    position: absolute;
+    width: 351px;
+    height: 184px;
+    left: 900px;
+    top: 373px;
+    border: 3px solid #EFEFEF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: rgb(11, 12, 14, 0.5);
+    border-radius: 10px;
+}
+
+#favourite {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: #EFEFEF;
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+#list {
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #EFEFEF;
+    text-align: left;
+    padding-left: 100px;
+    padding-top:20px ;
+}
+
+.reviews {
+    position: relative;
+    margin-top: -80px;
+    height: 150px;
+    width: 350px;
+    left: 900px;
+    /* top: 582px; */
+    border: 3px solid #EFEFEF;
+    border-radius: 10px;
+    background-color: rgb(11, 12, 14, 0.5);
+}
+
+#title {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: #EFEFEF;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#reviewText {
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #EFEFEF;
+    text-align: left;
+    padding-left: 45px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 950px) {
+    .bracelet {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 550px;
+        left: -500px;
+    }
+
+    #vertical {
+        display: none
+    }
+
+    #horizontal {
+        width: 450px;
+    }
+
+    #horizontal-1 {
+        display: block;
+        position: absolute;
+        width: 450px;
+        height: 2px;
+        left: 327px;
+        top: 700px;
+        background: #efefef;
+    }
+
+    .favmovies {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 885px;
+        left: 375px;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 1100px;
+        left: 375px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .side {
+        display: none;
+    }
+
+    .profileInfo {
+        position: absolute;
+        top: 0px;
+        left: -210px;
+    }
+
+    .status {
+        left: -230px;
+        top: 0px;
+        position: absolute;
+    }
+
+    #stars {
+        position: relative;
+        top: 210px;
+    }
+
+    .bracelet {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 550px;
+        left: -730px;
+    }
+
+    #vertical {
+        display: none
+    }
+
+    #horizontal {
+        width: 450px;
+    }
+
+    #horizontal-1 {
+        display: block;
+        position: absolute;
+        width: 350px;
+        height: 2px;
+        left: 150px;
+        top: 700px;
+        background: #efefef;
+    }
+
+    .favmovies {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 885px;
+        left: 150px;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 1100px;
+        left: 150px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    body{
+        overflow-x: hidden;
+    }
+    .overview{
+        position: relative;
+        margin-bottom: 875px;
+        top: -40px;
+    }
+    .side {
+        display: none;
+    }
+
+    .profileInfo {
+        position: absolute;
+        top: 0px;
+        left: -310px;
+    }
+
+    .status {
+        left: -348px;
+        top: 0px;
+        position: absolute;
+    }
+
+    #stars {
+        position: relative;
+        top: 185px;
+    }
+
+    .bracelet {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 550px;
+        left: -835px;
+    }
+    #spider-chart {
+        position: relative;
+        width: 213px;
+        height: 213px;
+        left: 457px;
+        top: 470px;
+    }
+    
+    #vertical {
+        display: none
+    }
+
+    #horizontal {
+        width: 450px;
+    }
+
+    #horizontal-1 {
+        display: block;
+        position: absolute;
+        width: 350px;
+        height: 2px;
+        left: 70px;
+        top: 700px;
+        background: #efefef;
+    }
+
+
+    .favmovies {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 885px;
+        left: 50px;
+    }
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 1170px;
+        left: 50px;
+        bottom: 200px;
+    }
+}  
