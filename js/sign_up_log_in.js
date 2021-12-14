@@ -42,6 +42,7 @@ $(function(user) {
       $.ajax({
           type:"POST",
           url:"https://vueloyal.herokuapp.com/user/signin",
+        //   url:"http://localhost:3000/user/signup",
           data: logInData,
           success: function(res) {
             let username = $("input[name=username]").val();
