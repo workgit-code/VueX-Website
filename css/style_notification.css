@@ -1,17 +1,16 @@
 body {
-  /* background-color: black; */
   background-image: url(../img/Background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .box {
-  position: absolute;
+  position: relative;
   width: 604px;
   height: 423px;
   left: 517px;
   top: 196px;
-
+  margin-bottom: 230px;
   border: 2px solid #efefef;
   box-sizing: border-box;
   border-radius: 10px;

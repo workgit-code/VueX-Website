@@ -1,4 +1,4 @@
-fetch("challenges.json")
+fetch("../json/challenges.json")
   .then(function (resp) {
     return resp.json();
   })

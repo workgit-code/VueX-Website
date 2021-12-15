@@ -1,16 +1,12 @@
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #0B0C0E;
-  color: white;
-  text-align: center;
+.experience {
+  position: relative;
+  height: 450px;
+  margin-bottom: 178px;
 }
 
 .tasks_button {
   background-color: transparent;
-  color:#4D69B1;
+  color: #4D69B1;
   cursor: pointer;
   border: 3px solid #efefef;
   border-radius: 50%;
@@ -19,11 +15,12 @@ footer {
   transform: translate(0%, -50%);
   z-index: 1;
   right: 5px;
-  margin-top: -100px;
+  margin-top: -80px;
 }
+
 .closeW {
   background-color: transparent;
-  color:#4D69B1;
+  color: #4D69B1;
   cursor: pointer;
   border: 3px solid #efefef;
   border-radius: 50%;
@@ -34,6 +31,7 @@ footer {
   right: 5px;
   margin-top: -110px;
 }
+
 .tasksBar {
   position: absolute;
   width: 604px;
@@ -47,7 +45,8 @@ footer {
   transform: rotate(0.56deg);
 }
 
-.tasks, .task1{
+.tasks,
+.task1 {
   border: 2px solid #efefef;
   border-left: none;
   border-right: none;
@@ -62,14 +61,16 @@ footer {
   padding-top: 15px;
   padding-top: 10px;
 }
-.taskName{
+
+.taskName {
   color: #efefef;
   font-family: Ubuntu;
   font-size: 20px;
   left: 40px;
   position: relative;
 }
-.starsGiven{
+
+.starsGiven {
   color: #efefef;
   font-family: Ubuntu;
   font-size: 20px;
@@ -79,16 +80,16 @@ footer {
   top: -75px;
   z-index: 1;
 }
+
 .panel {
-  padding: 0 18px;
-  /* display: none; */
+  padding: 100px 18px;
   background-color: transparent;
   overflow: hidden;
-  color:#4D69B1;
-  position: relative;
-  top:-65px;
+  color: #4D69B1;
+  position: absolute;
+  top: -65px;
   font-family: Montserrat;
-  font-size:15px;
+  font-size: 15px;
   font-style: italic;
   font-weight: 600;
   z-index: 1;
@@ -107,7 +108,8 @@ footer {
   border: 3px solid #efefef;
   border-radius: 25px;
 }
-.weekly{
+
+.weekly {
   border: 2px solid #efefef;
   border-left: none;
   border-right: none;
@@ -124,16 +126,17 @@ footer {
 
 }
 
-.WtaskName{
+.WtaskName {
   color: #efefef;
   font-family: Ubuntu;
   font-size: 20px;
   left: 40px;
   position: relative;
 }
-.WstarsGiven{
-    position: relative;
-  color:#efefef;
+
+.WstarsGiven {
+  position: relative;
+  color: #efefef;
   text-align: right;
   font-size: 20px;
   padding-right: 130px;
@@ -143,7 +146,7 @@ footer {
   z-index: 1;
 }
 
-.panelW{
+.panelW {
   padding: 0 18px;
   background-color: transparent;
   overflow: hidden;
@@ -156,37 +159,6 @@ footer {
   font-weight: 600;
   z-index: 1;
   margin-top: 71px;
-} 
-@media (max-width: 700px) {
-  .tasksBar {
-    position: absolute;
-    width: 315px;
-    height: 350px;
-    left: 117.61px;
-    top: 237px;
-    /* flex: 50%; */
-
-    border: 3px solid #efefef;
-    box-shadow: inset 2px 8px 10px 3px rgba(239, 239, 239, 0.25);
-    border-radius: 25px;
-    transform: rotate(0.56deg);
-  }
-}
-
-
-@media (max-width: 700px) {
-  .weeklyChallenges {
-    position: absolute;
-    width: 420px;
-    height: 430px;
-    left: 75px;
-    top: 630px;
-    flex: 50%;
-
-    border: 3px solid #efefef;
-    box-shadow: inset 2px 8px 10px 3px rgba(239, 239, 239, 0.25);
-    border-radius: 25px;
-  }
 }
 
 #Tasks {
@@ -199,104 +171,8 @@ footer {
   font-weight: bold;
   font-size: 25px;
   line-height: 29px;
-  top:25px;
+  top: 25px;
   color: #ffffff;
-}
-
-@media (max-width: 700px) {
-  #Tasks {
-    position: absolute;
-    width: 66.74px;
-    height: 500px;
-    left: 130px;
-    top: 25px;
-
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 29px;
-
-    color: #ffffff;
-  }
-}
-
-.taskBar {
-  position: relative;
-  left: 5px;
-  top: 120px;
-
-  color: #ffffff;
-  list-style-type: none;
-}
-
-@media (max-width: 700px) {
-  #taskBar {
-    position: relative;
-    left: -40px;
-    top: 85px;
-
-    color: #ffffff;
-    list-style-type: none;
-  }
-}
-
-#taskBar li {
-  display: flex;
-  width: 990px;
-  height: 24.06px;
-  left: 181.23px;
-  top: 350px;
-
-  font-family: Ubuntu;
-  font-size: 22px;
-  padding: 10px 20px;
-}
-
-@media (max-width: 700px) {
-  #taskBar li {
-    display: flex;
-    width: 590px;
-    height: 24.06px;
-    left: 181.23px;
-    top: 150px;
-
-    font-family: Ubuntu;
-    font-size: 22px;
-    padding: 10px 20px;
-  }
-}
-
-#taskBar li span:nth-child(1) {
-  width: 400px;
-  /* text-align: right; */
-}
-
-#taskBar li span:nth-child(2) {
-  width: 60px;
-  /* text-align: right; */
-}
-
-#taskBar li span:nth-child(3) {
-  width: 100px;
-  /* text-align: right; */
-}
-
-@media (max-width: 700px) {
-  #taskBar li span:nth-child(1) {
-    width: 200px;
-    /* text-align: right; */
-  }
-
-  #taskBar li span:nth-child(2) {
-    width: 50px;
-    /* text-align: right; */
-  }
-
-  #taskBar li span:nth-child(3) {
-    width: 100px;
-    /* text-align: right; */
-  }
 }
 
 #WeeklyChallengesTitle {
@@ -314,115 +190,84 @@ footer {
   color: #efefef;
 }
 
-@media (max-width: 700px) {
-  #WeeklyChallengesTitle {
-    position: absolute;
-    width: 225.77px;
-    height: 23.8px;
-    left: 120px;
-    top: 25px;
-
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-
-    color: #efefef;
-  }
-}
-
-#weeklyChalleneges li {
-  display: flex;
-  width: 520px;
-  height: 24.06px;
-  left: 181.23px;
-  top: 350px;
-
-  font-family: Ubuntu;
-  font-size: 22px;
-  padding: 10px 20px;
-}
-
-@media (max-width: 700px) {
-  #weeklyChalleneges li {
-    display: flex;
-    width: 370px;
-    height: 24.06px;
-    left: 181.23px;
-    top: 350px;
-
-    font-family: Ubuntu;
-    font-size: 22px;
-    padding: 10px 20px;
-  }
-}
-
-#weeklyChalleneges {
-  position: relative;
-  left: 5px;
-  top: 120px;
-
-  color: #ffffff;
-  list-style-type: none;
-}
-
-@media (max-width: 700px) {
-  #weeklyChalleneges {
-    position: relative;
-    left: -40px;
-    top: 120px;
-
-    color: #ffffff;
-    list-style-type: none;
-  }
-}
-
-#weeklyChalleneges li span:nth-child(1) {
-  width: 100px;
-  /* text-align: right; */
-}
-
-#weeklyChalleneges li span:nth-child(2) {
-  width: 1200px;
-  /* text-align: right; */
-}
-
-#weeklyChalleneges li span:nth-child(3) {
-  width: 200px;
-  /* text-align: right; */
-}
-
-#weeklyChalleneges li span:nth-child(4) {
-  width: 200px;
-  /* text-align: right; */
-}
-
-@media only screen and (max-width: 700px) {
-  #weeklyChalleneges li span:nth-child(1) {
-    width: 110px;
-    /* text-align: right; */
+@media only screen and (max-width: 760px) {
+  .experience {
+    height: 1200px;
+    margin-bottom: 60px;
   }
 
-  #weeklyChalleneges li span:nth-child(2) {
-    width: 1100px;
-    /* text-align: right; */
-  }
-
-  #weeklyChalleneges li span:nth-child(3) {
-    width: 250px;
-    /* text-align: right; */
-  }
-
-  #weeklyChalleneges li span:nth-child(4) {
-    width: 100px;
-    /* text-align: right; */
-  }
-}
-
-@media (max-width: 700px) {
-  .flex-container {
+  .tasksBar {
+    left: 60px;
     display: flex;
     flex-direction: column;
-    flex-flow: column wrap;
+    width: 350px;
+    height: 580px;
   }
+
+  #Tasks {
+    left: 130px;
+  }
+
+  .tasks {
+    height: 130px;
+  }
+
+  .taskName {
+    left: 75px;
+  }
+
+  .panel {
+    top: -30px;
+  }
+
+  .starsGiven {
+    left: 75px;
+    position: relative;
+    margin-top: 55px;
+    top: -45px;
+    z-index: 1;
+  }
+
+  .weeklyChallenges {
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 425px;
+    top: 765px;
+  }
+
+  #WeeklyChallengesTitle {
+    left: 65px;
+  }
+  .weekly{
+    height: 135px;
+  }
+  .WtaskName {
+    left: 75px;
+  }
+  .panelW{
+    top: -60px;
+  }
+  .WstarsGiven{
+     padding-right: 240px;
+  top: 8px;
+  }
+ 
+}
+
+@media only screen and (min-width: 835px) and  (max-width: 1435px) {
+  .experience {
+    height: 1100px;
+    margin-bottom: 60px;
+  }
+  .weeklyChallenges {
+    display: flex;
+    flex-direction: column;
+    width: 604px;
+    height: 450px;
+    top: 665px;
+    left: 117.61px;
+  }
+
 }
