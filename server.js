@@ -37,6 +37,7 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
+// no need to render again, as we do it below in the get request
 // app.get("/", (req, res) => {
 //   res.render("review_page");
 // });
@@ -50,8 +51,9 @@ app.post("/", urlencodedParser, (req, res) => {
   res.redirect("/");
 });
 
+//get the posted reviews to appear in the html (connected with the ejs file)
 app.get("/", (req, res) => {
-  console.log("show info");
+  console.log("get is working");
   Form.find({}, function (err, Reviews) {
     res.render("review_page", {
       reviewsList: Reviews,
