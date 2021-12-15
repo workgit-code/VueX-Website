@@ -49,8 +49,17 @@
         </div>
 
         <div class="scroll">
+          <%reviewsList.forEach(review => {%>
+          <div class="review">
+            <h3><em>"<%= review.title%>"</em></h3>
+            <h4><em><%= review.stars%></em><em> Stars</em></h4>
+            <p><%= review.inputCommentArea%></p>
+          </div>
+          <%})%>
           <div class="review">
             <h3>TITANIC</h3>
+            <h4><em>5 Stars</em></h4>
+            <!-- <h1>stars</h1> -->
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -61,6 +70,7 @@
 
           <div class="review">
             <h3>TITANIC</h3>
+            <h4><em>5 Stars</em></h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -71,16 +81,7 @@
 
           <div class="review">
             <h3>TITANIC</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and
-            </p>
-          </div>
-
-          <div class="review">
-            <h3>TITANIC</h3>
+            <h4><em>5 Stars</em></h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text

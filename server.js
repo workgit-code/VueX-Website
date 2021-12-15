@@ -37,9 +37,9 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-  res.render("review_page");
-});
+// app.get("/", (req, res) => {
+//   res.render("review_page");
+// });
 
 //post form data
 app.post("/", urlencodedParser, (req, res) => {
@@ -50,5 +50,13 @@ app.post("/", urlencodedParser, (req, res) => {
   res.redirect("/");
 });
 
+app.get("/", (req, res) => {
+  console.log("show info");
+  Form.find({}, function (err, Reviews) {
+    res.render("review_page", {
+      reviewsList: Reviews,
+    });
+  });
+});
 //NOTE: in order to start the server again, you need to run nodemon server.js and type localhost:3030
 server.listen(3030);

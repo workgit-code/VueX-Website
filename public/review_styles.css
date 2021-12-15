@@ -28,6 +28,9 @@ main {
   align-items: center;
   float: center;
 
+  width: 325px;
+  height: 550px;
+
   border: 2px solid #efefef;
   box-sizing: border-box;
   border-radius: 10px;
@@ -45,8 +48,8 @@ main {
 }
 
 #commentform {
-  width: 325px;
-  height: 450px;
+  /* width: 325px;
+  height: 450px; */
   padding-left: 50px;
   padding-right: 50px;
 
@@ -160,7 +163,6 @@ button:hover {
 }
 
 .container-reviews {
-  /* color: green; */
   width: 150px;
 }
 
@@ -180,9 +182,16 @@ button:hover {
 .review > h3 {
   font-family: Ubuntu;
   font-style: normal;
-  font-weight: 400px;
-  font-size: 30px;
-  line-height: 44px;
+  font-weight: 300px;
+  font-size: 25px;
+  line-height: 30px;
+
+  margin-left: 20px;
+  color: white;
+}
+.review > h4 {
+  font-family: Ubuntu;
+  font-style: normal;
 
   margin-left: 20px;
   color: white;
@@ -202,21 +211,38 @@ button:hover {
   margin-left: 20px;
 }
 
-/* @media (max-width: 700px) {
-  .ReviewsContainer {
-    display: grid;
-    max-width: 600px;
-    grid-template-columns: 225px 1fr;
-    gap: 20px;
+@media (max-width: 700px) {
+  .CommentsRectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: center;
+
+    width: 325px;
+    height: 450px;
+
+    border: 2px solid #efefef;
+    box-sizing: border-box;
+    border-radius: 10px;
   }
-} */
+}
 
-/* .reviewNext {
-  font-family: Ubuntu;
-  font-style: Ubuntu;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 28px;
+@media (max-width: 700px) {
+  #commentform {
+    width: 325px;
+    height: 450px;
+    padding-left: 50px;
+    padding-right: 50px;
 
-  color: #efefef;
-} */
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .ReviewsContainer {
+    display: table-column;
+    justify-content: center;
+    align-items: center;
+  }
+}
