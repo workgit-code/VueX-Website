@@ -242,25 +242,17 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: #24262b;
+	/* background-color: rgb(11, 12, 14, 0.85); */
+    background-color: rgb(222, 58, 147, 0.25);
     padding: 25px 0;
 }
 .footer-col{
    width: 25%;
    padding: 0 15px;
 }
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
 .footer-col h4::before{
 	content: '';
 	position: absolute;
-	left:0;
 	bottom: -10px;
 	background-color: #e91e63;
 	height: 2px;
@@ -271,17 +263,18 @@ ul{
 	margin-bottom: 10px;
 }
 .footer-col ul li a{
-	font-size: 16px;
+	font-size: 18px;
+  font-family: Ubuntu;
 	text-transform: capitalize;
-	color: #ffffff;
+	color: #efefef;
 	text-decoration: none;
-	font-weight: 300;
+	font-weight: bold;
 	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #ffffff;
+	color: #efefef;
 	padding-left: 8px;
 }
 .footer-col .social-links a{
@@ -293,12 +286,12 @@ ul{
 	text-align: center;
 	line-height: 40px;
 	border-radius: 50%;
-	color: #ffffff;
+	color: #efefef;
 	transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover{
 	color: #24262b;
-	background-color: #ffffff;
+	background-color: #efefef;
 }
 
 /*responsive*/

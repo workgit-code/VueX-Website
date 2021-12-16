@@ -1,19 +1,23 @@
-body {
-  background-image: url(../img/Background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+/* .main{
+  display: flex;
+  justify-content: center;
+} */
+.container{
+  
 }
-
 .box {
+  /* display: grid;
+  grid-template-columns: 1fr; */
   position: relative;
-  width: 604px;
+  max-width: 604px;
   height: 423px;
   left: 517px;
-  top: 196px;
-  margin-bottom: 230px;
+  top: -230px;
+  margin-bottom: -185px;
   border: 2px solid #efefef;
   box-sizing: border-box;
   border-radius: 10px;
+
 }
 
 .crnt-page {
@@ -185,4 +189,108 @@ body {
   line-height: 32px;
 
   color: #efefef;
+}
+ 
+.side {
+  position: relative;
+  width: 159px;
+  height: 135px;
+  background: rgba(11, 12, 14, 0.47);
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 280px;
+  margin-left: 75px;
+  z-index: 1;
+}
+#current {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #efefef;
+  text-decoration: none;
+}
+
+.others {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 26px;
+  color: #efefef;
+  text-decoration: none;
+}
+
+@media only screen and  (max-width: 1445px) {
+  .filter{
+    left:900px;
+  }
+  .filter-text{
+    left:915px;
+  }
+  .arrow-down{
+    left:990px;
+  }
+  .box{
+    width: 550px;
+  }
+}
+@media screen and (min-width:800px) and (max-width:1040px){
+  .filter{
+    left:900px;
+  }
+  .filter-text{
+    left:915px;
+  }
+  .arrow-down{
+    left:990px;
+  }
+  .box{
+    width: 550px;
+    left:210
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body{
+    overflow-x: hidden;
+  }
+  .side{
+    display: none;
+  }
+  .filter{
+    left:300px;
+  }
+  .filter-text{
+    left:315px;
+  }
+  .arrow-down{
+    left:390px;
+  }
+  .box{
+    margin-bottom: 250px;
+    width: 400px;
+    left: 50px;
+    top: 190px;
+  }
+  .title-notification {
+    font-size:25px;
+    left:170px;
+  }
+  .point{
+    left: 100px;
+  }
+  .second-point{
+    left: 100px;
+  }
+  .text-first{
+    font-size:15px;
+    left:150px;
+  }
+  .text-second{
+    top: 450px;
+    font-size: 15px;
+    left: 150px;
+  }
 }
