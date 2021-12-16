@@ -8,8 +8,6 @@
     <title>Shop</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/shop.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -21,79 +19,77 @@
         <div class="crnt-page nav-text">
         </div>
         <div class="profile nav-text">
-            <a href="../common/overview.html">Profile</a>
+            <a href="overview.html">Profile</a>
         </div>
         <div class="challenges nav-text">
-            <a href="../common/experience.html">Challenges</a>
+            <a href="challenges.html">Challenges</a>
         </div>
         <div class="schedule nav-text">
-            <a href="../common/schedule.html">Schedule</a>
+            <a href="schedule.html">Schedule</a>
         </div>
         <div class="shop nav-text">
-            <a href="../common/shop.html">Shop</a>
+            <a href="shop.html">Shop</a>
         </div>
     </div>
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="../common/overview.html">Profile</a><br><br>
-        <a href="../common/notification.html" class="downMenues">Notification</a><br><br>
-        <a href="#" class="downMenues">Perks</a><br><br>
-        <a href="../common/friends.html" class="downMenues">Friends</a><br><br>
-        <a href="../common/schedule.html">Schedule</a><br><br>
-        <a href="../common/experience.html">Challenges</a><br><br>
-        <a href="../common/shop.html">Shop</a>
+        <a href="overview.html">Profile</a><br><br>
+        <a href="schedule.html">Schedule</a><br><br>
+        <a href="#">Challenges</a><br><br>
+        <a href="shop.html">Shop</a>
     </div>
-    
+
     <div class="burger-menu" onclick="openNav()">&#9776;</div>
 
     <div class="balance">
         <p class="balanceText">Balance: 900 000
-            <img src="./images/Star.png" alt="stars">
+            <img src="../img/Star.png" alt="stars">
         </p>
     </div>
     <div class="sorting">
-        <button class="sorting-text">Sorted by
-            <img src="./images/ExpandArrow.png" class="arrows" alt="down arrow">
-        </button>
-        <div class="dropdown-content-sort">
-            <p>Ascending</p>
-            <p>Descending</p>
-        </div>
+        <!--<button class="sorting-text">Sorted by
+            <img src="../img/ExpandArrow.png" class="arrows" alt="down arrow">
+        </button>-->
+        <select class="dropdown-content-sort">
+            <option >Sorted by</option>
+            <option >Ascending</option>
+            <option>Descending</option>
+        </select>
     </div>
     </header>
     <main>
         <div class="items">
-            <p class="itemName">Free Popcorn</p>
-            <img src="./images/popcorn.png" alt="product" class="images">
-            <p class="price">2 000
-                <img src="./images/Star.png" alt="stars">
+            <p class="itemName">Medium Popcorn</p>
+            <img src="../img/Medium popcorn.png" style="width:55%; height: 135px; " alt="product" class="images">
+            <p class="price">2 500
+                <img src="../img/Star.png" alt="stars">
             </p>
             <button class="normal">Buy</button>
         </div>
         <div class="items">
-            <p class="itemName">Free Popcorn</p>
-            <img src="./images/popcorn.png" alt="product" class="images">
-            <p class="price">2 000
-                <img src="./images/Star.png" alt="stars">
+            <p class="itemName" style="padding-left: 70px;">Big Popcorn</p>
+            <img src="../img/popcorn.png" style="margin-top: 5px;" alt="product" class="images">
+            <p class="price">5 000
+                <img src="../img/Star.png" alt="stars">
             </p>
-            <button class="normal">Buy</button>
+            <button class="normal1">Buy</button>
         </div>
         <div class="items">
-            <p class="itemName">Free Popcorn</p>
-            <img src="./images/popcorn.png" alt="product" class="images">
-            <p class="price">2 000
-                <img src="./images/Star.png" alt="stars">
+            <p class="itemName" style="padding-left: 100px;">Drink</p>
+            <img src="../img/vue_cola.png" style="width:37%; height: 135px; padding-left: 25px;" alt="product" class="images">
+            <p class="price">3 750
+                <img src="../img/Star.png" alt="stars">
             </p>
-            <button class="normal">Buy</button>
+            <button class="normal2">Buy</button>
         </div>
         <div class="items">
-            <p class="itemName">Free Popcorn</p>
-            <img src="./images/popcorn.png" alt="product" class="images">
-            <p class="price">2 000
-                <img src="./images/Star.png" alt="stars">
+            <p class="itemName">Medium Nachos</p>
+            <img src="../img/vue nacho.jpg" style="width:50%; height: 135px;" alt="product" class="images">
+            <p class="price">3 750
+                <img src="../img/Star.png" alt="stars">
             </p>
-            <button class="normal">Buy</button>
+            <button class="normal3">Buy</button>
             <!-- <div class="overlay">
                 <div class="text"> <b>Free popcorns!</b><br>
                     Everybody love popcorn with their movie, but free are the best one,
@@ -102,42 +98,42 @@
         </div>
         <div class="items">
             <p class="itemNameL">Unlocked reward</p>
-            <img src="./images/ticket.png" alt="product" class="imagesLock">
-            <img src="./images/Lock.png" alt="product" class="lock">
-            <p class="level">Level 45</p>
-            <p class="priceLock">2 000
-                <img src="./images/Star.png" alt="stars">
+            <img src="../img/vip seat.jfif" style="width:50%; height: 135px; padding-left: 15px; margin-top: 5px;" alt="product" class="imagesLock">
+            <img src="../img/Lock.png" alt="product" class="lock">
+            <p class="level">Level 10</p>
+            <p class="priceLock">5 000
+                <img src="../img/Star.png" alt="stars">
             </p>
             <button class="locking">Buy</button>
         </div>
         <div class="items">
             <p class="itemNameL">Unlocked reward</p>
-            <img src="./images/ticket.png" alt="product" class="imagesLock">
-            <img src="./images/Lock.png" alt="product" class="lock">
-            <p class="level">Level 45</p>
-            <p class="priceLock">2 000
-                <img src="./images/Star.png" alt="stars">
+            <img src="../img/ticket.png" alt="product" class="imagesLock">
+            <img src="../img/Lock.png" alt="product" class="lock">
+            <p class="level">Level 10</p>
+            <p class="priceLock">12 500
+                <img src="../img/Star.png" alt="stars">
             </p>
             <button class="locking">Buy</button>
         </div>
 
         <div class="items">
             <p class="itemNameL">Unlocked reward</p>
-            <img src="./images/ticket.png" alt="product" class="imagesLock">
-            <img src="./images/Lock.png" alt="product" class="lock">
+            <img src="../img/ticket.png" alt="product" class="imagesLock">
+            <img src="../img/Lock.png" alt="product" class="lock">
             <p class="level">Level 45</p>
             <p class="priceLock">2 000
-                <img src="./images/Star.png" alt="stars">
+                <img src="../img/Star.png" alt="stars">
             </p>
             <button class="locking">Buy</button>
         </div>
         <div class="items">
             <p class="itemNameL">Unlocked reward</p>
-            <img src="./images/ticket.png" alt="product" class="imagesLock">
-            <img src="./images/Lock.png" alt="product" class="lock">
-            <p class="level">Level 45</p>
-            <p class="priceLock">2 000
-                <img src="./images/Star.png" alt="stars">
+            <img src="../img/limou.jpg" style="width:55%; height: 135px; padding-left: 3px; margin-top: -5px;" alt="product" class="imagesLock">
+            <img src="../img/Lock.png" alt="product" class="lock">
+            <p class="level">Level 13</p>
+            <p class="priceLock">37 500
+                <img src="../img/Star.png" alt="stars">
             </p>
             <button class="locking">Buy</button>
         </div>
@@ -147,7 +143,7 @@
         <div id="ModalLock" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
-                <span class="close"><img src="./images/shop-x.png" alt=""></span>
+                <span class="close"><img src="../img/shop-x.png" alt=""></span>
                 <p>Unfortunately, you did not reach this level</p>
             </div>
         </div>
@@ -155,12 +151,12 @@
         <div id="ModalNormal" class="modal">
             <!-- Modal content -->
             <div class="modal-content-normal">
-                <span class="closeN"><img src="./images/shop-x.png" alt=""></span>
+                <span class="closeN"><img src="../img/shop-x.png" alt=""></span>
                 <p class="purchase">Purchase</p>
-                <img src="./images/popcorn.png" alt="product" class="images-purchase">
-                <p class="desc-purchase">Free popcorns with your next movie!</p>
-                <p class="price-purchase">2 000
-                    <img src="./images/blackStar.png" alt="stars">
+                <img src="../img/Medium popcorn.png" style="width:26%; height: 130px;" alt="product" class="images-purchase">
+                <p class="desc-purchase" style="margin-top: -155px;">Free Medium Popcorn with your next movie!</p>
+                <p class="price-purchase">2 500
+                    <img src="../img/blackStar.png" alt="stars">
                 </p>
                 <form action="/action_page.php">
                     <input list="browsers" name="browser" id="locations" placeholder="Choose location to take">
@@ -190,46 +186,162 @@
                 <hr id="big">
                 <p class="cb">Current Balance:</p>
                 <p class="bal"> 900 000
-                    <img src="./images/blackStar.png" alt="stars"></p>
-                <p class="money">-   2 000
-                    <img src="./images/blackStar.png" alt="stars"></p>
+                    <img src="../img/blackStar.png" alt="stars"></p>
+                <p class="money">-   2 500
+                    <img src="../img/blackStar.png" alt="stars"></p>
                 <hr id="small">
                 <p class="nb">New Balance Balance:</p>
-                <p class="left">89 800
-                    <img src="./images/blackStar.png" alt="stars"></p>
+                <p class="left">897 500
+                    <img src="../img/blackStar.png" alt="stars"></p>
                 <button class="confirm">Confirm</button>
+
             </div>
         </div>
+        <div id="ModalNormal1" class="modal">
+            <div class="modal-content-normal1">
+            <span class="closeN1"><img src="../img/shop-x.png" alt=""></span>
+                <p class="purchase">Purchase</p>
+                <img src="../img/popcorn.png" alt="product" class="images-purchase">
+                <p class="desc-purchase">Free big popcorns with your next movie!</p>
+                <p class="price-purchase">5 000
+                    <img src="../img/blackStar.png" alt="stars">
+                </p>
+                <form action="/action_page.php">
+                    <input list="browsers" name="browser" id="locations" placeholder="Choose location to take">
+                    <datalist id="browsers">
+                        <option value="Vue Alkmaar">
+                        <option value="Vue Alphen a/d Rijn">
+                        <option value="Vue Amersfoort">
+                        <option value="Vue Apeldoorn">
+                        <option value="Vue Arnhem">
+                        <option value="Vue Den Bosch">
+                        <option value=" Vue Deventer">
+                        <option value="Vue Doetinchem">
+                        <option value="Vue Eindhoven">
+                        <option value="Vue Gorinchem">
+                        <option value="Vue Heerhugowaard">
+                        <option value="Vue Hilversum">
+                        <option value="Vue Hoogeveen">
+                        <option value="Vue Hoogezand">
+                        <option value="Vue Horn">
+                        <option value="Vue Kerkrade">
+                        <option value=" Vue Deventer">
+                        <option value="Vue Nijmegen Walstraat">
+                        <option value="Vue Purmerend">
+                        <option value="Vue Vlaardingen">
+                    </datalist>
+                </form>
+                <hr id="big">
+                <p class="cb">Current Balance:</p>
+                <p class="bal"> 900 000
+                    <img src="../img/blackStar.png" alt="stars"></p>
+                <p class="money">-   5 000
+                    <img src="../img/blackStar.png" alt="stars"></p>
+                <hr id="small">
+                <p class="nb">New Balance Balance:</p>
+                <p class="left">895 000
+                    <img src="../img/blackStar.png" alt="stars"></p>
+                <button class="confirm">Confirm</button>
+                </div>
+            </div>
+            <div id="ModalNormal2" class="modal">
+                <div class="modal-content-normal2">
+                <span class="closeN2"><img src="../img/shop-x.png" alt=""></span>
+                    <p class="purchase">Purchase</p>
+                    <img src="../img/vue_cola.png" style="width:15%; height: 135px; padding-left: 25px;" alt="product" class="images-purchase">
+                    <p class="desc-purchase" style="margin-top: -135px;">Free Drink with your next movie! </p>
+                    <p class="price-purchase">3 750
+                        <img src="../img/blackStar.png" alt="stars">
+                    </p>
+                    <form action="/action_page.php">
+                        <input list="browsers" name="browser" id="locations" placeholder="Choose location to take">
+                        <datalist id="browsers">
+                            <option value="Vue Alkmaar">
+                            <option value="Vue Alphen a/d Rijn">
+                            <option value="Vue Amersfoort">
+                            <option value="Vue Apeldoorn">
+                            <option value="Vue Arnhem">
+                            <option value="Vue Den Bosch">
+                            <option value=" Vue Deventer">
+                            <option value="Vue Doetinchem">
+                            <option value="Vue Eindhoven">
+                            <option value="Vue Gorinchem">
+                            <option value="Vue Heerhugowaard">
+                            <option value="Vue Hilversum">
+                            <option value="Vue Hoogeveen">
+                            <option value="Vue Hoogezand">
+                            <option value="Vue Horn">
+                            <option value="Vue Kerkrade">
+                            <option value=" Vue Deventer">
+                            <option value="Vue Nijmegen Walstraat">
+                            <option value="Vue Purmerend">
+                            <option value="Vue Vlaardingen">
+                        </datalist>
+                    </form>
+                    <hr id="big">
+                    <p class="cb">Current Balance:</p>
+                    <p class="bal"> 900 000
+                        <img src="../img/blackStar.png" alt="stars"></p>
+                    <p class="money">-   3 750
+                        <img src="../img/blackStar.png" alt="stars"></p>
+                    <hr id="small">
+                    <p class="nb">New Balance Balance:</p>
+                    <p class="left">896 250
+                        <img src="../img/blackStar.png" alt="stars"></p>
+                    <button class="confirm">Confirm</button>
+                    </div>
+                </div>
+                <div id="ModalNormal3" class="modal">
+                    <div class="modal-content-normal3">
+                    <span class="closeN3"><img src="../img/shop-x.png" alt=""></span>
+                        <p class="purchase">Purchase</p>
+                        <img src="../img/vue nacho.jpg" style="width:25%; height: 125px;" alt="product" class="images-purchase">
+                        <p class="desc-purchase" style="margin-top: -125px;">Free nachos with your next movie! </p>
+                        <p class="price-purchase">3 750
+                            <img src="../img/blackStar.png" alt="stars">
+                        </p>
+                        <form action="/action_page.php">
+                            <input list="browsers" name="browser" id="locations" placeholder="Choose location to take">
+                            <datalist id="browsers">
+                                <option value="Vue Alkmaar">
+                                <option value="Vue Alphen a/d Rijn">
+                                <option value="Vue Amersfoort">
+                                <option value="Vue Apeldoorn">
+                                <option value="Vue Arnhem">
+                                <option value="Vue Den Bosch">
+                                <option value=" Vue Deventer">
+                                <option value="Vue Doetinchem">
+                                <option value="Vue Eindhoven">
+                                <option value="Vue Gorinchem">
+                                <option value="Vue Heerhugowaard">
+                                <option value="Vue Hilversum">
+                                <option value="Vue Hoogeveen">
+                                <option value="Vue Hoogezand">
+                                <option value="Vue Horn">
+                                <option value="Vue Kerkrade">
+                                <option value=" Vue Deventer">
+                                <option value="Vue Nijmegen Walstraat">
+                                <option value="Vue Purmerend">
+                                <option value="Vue Vlaardingen">
+                            </datalist>
+                        </form>
+                        <hr id="big">
+                        <p class="cb">Current Balance:</p>
+                        <p class="bal"> 900 000
+                            <img src="../img/blackStar.png" alt="stars"></p>
+                        <p class="money">-   3 750
+                            <img src="../img/blackStar.png" alt="stars"></p>
+                        <hr id="small">
+                        <p class="nb">New Balance Balance:</p>
+                        <p class="left">896 250
+                            <img src="../img/blackStar.png" alt="stars"></p>
+                        <button class="confirm">Confirm</button>
+                        </div>
+                        </div>
 
     </main>
 
-    <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col">
-              <ul>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                   <li><a href="https://vuexprojectblog.wordpress.com/home-2/">Desend</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <div class="social-links">
-               <a href="https://www.facebook.com/VueCinemas/"><i class="fab fa-facebook-f"></i></a>
-                  <a href="https://twitter.com/vuecinemas"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/vuecinemasnl/"><i class="fab fa-instagram"></i></a>
-                 <a href="https://www.youtube.com/c/VueCinema/featured"><i class="fab fa-youtube"></i></a>
-              </div>
-            </div>
-            <div class="footer-col">
-              <ul>
-                <li><a href="#">Legal Terms</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-     </footer>
+
     <script src="../js/script.js"></script>
     <script src="../js/shop.js"></script>
 </body>
