@@ -1,11 +1,20 @@
 //THIS THE MODAL BOX FOR THE SHOP PAGE PARTICULARY FOR THE NORMAL(unlocked) ELEMENTS
 var modalNormal = document.getElementById("ModalNormal");
+var modalNormal1 = document.getElementById("ModalNormal1");
+var modalNormal2 = document.getElementById("ModalNormal2");
+var modalNormal3 = document.getElementById("ModalNormal3");
 
 // Get the button that opens the modal
 var button = document.getElementsByClassName("normal");
+var button1 = document.getElementsByClassName("normal1");
+var button2 = document.getElementsByClassName("normal2");
+var button3 = document.getElementsByClassName("normal3");
 
 // Get the <span> element that closes the modal
 var spanN = document.getElementsByClassName("closeN")[0];
+var spanN1 = document.getElementsByClassName("closeN1")[0];
+var spanN2 = document.getElementsByClassName("closeN2")[0];
+var spanN3 = document.getElementsByClassName("closeN3")[0];
 
 // When the user clicks on the button, open the modal
 for (let bt of button) {
@@ -14,10 +23,41 @@ for (let bt of button) {
   };
 } 
 
+for (let bt1 of button1) {
+  bt1.onclick = function() {
+    modalNormal1.style.display = "block";
+  };
+} 
+
+for (let bt2 of button2) {
+  bt2.onclick = function() {
+    modalNormal2.style.display = "block";
+  };
+}
+
+for (let bt3 of button3) {
+  bt3.onclick = function() {
+    modalNormal3.style.display = "block";
+  };
+}
+
+
 
 // When the user clicks on <span> (x), close the modal
 spanN.onclick = function() {
   modalNormal.style.display = "none";
+}
+
+spanN1.onclick = function() {
+  modalNormal1.style.display = "none";
+}
+
+spanN2.onclick = function() {
+  modalNormal2.style.display = "none";
+}
+
+spanN3.onclick = function() {
+  modalNormal3.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -27,6 +67,11 @@ window.onclick = function(event) {
   }
 }
 
+window.onclick = function(event) {
+  if (event.target == modalNormal1) {
+    modalNormal1.style.display = "none";
+  }
+}
 
 
 //THIS THE MODAL BOX FOR THE SHOP PAGE PARTICULARY FOR THE LOCKED ELEMENTS

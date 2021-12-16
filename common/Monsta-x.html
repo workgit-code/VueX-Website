@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Monsta-x</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/trailer style.css">
+</head>
+<body>
+  <!-- Banner -->
+  <header>
+    <a href="./schedule.html" class="logo"><img src="../img/v502_198.png"></a>
+    <a href="./schedule.html" class="toggle"><img src="../img/shop-x.png"onclick="toggle();" class="close"></a>
+  </header>
+  <div class="banner">
+    <div class="content">
+      <img src="../img/monsta-xbg.jpg">
+      <h2>MONSTA X : THE DREAMING</h2>
+      <p>The K-pop band MONSTA X is known for their impressive and striking performances. The band is loved by – and devoted to – countless fans around the world.
+        A gift to the fans, this film provides an intimate glimpse into the grueling journey the band has traveled over the past six years. 
+          </p>
+      <a href="#" class="play" onclick="toggle();"><img src="../img/play.png">Watch Trailer</a>
+    </div>
+  </div>
+  <div class="trailer">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DQ9qFfPjFD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src="../img/shop-x.png"onclick="toggle();" class="close">
+  </div>
+  <script type="text/javascript">
+    function toggle() {
+      var trailer = document.querySelector(".trailer");
+      var video = document.querySelector("video");
+      trailer.classList.toggle("active");
+      video.pause();
+      video.currentTime = 0;
+    }
+  </script>
+</body>
+</html>
