@@ -260,6 +260,9 @@ body {
   text-align: left;
 }
 @media screen and (max-height: 480px) {
+  .subnav{
+    display: none;
+  }
   .Perks-update {
     width: 65%;
     height: 60%;
@@ -293,6 +296,9 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
+  .subnav{
+    display: none;
+  }
   .Perks-update {
     width: 65%;
     height: 60%;
@@ -436,6 +442,9 @@ body {
 }
 
 @media only screen and (max-width: 550px) {
+  .subnav{
+    display: none;
+  }
   .Perks-update {
     width: 65%;
     height: 60%;
@@ -495,10 +504,13 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .subnav{
+    display: none;
+  }
   .Perks-update {
-    width: 65%;
-    height: 60%;
-    left: 31%;
+    margin-bottom: 350px;
+    left: 100px;
+    height: 475px;
   }
 
   .circle-1,
