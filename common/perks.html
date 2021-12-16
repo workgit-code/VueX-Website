@@ -6,42 +6,51 @@
         <meta name="HandheldFriendly" content="true">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-        <link href="./css/perks style.css" rel="stylesheet" />
+        <link href="../css/perks style.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
         <title>Perks</title>
     </head>
     <body>
-        <div class="Container">
-            <div class="Background"></div>
-            <div class="Logo"></div>
-            <div class="navigation-bar">
-                <div class="crnt-page nav-text">
-                </div>
-                <div class="profile nav-text">
-                    <a href="#">Profile</a>
-                </div>
-                <div class="challenges nav-text">
-                    <a href="challenges.html">Challenges</a>
-                </div>
-                <div class="schedule nav-text">
-                    <a href="schedule.html">Schedule</a>
-                </div>
-                <div class="shop nav-text">
-                    <a href="shop.html">Shop</a>
-                </div>
-            
+        <div class="logo">
+         <a href="../common/overview.html"><img src="../img/VueX2.0.svg" alt="Logo"></a>
+          </div>
+          
+          <div class="navigation-bar">
+            <div class="crnt-page nav-text">
             </div>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">Profile</a><br><br>
-                <a href="#">Schedule</a><br><br>
-                <a href="#">Challenges</a><br><br>
-                <a href="#">Shop</a>
+            <div class="profile nav-text">
+                <a href="../common/overview.html">Profile</a>
             </div>
-            <div class="burger-menu" onclick="openNav()">&#9776;</div>
+            <div class="challenges nav-text">
+                <a href="../common/experience.html">Challenges</a>
+            </div>
+            <div class="schedule nav-text">
+                <a href="../common/schedule.html">Schedule</a>
+            </div>
+            <div class="shop nav-text">
+                <a href="../common/shop.html">Shop</a>
+            </div>
+          </div>
+          
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../common/overview.html">Profile</a><br><br>
+            <a href="../common/notification.html" class="downMenues">Notification</a><br><br>
+              <a href="../common/perks.html" class="downMenues">Perks</a><br><br>
+            <a href="../common/friends.html" class="downMenues">Friends</a><br><br>
+            <a href="../common/schedule.html">Schedule</a><br><br>
+            <a href="../common/experience.html">Challenges</a><br><br>
+            <a href="../common/shop.html">Shop</a>
+          </div>
+          
+          <div class="burger-menu" onclick="openNav()">&#9776;</div> 
             <div class="subnav">
-                <a href="overview.html" class="overview">Overview</a>
-                <a href="perks.html" class="perks">Perks</a>
-                <a href="notification.html" class="notification">Notification</a>
+                <a href="../common/overview.html" class="overview">Overview</a>
+                <a href="../common/perks.html" class="perks">Perks</a>
+                <a href="../common/notification.html" class="notification">Notification</a>
+                <!-- <a href="../common/friends.html" class="notification">Friends</a> -->
             </div>
             <div class="Perks-update">
                 <div class="circle-1"><i class="fas fa-percent"></i>
@@ -56,56 +65,37 @@
                 <div class="perks-popcorn">Free popcorn with the next 10 movies <br>Used 4/10</div>
             </div>
            
-            <div class="footer">
-                <div class="f-about-us first-row">
-            About us
-        </div>
-        <div class="f-contact-us first-row">
-            Contact us
-        </div>
-        <div class="f-desend first-row">
-            © Desend
-        </div>
-        <div>
-            <div class="f-follow-us">
-                Also follow us
-            </div>
-            <div class="f-yt social-media-logos">
-                <img src="images/Youtube.png" alt="" srcset="">
-            </div>
-            <div class="f-insta social-media-logos">
-                <img src="images/Instagram.png" alt="" srcset="">
-            </div>
-            <div class="f-facebook social-media-logos">
-                <img src="images/Facebook.png" alt="" srcset="">
-            </div>
-            <div class="f-discord social-media-logos">
-                <img src="images/Discord.png" alt="" srcset="">
-            </div>
-            <div class="f-twitter social-media-logos">
-                <img src="images/Twitter.png" alt="" srcset="">
-            </div>
-        </div>
-        <div class="f-legal-terms footer-left-row">
-            Legal Terms
-        </div>
-        <div class="f-privacy-policy footer-left-row">
-            Privacy Policy
-        </div>
-    </div>
-
-    </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                        </div>
+                        <div class="footer-col">
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                               <li><a href=" https://www.vuecinemas.nl/contact">Contact Us</a></li>
+                                   <li><a href="https://vuexprojectblog.wordpress.com/home-2/">Desend</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <div class="social-links">
+                               <a href="https://www.facebook.com/VueCinemas/"><i class="fab fa-facebook-f"></i></a>
+                                  <a href="https://twitter.com/vuecinemas"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/vuecinemasnl/"><i class="fab fa-instagram"></i></a>
+                                 <a href="https://www.youtube.com/c/VueCinema/featured"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <ul>
+                                <li><a href="#">Legal Terms</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 
     <!-- JS -->
-    <script>
-        function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-
-    </script>
+    <script src="script.js"></script>
     </body>
     </html>
