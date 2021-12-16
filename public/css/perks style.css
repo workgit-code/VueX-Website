@@ -89,7 +89,7 @@ body {
 .subnav {
   position: absolute;
   width: 15%;
-  height: 16%;
+  height: 18%;
   left: 3.5%;
   top: 40%;
   background: rgba(11, 12, 14, 0.75);
@@ -120,18 +120,20 @@ body {
 .Perks-update {
   width: 1080px;
   height: 380px;
-  background: rgba(62,67,76,0);
+  background: rgba(62, 67, 76, 0);
   opacity: 1;
-  position: absolute;
+  position: relative;
   top: 208px;
   left: 359px;
-  border: 3px solid rgba(239,239,239,1);
+  border: 3px solid rgba(239, 239, 239, 1);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   overflow: hidden;
+  margin-bottom: 323px;
 }
+
 .circle-1 {
   width: 90px;
   height: 90px;
@@ -143,10 +145,11 @@ body {
   border: 2px solid rgba(239, 239, 239, 0.25);
   box-sizing: border-box;
 }
+
 .icon-percent {
   width: 64px;
   height: 64px;
-  background: url("../images/percentage.png");
+  background: url("../img/percentage.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -156,10 +159,11 @@ body {
   left: 47px;
   overflow: hidden;
 }
+
 .perks-discount {
   width: 297px;
   height: 54px;
-  color: rgba(239,239,239,1);
+  color: rgba(239, 239, 239, 1);
   position: absolute;
   top: 59px;
   left: 147px;
@@ -171,6 +175,7 @@ body {
   font-weight: normal;
   line-height: 28px;
 }
+
 .circle-2 {
   width: 90px;
   height: 90px;
@@ -180,12 +185,13 @@ body {
   left: 546px;
   border-radius: 50%;
   border: 1px solid rgba(239, 239, 239, 0.25);
-  
+
 }
+
 .icon-popcorn {
   width: 64px;
   height: 64px;
-  background: url("../images/popcorn.png");
+  background: url("../img/popcorn-i.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -199,7 +205,7 @@ body {
 .perks-popcorn {
   width: 339px;
   height: 102px;
-  color:rgba(239,239,239,1);
+  color: rgba(239, 239, 239, 1);
   position: absolute;
   top: 59px;
   left: 670px;
@@ -211,6 +217,7 @@ body {
   font-size: 24px;
   line-height: 28px;
 }
+
 .circle-3 {
   width: 90px;
   height: 90px;
@@ -222,10 +229,11 @@ body {
   border: 1px solid rgba(239, 239, 239, 0.25);
   box-sizing: border-box;
 }
-.icon-chair{
+
+.icon-chair {
   width: 64px;
   height: 64px;
-  background: url("../images/chair-solid.png");
+  background: url("../img/chair-solid.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -235,10 +243,11 @@ body {
   left: 47px;
   overflow: hidden;
 }
+
 .perks-seat {
   width: 463px;
   height: 29px;
-  color:rgba(239,239,239,1);
+  color: rgba(239, 239, 239, 1);
   position: absolute;
   top: 263px;
   left: 147px;
@@ -250,258 +259,313 @@ body {
   opacity: 1;
   text-align: left;
 }
-.first-row {
-  position: absolute;
-  left: 5%;
-}
-
-.f-about-us {
-  bottom: 12%;
-}
-
-.f-contact-us {
-  bottom: 7%;
-}
-
-.f-desend {
-  bottom: 2%;
-}
-
-.f-follow-us {
-  position: absolute;
-  width: 130px;
-  left: 48%;
-  bottom: 10%;
-}
-
-.social-media-logos{
-  position: absolute;
-  bottom: 2%;
-}
-
-.f-yt {
-  left: 41%;
-}
-
-.f-facebook {
-  left: 46%;
-}
-
-.f-insta {
-  left: 51%;
-}
-
-.f-discord {
-  left: 56%;
-}
-.f-twitter {
-  left: 61%;
-}
-
-.footer-left-row{
-  position: absolute;
-  right: 5%;
-}
-
-.f-legal-terms {
-  bottom: 9%;
-}
-
-.f-privacy-policy {
-  bottom: 4%;
-}
-
-.footer{
-  font-family: Ubuntu;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-
-  color: #efefef;
-}
-a {
-  text-decoration: none;
-  color: #efefef;
-}
-
-.sidenav{
-  display: block;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  transition: 0.5s;
-  background-color: #0A0A0A;
-  overflow-x: hidden;
-  padding-top: 60px;
-}
-
-.sidenav a{
-  padding: 8px 8px 8px 32px;
-  transition: 0.3s;
-}
-
-.sidenav a:hover, .navigation-bar a:hover, .burger-menu:hover {
-color: #949494;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 60px;
-  margin-left: 50px;
-}
-
-.burger-menu{
-  display: none;
-  position: absolute;
-  right: 5%;
-  top: 18px;
-  color: rgb(239, 239, 239);
-  font-size: 45px;
-  cursor: pointer;
-}
-
 @media screen and (max-height: 480px) {
-  .sidenav {padding-top: 15px;}
-  
-  .subnav a{
-    font-size: 10px;
-}
-.subnav{
-    left: 0;
-}
-.Perks-update{width: 65%; height: 60%; left: 31%;
-}
-.circle-1, .circle-2, .circle-3 {width: 70px;height: 70px; }
+  .subnav{
+    display: none;
+  }
+  .Perks-update {
+    width: 65%;
+    height: 60%;
+    left: 31%;
+  }
 
-.icon-percent, .icon-popcorn, .icon-chair{
-  width: 44px;
-  height: 44px;
-}
-.icon-popcorn{
-  top: 385px; left: 34px;
-}
-.perks-discount, .perks-seat{font-size: 10px; left: 90px;}
+  .circle-1,
+  .circle-2,
+  .circle-3 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-percent,
+  .icon-popcorn,
+  .icon-chair {
+    width: 44px;
+    height: 44px;
+  }
+
+  .icon-popcorn {
+    top: 385px;
+    left: 34px;
+  }
+
+  .perks-discount,
+  .perks-seat {
+    font-size: 10px;
+    left: 90px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-  .challenges {
-    left: 40.5%;
+  .subnav{
+    display: none;
   }
-  .sidenav{
-    width: 0;
+  .Perks-update {
+    width: 65%;
+    height: 60%;
+    left: 31%;
   }
-  .subnav a{
-    font-size: 15px;
-}
-.Perks-update{width: 65%; height: 60%; left: 31%;
-}
-.circle-1, .circle-2, .circle-3  {width: 70px; height: 70px;left: 14px;
-}
-.icon-percent, .icon-popcorn, .icon-chair{
-  width: 44px;
-  height: 44px; left: 27px;
+
+  .circle-1,
+  .circle-2,
+  .circle-3 {
+    width: 70px;
+    height: 70px;
+    left: 14px;
+  }
+
+  .icon-percent,
+  .icon-popcorn,
+  .icon-chair {
+    width: 44px;
+    height: 44px;
+    left: 27px;
+  }
+
+  .perks-discount,
+  .perks-seat {
+    font-size: 20px;
+    left: 94px;
+    line-height: 23px;
+  }
+
+  .circle-2 {
+    top: 363px;
+  }
+
+  .circle-3 {
+    top: 200px;
+  }
+
+  .icon-chair {
+    top: 210px;
+  }
+
+  .icon-popcorn {
+    top: 375px;
+    left: 34px;
+  }
+
+  .perks-seat {
+    left: 94px;
+    top: 213px;
+  }
+
+  .perks-popcorn {
+    font-size: 20px;
+    left: 94px;
+    top: 371px;
+    line-height: 23px;
+  }
 }
 
-.perks-discount, .perks-seat{font-size: 20px; left: 94px; line-height: 23px;}
-
-.circle-2{top: 363px ; }
-  .circle-3{top: 200px;}
-  .icon-chair{top: 210px;}
-  .icon-popcorn{top: 375px; left: 34px;}
-  
-  .perks-seat{left: 94px;top: 213px;}
-  .perks-popcorn {font-size: 20px; left: 94px;top: 371px; line-height: 23px;}
+@media only screen and (max-width: 1080px) {
+  .Perks-update {
+    width: 65%;
+    height: 60%;
+    left: 31%;
   }
-  
-@media only screen and (max-width: 1080px){
-  .Perks-update{width: 65%; height: 60%; left: 31%;
+
+  .perks-discount,
+  .perks-seat {
+    font-size: 24px;
   }
-  .perks-discount, .perks-seat{font-size: 24px; }
-.circle-2{top: 363px ; left: 34px;}
-.circle-3{top: 200px;}
-.icon-chair{top: 210px;}
-.icon-popcorn{top: 375px; left: 57px;}
-.perks-seat{top: 213px;}
-.perks-popcorn {font-size: 24px; left: 147px;top: 371px;}
+
+  .circle-2 {
+    top: 363px;
+    left: 34px;
+  }
+
+  .circle-3 {
+    top: 200px;
+  }
+
+  .icon-chair {
+    top: 210px;
+  }
+
+  .icon-popcorn {
+    top: 375px;
+    left: 57px;
+  }
+
+  .perks-seat {
+    top: 213px;
+  }
+
+  .perks-popcorn {
+    font-size: 24px;
+    left: 147px;
+    top: 371px;
+  }
 }
 
-@media only screen and (max-width: 900px){
- 
-.subnav{
-  width: 23%;
-}
-.Perks-update{width: 65%; height: 60%; left: 31%;
-}
-.perks-discount, .perks-seat{font-size: 24px;}
-.circle-2{top: 363px ; left: 34px;}
-.circle-3{top: 200px;}
-.icon-chair{top: 210px;}
-.icon-popcorn{top: 375px; left: 57px;}
-.perks-seat{top: 213px;}
-.perks-popcorn {font-size: 24px; left: 147px;top: 371px;}
+@media only screen and (max-width: 900px) {
+  .Perks-update {
+    width: 65%;
+    height: 60%;
+    left: 31%;
+  }
+
+  .perks-discount,
+  .perks-seat {
+    font-size: 24px;
+  }
+
+  .circle-2 {
+    top: 363px;
+    left: 34px;
+  }
+
+  .circle-3 {
+    top: 200px;
+  }
+
+  .icon-chair {
+    top: 210px;
+  }
+
+  .icon-popcorn {
+    top: 375px;
+    left: 57px;
+  }
+
+  .perks-seat {
+    top: 213px;
+  }
+
+  .perks-popcorn {
+    font-size: 24px;
+    left: 147px;
+    top: 371px;
+  }
 
 }
 
 @media only screen and (max-width: 550px) {
-  .logo {
-    top: 2.5%;
+  .subnav{
+    display: none;
   }
-  .navigation-bar, .f-follow-us, .social-media-logos {
-    display:none;
+  .Perks-update {
+    width: 65%;
+    height: 60%;
+    left: 31%;
   }
-  .Perks-update{width: 65%; height: 60%; left: 31%;
+
+  .circle-1,
+  .circle-2,
+  .circle-3 {
+    width: 70px;
+    height: 70px;
+    left: 14px;
   }
-  .circle-1, .circle-2, .circle-3  {width: 70px; height: 70px;left: 14px;
-  }
-  .icon-percent, .icon-popcorn, .icon-chair{
+
+  .icon-percent,
+  .icon-popcorn,
+  .icon-chair {
     width: 44px;
-    height: 44px; left: 27px;
+    height: 44px;
+    left: 27px;
   }
-  
-  .perks-discount, .perks-seat{font-size: 12.5px; left: 94px; line-height: 23px;}
-  
-  .circle-2{top: 363px ; }
-    .circle-3{top: 200px;}
-    .icon-chair{top: 210px;}
-    .icon-popcorn{top: 375px; left: 34px;}
-    
-    .perks-seat{top: 213px;}
-    .perks-popcorn {font-size: 12.5px; left: 94px;top: 371px; line-height: 23px;}
+
+  .perks-discount,
+  .perks-seat {
+    font-size: 12.5px;
+    left: 94px;
+    line-height: 23px;
+  }
+
+  .circle-2 {
+    top: 363px;
+  }
+
+  .circle-3 {
+    top: 200px;
+  }
+
+  .icon-chair {
+    top: 210px;
+  }
+
+  .icon-popcorn {
+    top: 375px;
+    left: 34px;
+  }
+
+  .perks-seat {
+    top: 213px;
+  }
+
+  .perks-popcorn {
+    font-size: 12.5px;
+    left: 94px;
+    top: 371px;
+    line-height: 23px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
-  .navigation-bar, .f-follow-us, .social-media-logos {
-    display:none;
+  .subnav{
+    display: none;
   }
-  .burger-menu{
-    display: block;
-  }
-  .Perks-update{width: 65%; height: 60%; left: 31%;
-  }
-  .circle-1, .circle-2, .circle-3{width: 70px; height: 70px; left: 14px;
-  }
-  .icon-percent, .icon-popcorn, .icon-chair{
-    width: 44px;
-    height: 44px; left: 27px;
-  }
-  .circle-2{top: 363px ; width: 70px; height: 70px; left: 14px}
-  .circle-3{top: 200px;}
-  .icon-chair{top: 210px;}
-  .icon-popcorn{top: 375px; left: 34px;}
-  .perks-discount, .perks-seat{font-size: 12.3px; left: 94px; line-height: 23px;}
-  .perks-seat{left: 94px;top: 213px;}
-  .perks-popcorn {font-size: 12.3px; left: 94px;top: 375px; line-height: 23px;}
+  .Perks-update {
+    margin-bottom: 350px;
+    left: 100px;
+    height: 475px;
   }
 
-@media only screen and (min-width: 700px) {
-  .sidenav{
-    width: 0;
+  .circle-1,
+  .circle-2,
+  .circle-3 {
+    width: 70px;
+    height: 70px;
+    left: 14px;
+  }
+
+  .icon-percent,
+  .icon-popcorn,
+  .icon-chair {
+    width: 44px;
+    height: 44px;
+    left: 27px;
+  }
+
+  .circle-2 {
+    top: 363px;
+    width: 70px;
+    height: 70px;
+    left: 14px
+  }
+
+  .circle-3 {
+    top: 200px;
+  }
+
+  .icon-chair {
+    top: 210px;
+  }
+
+  .icon-popcorn {
+    top: 375px;
+    left: 34px;
+  }
+
+  .perks-discount,
+  .perks-seat {
+    font-size: 12.3px;
+    left: 94px;
+    line-height: 23px;
+  }
+
+  .perks-seat {
+    left: 94px;
+    top: 213px;
+  }
+
+  .perks-popcorn {
+    font-size: 12.3px;
+    left: 94px;
+    top: 375px;
+    line-height: 23px;
   }
 }
-}
+

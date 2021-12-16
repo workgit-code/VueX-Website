@@ -22,7 +22,7 @@ $(function(user) {
     $.ajax({
         type:"POST",
         url:"https://vueloyal.herokuapp.com/user/signup",
-        // url:"http://localhost:3000/user/signup",
+        // url:"http://localhost:8000/user/signup",
         data: signUpData,
         success: function() {
             window.location.href = "../common/LogIn.html"
@@ -41,8 +41,8 @@ $(function(user) {
       var logInData = JSON.stringify($("#logInForm").serializeObject());
       $.ajax({
           type:"POST",
-          url:"https://vueloyal.herokuapp.com/user/signin",
-        //   url:"http://localhost:3000/user/signup",
+        //   url:"https://vueloyal.herokuapp.com/user/signin",
+          url:"http://localhost:8000/user/signin",
           data: logInData,
           success: function(res) {
             let username = $("input[name=username]").val();
@@ -68,3 +68,27 @@ $(function(user) {
       })
   });
 });
+
+document.querySelector("#image_input").addEventListener("change",(event)=>{
+    let files = $('#image_input')[0].files;
+    let formData=new FormData();
+    formData.append("file",files[0]);
+    formData.append("userId",sessionStorage.getItem("username"));
+    $.ajax({
+        type:"POST",
+        data:formData,
+        contentType: false,
+        processData: false,
+        // url:"https://vueloyal.herokuapp.com/user/upload",
+          url:"http://localhost:8000/user/upload",
+        success: function(res) {
+            window.location.href = "../common/overview.html"
+            alert("Evala pricheska")
+        },
+        error: function(err) {
+            if(err.responseJSON)
+              alert(err.responseJSON.message);
+        }
+    })
+})
+

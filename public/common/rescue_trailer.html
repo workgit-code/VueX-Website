@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>The rescue trailer</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/trailer style.css">
+</head>
+<body>
+  <!-- Banner -->
+  <header>
+    <a href="./schedule.html" class="logo"><img src="../img/v502_198.png"></a>
+    <a href="./schedule.html" class="toggle"><img src="../img/shop-x.png"onclick="toggle();" class="close"></a>
+  </header>
+  <div class="banner">
+    <div class="content">
+      <img src="../img/Trailer rescue posterbg.jpg">
+      <h2>The Rescue</h2>
+      <p>In 2018, for two weeks, the world is under the spell of the rescue of the Thai football team who became trapped in a cave several kilometers deep. The rushing army, the Navy Seals 
+        and the flown in American Special Forces are powerless. No one appears to have the proper training and equipment to free the young footballers from these miles of narrow caves, where 
+        the water can flow as fast as a river and be pitch black from the mud.</p>
+      <a href="#" class="play" onclick="toggle();"><img src="../img/play.png">Watch Trailer</a>
+      <div class="slide"></div>
+    
+    </div>
+  </div>
+  <div class="trailer">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HI28_9IwVbc" title="YouTube video player"
+     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src="../img/shop-x.png "onclick="toggle();" class="close">
+  </div>
+  <script type="text/javascript">
+    function toggle() {
+      var trailer = document.querySelector(".trailer");
+      var video = document.querySelector("video");
+      trailer.classList.toggle("active");
+      video.pause();
+      video.currentTime = 0;
+    }
+  </script>
+</body>
+</html>

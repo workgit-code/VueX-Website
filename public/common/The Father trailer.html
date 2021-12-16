@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>The Father</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/trailer style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+  <!-- Banner -->
+  <header>
+    <a href="./schedule.html" class="logo"><img src="../img/v502_198.png"></a>
+    <a href="./schedule.html" class="toggle"><img src="../img/shop-x.png"onclick="toggle();" class="close"></a>
+  </header>
+  <div class="banner">
+    <div class="content">
+      <img src="../img/The fatherbg.jpg">
+      <h2>The Father</h2>
+      <p>The Father is a fascinating portrait of a man who is losing his grip on reality. The brilliant rendition of Anthony Hopkins (The Silence of the Lambs, The Two Popes) will never let you go. 
+        Olivia Colman (The Crown, The Favourite) as his daughter Anne, makes both her powerlessness and her love tangible. Anne is once again looking for a nurse for her demented father Anthony, who keeps refusing all help. 
+        </p>
+      <a href="#" class="play" onclick="toggle();"><img src="../img/play.png">Watch Trailer</a>
+    </div>
+  </div>
+  <div class="trailer">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sOt0j6d-nW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src="../img/shop-x.png"onclick="toggle();" class="close">
+  </div>
+  <script type="text/javascript">
+    function toggle() {
+      var trailer = document.querySelector(".trailer");
+      var video = document.querySelector("video");
+      trailer.classList.toggle("active");
+      video.pause();
+      video.currentTime = 0;
+    }
+  </script>
+</body>
+</html>

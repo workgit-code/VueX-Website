@@ -1,3 +1,4 @@
+
 fetch("../json/challenges.json")
   .then(function (resp) {
     return resp.json();
@@ -33,47 +34,47 @@ fetch("../json/challenges.json")
     // this is for the tasks
     let counters = 1;
     let startPoint = 0
+    let current_new_task_index=3;
     let endPoint = 3
-    function taskManager(){
-      data["Tasks"].forEach(tasks => {
-        if (counters <= 3) {
-          document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "<div class=\"starsGiven\">" + tasks.stars + "</div></div><div class=\"panel\">" + tasks.taskDescription + "</div><span class=\"tasks_button\">&#10003;</span></div>";
-          counters++;
-        } else {
-          return;
-        }
-        var closebtn = document.getElementsByClassName("tasks_button");
-      });
-    }
+    // function taskManager(){
+    //   data["Tasks"].forEach(tasks => {
+    //     if (counters <= 3) {
+    //       document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "<div class=\"starsGiven\">" + tasks.stars + "</div></div><div class=\"panel\">" + tasks.taskDescription + "</div><span class=\"tasks_button\">&#10003;</span></div>";
+    //       counters++;
+    //     } else {
+    //       return;
+    //     }
+    //     var closebtn = document.getElementsByClassName("tasks_button");
+    //   });
+    // }
+
     data["Tasks"].forEach(tasks => {
       if (counters <= 3) {
         document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "<div class=\"starsGiven\">" + tasks.stars + "</div></div><div class=\"panel\">" + tasks.taskDescription + "</div><span class=\"tasks_button\">&#10003;</span></div>";
         counters++;
-      } else {
-        return;
-      }
-      var closebtn = document.getElementsByClassName("tasks_button");
-      for (let i = 0; i < closebtn.length; i++) {
-        startPoint = 1
-        closebtn[i].addEventListener("click", function () {
-          taskManager();
-          console.log("fwfggwghargrg")
-          this.parentElement.remove();
-          counters--;
-          if (counters <= 3) {
-            document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "<div class=\"starsGiven\">" + tasks.stars + "</div></div><div class=\"panel\">" + tasks.taskDescription + "</div><span class=\"tasks_button\">&#10003;</span></div>";
-            counters++;
-          } else {
-            return;
-          }
-          console.log("fwfggwghargrg");
-          Completed_task();
-          //Call function that updates task in datase
-          //Call function for retrieving task (not completed). and render again
-
-        });
-      }
+      } 
+      
     });
+    add_delete_functionality();
+    
+    
+
+    function deleteTask(event){
+      event.target.parentElement.remove();
+      let tasks=data["Tasks"][current_new_task_index];
+      document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "<div class=\"starsGiven\">" + tasks.stars + "</div></div><div class=\"panel\">" + tasks.taskDescription + "</div><span class=\"tasks_button\">&#10003;</span></div>";
+      add_delete_functionality();
+      current_new_task_index++;
+      //Call function that updates task in datase
+      //Call function for retrieving task (not completed). and render again
+  
+    }
+
+    function add_delete_functionality(){
+      document.querySelectorAll(".tasks .tasks_button").forEach((close_button)=>{
+        close_button.addEventListener("click",deleteTask);
+      })
+    }
   })
 
 

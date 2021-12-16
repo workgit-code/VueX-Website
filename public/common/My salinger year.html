@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+  <title>My Salinger</title>
+  <link rel="stylesheet" href="../css/trailer style.css">
+</head>
+<body>
+  <!-- Banner -->
+  <header>
+    <a href="./schedule.html" class="logo"><img src="../img/v502_198.png"></a>
+    <a href="./schedule.html" class="toggle"><img src="../img/shop-x.png"onclick="toggle();" class="close"></a>
+  </header>
+  <div class="banner">
+    <div class="content">
+      <img src="../img/salingerbg.jpg">
+      <h2>MY SALINGER YEAR</h2>
+      <p>New York, the 90s. After graduating, Joanna dreams of becoming a writer. She finds a job as an assistant to Margaret, an unflappable and also old-fashioned literary agent, with JD Salinger as one of her most famous clients. 
+          Joanna, meanwhile, lives in two opposing worlds. Because during the day she immerses herself in the world of glamor in the stately office full of old-fashioned dictaphones, typewriters and lunches where three martinis are the norm, 
+          at night it is poverty in the house where she lives with her socialist boyfriend, but without a sink.  
+          </p>
+      <a href="#" class="play" onclick="toggle();"><img src="../img/play.png">Watch Trailer</a>
+    </div>
+  </div>
+  <div class="trailer">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xwaS_67SaT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src="../img/shop-x.png"onclick="toggle();" class="close">
+  </div>
+  <script type="text/javascript">
+    function toggle() {
+      var trailer = document.querySelector(".trailer");
+      var video = document.querySelector("video");
+      trailer.classList.toggle("active");
+      video.pause();
+      video.currentTime = 0;
+    }
+  </script>
+</body>
+</html>

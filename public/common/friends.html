@@ -6,12 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/friends.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <div class="logo">
+        <a href="../common/overview.html">
         <img src="../img/VueX2.0.svg" alt="">
+    </a>
     </div>
 
     <div class="navigation-bar">
@@ -21,7 +28,7 @@
             <a href="../common/overview.html">Profile</a>
         </div>
         <div class="challenges nav-text">
-            <a href="../common/challenges.html">Challenges</a>
+            <a href="../common/experience.html">Challenges</a>
         </div>
         <div class="schedule nav-text">
             <a href="../common/schedule.html">Schedule</a>
@@ -40,7 +47,13 @@
     </div>
 
     <div class="burger-menu" onclick="openNav()">&#9776;</div>
+    <div class="side">
 
+        <a href="../common/overview.html" id="current"> Overview</a> <br>
+        <a href="../common/perks.html" class="others"> Perks</a> <br>
+        <a href="../common/notification.html" class="others"> Notification</a> <br>
+        <a href="../common/friends.html" class="others"> Friends</a>
+    </div>
     <div class="page-title">Friends</div>
     <div class="add-friends-icon">
         <img onclick="showFriendSearch()" src="../img/add-user.png" alt="Add user icon">
@@ -113,43 +126,36 @@
         </div>
     </div>
 
-    <div class="footer">
-        <div class="f-about-us first-row">
-            About us
-        </div>
-        <div class="f-contact-us first-row">
-            Contact us
-        </div>
-        <div class="f-desend first-row">
-            © Desend
-        </div>
-        <div>
-            <div class="f-follow-us">
-                Also follow us
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        
+                        <li><a href="https://www.myvue.com/about-vue/about-us" target="_blank">About us</a></li>
+                        <li><a href=" https://www.vuecinemas.nl/contact" target="_blank">Contact Us</a></li>
+                           <li><a href="https://vuexprojectblog.wordpress.com/home-2/" target="_blank">By Desend</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="social-links">
+                       <a href="https://www.facebook.com/VueCinemas/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://twitter.com/vuecinemas" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/vuecinemasnl/" target="_blank"><i class="fab fa-instagram"></i></a>
+                         <a href="https://www.youtube.com/c/VueCinema/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="../common/discalimer.html">Disclaimer</a></li>
+                        <li><a href="../common/privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="f-yt social-media-logos">
-                <img src="../img/YouTube.png" alt="" srcset="">
-            </div>
-            <div class="f-insta social-media-logos">
-                <img src="../img/Instagram.png" alt="" srcset="">
-            </div>
-            <div class="f-facebook social-media-logos">
-                <img src="../img/Facebook.png" alt="" srcset="">
-            </div>
-            <div class="f-discord social-media-logos">
-                <img src="../img/Discord.png" alt="" srcset="">
-            </div>
-            <div class="f-twitter social-media-logos">
-                <img src="../img/Twitter.png" alt="" srcset="">
-            </div>
         </div>
-        <div class="f-legal-terms footer-left-row">
-            Legal Terms
-        </div>
-        <div class="f-privacy-policy footer-left-row">
-            Privacy Policy
-        </div>
-    </div>
+    </footer>
 
     <script src="../js/friends.js"></script>
 </body>

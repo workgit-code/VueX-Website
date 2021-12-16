@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+  <title>Christmas with Andre</title>
+  <link rel="stylesheet" href="../css/trailer style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+  <!-- Banner -->
+  <header>
+    <a href="./schedule.html" class="logo"><img src="../img/v502_198.png"></a>
+    <a href="./schedule.html" class="toggle"><img src="../img/shop-x.png"onclick="toggle();" class="close"></a>
+  </header>
+  <div class="banner">
+    <div class="content">
+      <img src="../img/Andrebg.jpg">
+      <h2>CHRISTMAS WITH ANDRÉ</h2>
+      <p>The King of the Wals created a veritable winter palace in his hometown of Maastricht. Get a taste of Christmas as you dance and sing to your heart's content with delightful Christmas songs, 
+          romantic waltzes and beautiful melodies such as 'Jingle Bells', 'O Holy Night', 'Hallelujah', a fantastic rendition of 'Walking in the Air' and much more! Marvel at its magnificent splendor,
+           such as 150 dazzling chandeliers, over 50 Venetian candlesticks and huge arched windows, revealing a delightful winter landscape filled with ice rinks and skaters. 
+          </p>
+      <a href="#" class="play" onclick="toggle();"><img src="../img/play.png">Watch Trailer</a>
+    </div>
+  </div>
+  <div class="trailer">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mTWq2541ywY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src="../img/shop-x.png"onclick="toggle();" class="close">
+  </div>
+  <script type="text/javascript">
+    function toggle() {
+      var trailer = document.querySelector(".trailer");
+      var video = document.querySelector("video");
+      trailer.classList.toggle("active");
+      video.pause();
+      video.currentTime = 0;
+    }
+  </script>
+</body>
+</html>
