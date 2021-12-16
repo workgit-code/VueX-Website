@@ -2,8 +2,16 @@
   display: flex;
   justify-content: center;
 } */
-.container{
-  
+.container {
+  color: red;
+  position: relative;
+  width: 50%;
+}
+
+.container:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 .box {
   /* display: grid;
@@ -17,7 +25,6 @@
   border: 2px solid #efefef;
   box-sizing: border-box;
   border-radius: 10px;
-
 }
 
 .crnt-page {
@@ -190,7 +197,7 @@
 
   color: #efefef;
 }
- 
+
 .side {
   position: relative;
   width: 159px;
@@ -222,73 +229,73 @@
   text-decoration: none;
 }
 
-@media only screen and  (max-width: 1445px) {
-  .filter{
-    left:900px;
+@media only screen and (max-width: 1445px) {
+  .filter {
+    left: 900px;
   }
-  .filter-text{
-    left:915px;
+  .filter-text {
+    left: 915px;
   }
-  .arrow-down{
-    left:990px;
+  .arrow-down {
+    left: 990px;
   }
-  .box{
+  .box {
     width: 550px;
   }
 }
-@media screen and (min-width:800px) and (max-width:1040px){
-  .filter{
-    left:900px;
+@media screen and (min-width: 800px) and (max-width: 1040px) {
+  .filter {
+    left: 900px;
   }
-  .filter-text{
-    left:915px;
+  .filter-text {
+    left: 915px;
   }
-  .arrow-down{
-    left:990px;
+  .arrow-down {
+    left: 990px;
   }
-  .box{
+  .box {
     width: 550px;
-    left:210
+    left: 210;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  body{
+  body {
     overflow-x: hidden;
   }
-  .side{
+  .side {
     display: none;
   }
-  .filter{
-    left:300px;
+  .filter {
+    left: 300px;
   }
-  .filter-text{
-    left:315px;
+  .filter-text {
+    left: 315px;
   }
-  .arrow-down{
-    left:390px;
+  .arrow-down {
+    left: 390px;
   }
-  .box{
+  .box {
     margin-bottom: 250px;
     width: 400px;
     left: 50px;
     top: 190px;
   }
   .title-notification {
-    font-size:25px;
-    left:170px;
+    font-size: 25px;
+    left: 170px;
   }
-  .point{
+  .point {
     left: 100px;
   }
-  .second-point{
+  .second-point {
     left: 100px;
   }
-  .text-first{
-    font-size:15px;
-    left:150px;
+  .text-first {
+    font-size: 15px;
+    left: 150px;
   }
-  .text-second{
+  .text-second {
     top: 450px;
     font-size: 15px;
     left: 150px;
