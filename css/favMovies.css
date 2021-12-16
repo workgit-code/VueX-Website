@@ -34,6 +34,7 @@ main {
     flex-wrap: wrap;
     /* margin-top: 160px; */
     margin-left: 150px;
+    margin-bottom: 50px;
 }
 
 .movie {
