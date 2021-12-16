@@ -12,12 +12,20 @@
     <title>Reviews</title>
   </head>
   <body>
+    <!-- nav bar -->
+
     <!-- main body  -->
     <main>
       <div class="ReviewsContainer">
         <div class="CommentsRectangle">
           <form name="commentform" id="commentform" method="post" action="/">
-            <input type="text" id="title" name="title" placeholder="Title..." />
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Title..."
+              required
+            />
 
             <div class="star-rating">
               <input type="radio" name="stars" id="star-a" value="5" />
@@ -42,6 +50,7 @@
               rows="10"
               cols="30"
               placeholder="Comment here..."
+              required
             ></textarea>
             <button id="button" type="submit">Publish</button>
             <!-- </div> -->
@@ -49,7 +58,8 @@
         </div>
 
         <div class="scroll">
-          <%reviewsList.forEach(review => {%>
+          <!-- embed some js by getting info from the server, so that the reviews show up in the html -->
+          <%reviewsList.reverse()%> <%reviewsList.forEach(review => {%>
           <div class="review">
             <h3><em>"<%= review.title%>"</em></h3>
             <h4><em><%= review.stars%></em><em> Stars</em></h4>
@@ -57,7 +67,7 @@
           </div>
           <%})%>
           <div class="review">
-            <h3>TITANIC</h3>
+            <h3><em>TITANIC</em></h3>
             <h4><em>5 Stars</em></h4>
             <!-- <h1>stars</h1> -->
             <p>
@@ -69,7 +79,7 @@
           </div>
 
           <div class="review">
-            <h3>TITANIC</h3>
+            <h3><em>TITANIC</em></h3>
             <h4><em>5 Stars</em></h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -80,7 +90,7 @@
           </div>
 
           <div class="review">
-            <h3>TITANIC</h3>
+            <h3><em>TITANIC</em></h3>
             <h4><em>5 Stars</em></h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting

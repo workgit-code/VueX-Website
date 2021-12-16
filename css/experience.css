@@ -1,7 +1,5 @@
 .experience {
-  position: relative;
-  height: 450px;
-  margin-bottom: 178px;
+  margin-bottom: 670px;
 }
 
 .tasks_button {
@@ -192,8 +190,7 @@
 
 @media only screen and (max-width: 760px) {
   .experience {
-    height: 1200px;
-    margin-bottom: 60px;
+    margin-bottom: 1275px;
   }
 
   .tasksBar {
