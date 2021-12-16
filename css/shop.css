@@ -3,7 +3,7 @@
   margin-top: 45px;
 }
 
-.normal {
+.normal, .normal1, .normal2, .normal3 {
   border: 1px solid #efefef;
   box-sizing: border-box;
   border-radius: 5px;
@@ -19,7 +19,7 @@
   margin-top: -10px;
 }
 
-#ModalNormal {
+#ModalNormal, #ModalNormal1, #ModalNormal2, #ModalNormal3  {
   display: none;
   /* Hidden by default */
   position: fixed;
@@ -41,12 +41,12 @@
   /* Black w/ opacity */
 }
 
-.modal-content-normal {
+.modal-content-normal, .modal-content-normal1, .modal-content-normal2, .modal-content-normal3 {
   position: relative;
   margin: auto;
   padding: 0;
   width: 35%;
-  height: 70%;
+  height: 90%;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -87,7 +87,7 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 23px;
-  margin-top: -140px;
+  margin-top: -160px;
   margin-left: 140px;
   padding-left: 50px;
 }
@@ -99,7 +99,7 @@
   font-weight: bold;
   color: #0B0C0E;
   margin-left: 295px;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 #big {
@@ -229,7 +229,7 @@
   margin: auto;
   padding: 0;
   width: 20%;
-  height: 15%;
+  height: 35%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -274,7 +274,7 @@
 
 /* The Close Button */
 .close,
-.closeN {
+.closeN, .closeN1, .closeN2, .closeN3  {
   color: black;
   float: right;
   font-size: 28px;
@@ -284,8 +284,8 @@
 
 .close:hover,
 .close:focus,
-.closeN:hover,
-.closeN:focus {
+.closeN:hover, .closeN1:hover, .closeN2:hover, .closeN3:hover,
+.closeN:focus, .closeN1:focus, .closeN2:focus, .closeN3:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -357,7 +357,7 @@
 }
 
 .dropdown-content-sort {
-  display: none;
+  
   position: absolute;
   background-color: rgba(11, 12, 14, 0.8);
   border-radius: 10px;
@@ -413,9 +413,9 @@ main {
   right: 100px;
   position: relative;
   width: 300px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr  ;
   gap: 35px;
-  bottom:15px;
+  margin-bottom: 50px;
 }
 
 .items {
@@ -435,7 +435,8 @@ main {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  padding-left: 60px;
+  padding-left: 40px;
+  margin-top: 20px;
 }
 
 .itemNameL {
@@ -445,6 +446,8 @@ main {
   font-weight: bold;
   font-size: 24px;
   padding-left: 35px;
+  margin-top: 20px;
+  
 }
 
 .images {
@@ -594,7 +597,6 @@ main {
     top: 105px;
     left: 150px;
     right: 150px;
-    margin-bottom: 150px;
   }
 
   /* header {
