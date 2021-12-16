@@ -87,9 +87,10 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 23px;
-  margin-top: -160px;
+  
   margin-left: 140px;
   padding-left: 50px;
+  margin-top: -140px;
 }
 
 .price-purchase {
@@ -99,11 +100,11 @@
   font-weight: bold;
   color: #0B0C0E;
   margin-left: 295px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 #big {
-  top: 240px;
+  top: 235px;
   left: 200px;
   position: absolute;
   width: 60%;
@@ -132,7 +133,7 @@
 
 .bal {
   position: absolute;
-  top: 240px;
+  top: 245px;
   left: 295px;
   font-family: Ubuntu;
   font-style: normal;
