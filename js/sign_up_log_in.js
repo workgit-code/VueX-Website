@@ -41,8 +41,8 @@ $(function(user) {
       var logInData = JSON.stringify($("#logInForm").serializeObject());
       $.ajax({
           type:"POST",
-          url:"https://vueloyal.herokuapp.com/user/signin",
-        //   url:"http://localhost:8000/user/signup",
+        //   url:"https://vueloyal.herokuapp.com/user/signin",
+          url:"http://localhost:8000/user/signin",
           data: logInData,
           success: function(res) {
             let username = $("input[name=username]").val();
@@ -69,11 +69,18 @@ $(function(user) {
   });
 });
 
-$("#picSub").submit(function (event){
-    event.preventDefault();
+document.querySelector("#image_input").addEventListener("change",(event)=>{
+    let files = $('#image_input')[0].files;
+    let formData=new FormData();
+    formData.append("file",files[0]);
+    formData.append("userId",sessionStorage.getItem("username"));
     $.ajax({
         type:"POST",
-        url:"https://vueloyal.herokuapp.com/user/upload",
+        data:formData,
+        contentType: false,
+        processData: false,
+        // url:"https://vueloyal.herokuapp.com/user/upload",
+          url:"http://localhost:8000/user/upload",
         success: function(res) {
             window.location.href = "../common/overview.html"
             alert("Evala pricheska")
@@ -81,8 +88,7 @@ $("#picSub").submit(function (event){
         error: function(err) {
             if(err.responseJSON)
               alert(err.responseJSON.message);
-        },
-        dataType: "json",
-        contentType:"application/json"
+        }
     })
 })
+
