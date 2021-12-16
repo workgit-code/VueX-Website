@@ -68,3 +68,21 @@ $(function(user) {
       })
   });
 });
+
+$("#picSub").submit(function (event){
+    event.preventDefault();
+    $.ajax({
+        type:"POST",
+        url:"https://vueloyal.herokuapp.com/user/upload",
+        success: function(res) {
+            window.location.href = "../common/overview.html"
+            alert("Evala pricheska")
+        },
+        error: function(err) {
+            if(err.responseJSON)
+              alert(err.responseJSON.message);
+        },
+        dataType: "json",
+        contentType:"application/json"
+    })
+})
