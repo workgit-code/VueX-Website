@@ -47,32 +47,33 @@ fetch("../json/challenges.json")
     //     var closebtn = document.getElementsByClassName("tasks_button");
     //   });
     // }
+
     data["Tasks"].forEach(tasks => {
-      console.log("TASKS!",tasks);
       if (counters <= 3) {
         document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "<div class=\"starsGiven\">" + tasks.stars + "</div></div><div class=\"panel\">" + tasks.taskDescription + "</div><span class=\"tasks_button\">&#10003;</span></div>";
         counters++;
-      } else {
-        return;
-      }
-      var closebtn = document.getElementsByClassName("tasks_button");
-      for (let i = 0; i < closebtn.length; i++) {
-        startPoint = 1
-        closebtn[i].addEventListener("click",deleteTask);
-      }
+      } 
+      
     });
+    add_delete_functionality();
+    
+    
 
     function deleteTask(event){
-      console.log("test");
       event.target.parentElement.remove();
       let tasks=data["Tasks"][current_new_task_index];
       document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "<div class=\"starsGiven\">" + tasks.stars + "</div></div><div class=\"panel\">" + tasks.taskDescription + "</div><span class=\"tasks_button\">&#10003;</span></div>";
-      Completed_task();
+      add_delete_functionality();
       current_new_task_index++;
-      console.log("end");
       //Call function that updates task in datase
       //Call function for retrieving task (not completed). and render again
   
+    }
+
+    function add_delete_functionality(){
+      document.querySelectorAll(".tasks .tasks_button").forEach((close_button)=>{
+        close_button.addEventListener("click",deleteTask);
+      })
     }
   })
 

@@ -12,12 +12,13 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/friends.css">
     <link rel="stylesheet" href="../css/style.css">
-    
 </head>
 
 <body>
     <div class="logo">
+        <a href="../common/overview.html">
         <img src="../img/VueX2.0.svg" alt="">
+    </a>
     </div>
 
     <div class="navigation-bar">
@@ -27,7 +28,7 @@
             <a href="../common/overview.html">Profile</a>
         </div>
         <div class="challenges nav-text">
-            <a href="../common/challenges.html">Challenges</a>
+            <a href="../common/experience.html">Challenges</a>
         </div>
         <div class="schedule nav-text">
             <a href="../common/schedule.html">Schedule</a>
@@ -46,7 +47,13 @@
     </div>
 
     <div class="burger-menu" onclick="openNav()">&#9776;</div>
+    <div class="side">
 
+        <a href="../common/overview.html" id="current"> Overview</a> <br>
+        <a href="../common/perks.html" class="others"> Perks</a> <br>
+        <a href="../common/notification.html" class="others"> Notification</a> <br>
+        <a href="../common/friends.html" class="others"> Friends</a>
+    </div>
     <div class="page-title">Friends</div>
     <div class="add-friends-icon">
         <img onclick="showFriendSearch()" src="../img/add-user.png" alt="Add user icon">
