@@ -26,6 +26,7 @@ $(function(user) {
         data: signUpData,
         success: function() {
             window.location.href = "../common/LogIn.html"
+            // window.location.href = "./public/common/LogIn.html"
         },
         error: function(err) {
             if(err.responseJSON)
@@ -46,17 +47,19 @@ $(function(user) {
           data: logInData,
           success: function(res) {
             let username = $("input[name=username]").val();
+            let password = $("input[name=password]").val();
             let email = res.data[0].email;
             let experience = res.data[0].experience;
             let stars = res.data[0].stars;
             let level = res.data[0].level;
             sessionStorage.setItem('username', username);
+            sessionStorage.setItem('password', password);
             sessionStorage.setItem('email', email);
             sessionStorage.setItem('experience', experience);
             sessionStorage.setItem('stars', stars);
             sessionStorage.setItem('level', level);
             // window.location.href = "../common/overview.html"
-            window.location.href = "./public/common/overview.html"
+            window.location.href = "/public/common/overview.html"
           },
           error: function(err) {
               if(err.responseJSON)
