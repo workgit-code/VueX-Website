@@ -41,8 +41,8 @@ $(function(user) {
       var logInData = JSON.stringify($("#logInForm").serializeObject());
       $.ajax({
           type:"POST",
-        //   url:"https://vueloyal.herokuapp.com/user/signin",
-          url:"http://localhost:8000/user/signin",
+          url:"https://vueloyal.herokuapp.com/user/signin",
+        //   url:"http://localhost:8000/user/signin",
           data: logInData,
           success: function(res) {
             let username = $("input[name=username]").val();
@@ -79,8 +79,8 @@ document.querySelector("#image_input").addEventListener("change",(event)=>{
         data:formData,
         contentType: false,
         processData: false,
-        // url:"https://vueloyal.herokuapp.com/user/upload",
-          url:"http://localhost:8000/user/upload",
+        url:"https://vueloyal.herokuapp.com/user/upload",
+        //   url:"http://localhost:8000/user/upload",
         success: function(res) {
             window.location.href = "../common/overview.html"
             alert("Evala pricheska")
