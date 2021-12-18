@@ -1,163 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Friends</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/friends.css">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/friends.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="logo">
-        <a href="../common/overview.html">
-        <img src="../img/VueX2.0.svg" alt="">
-    </a>
+      <a href="../common/overview.html">
+        <img src="../img/VueX2.0.svg" alt="" />
+      </a>
     </div>
 
     <div class="navigation-bar">
-        <div class="crnt-page nav-text">
-        </div>
-        <div class="profile nav-text">
-            <a href="../common/overview.html">Profile</a>
-        </div>
-        <div class="challenges nav-text">
-            <a href="../common/experience.html">Challenges</a>
-        </div>
-        <div class="schedule nav-text">
-            <a href="../common/schedule.html">Schedule</a>
-        </div>
-        <div class="shop nav-text">
-            <a href="../common/shop.html">Shop</a>
-        </div>
+      <div class="crnt-page nav-text"></div>
+      <div class="profile nav-text">
+        <a href="../common/overview.html">Profile</a>
+      </div>
+      <div class="challenges nav-text">
+        <a href="../common/experience.html">Challenges</a>
+      </div>
+      <div class="schedule nav-text">
+        <a href="../common/schedule.html">Schedule</a>
+      </div>
+      <div class="shop nav-text">
+        <a href="../common/shop.html">Shop</a>
+      </div>
     </div>
 
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="../common/overview.html">Profile</a><br><br>
-        <a href="../common/schedule.html">Schedule</a><br><br>
-        <a href="../common/experience.html">Challenges</a><br><br>
-        <a href="../common/shop.html">Shop</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="../common/overview.html">Profile</a><br /><br />
+      <a href="../common/schedule.html">Schedule</a><br /><br />
+      <a href="../common/experience.html">Challenges</a><br /><br />
+      <a href="../common/shop.html">Shop</a>
     </div>
 
     <div class="burger-menu" onclick="openNav()">&#9776;</div>
     <div class="side">
-
-        <a href="../common/overview.html" id="current"> Overview</a> <br>
-        <a href="../common/perks.html" class="others"> Perks</a> <br>
-        <a href="../common/notification.html" class="others"> Notification</a> <br>
-        <a href="../common/friends.html" class="others"> Friends</a>
+      <a href="../common/overview.html" id="current"> Overview</a> <br />
+      <a href="../common/perks.html" class="others"> Perks</a> <br />
+      <a href="../common/notification.html" class="others"> Notification</a>
+      <br />
+      <a href="../common/friends.html" class="others"> Friends</a>
     </div>
     <div class="page-title">Friends</div>
     <div class="add-friends-icon">
-        <img onclick="showFriendSearch()" src="../img/add-user.png" alt="Add user icon">
+      <img
+        onclick="showFriendSearch()"
+        src="../img/add-user.png"
+        alt="Add user icon"
+      />
     </div>
     <div class="overlay">
-        <div class="cls-btn">
-            <img onclick="showFriendSearch()" src="../img/close.png" alt="Close Button">
-        </div>
-        <div class="search-ico">
-            <img src="../img/zoom.png">
-        </div>
-        <div class="search-bar-friends">
-            <input type="text" placeholder="Enter username...">
-        </div>
+      <div class="cls-btn">
+        <img
+          onclick="showFriendSearch()"
+          src="../img/close.png"
+          alt="Close Button"
+        />
+      </div>
+      <div class="search-ico">
+        <img src="../img/zoom.png" />
+      </div>
+      <div class="search-bar-friends">
+        <input
+          type="text"
+          placeholder="Enter username..."
+          list="searchForFriends"
+        />
+        <datalist id="searchForFriends">
+          <option value="Yoana"></option>
+        </datalist>
+      </div>
+      <div class="friend" id="friendYoana">
+        <div class="profile-friends" id="imageYoana"></div>
+        <p class="profileName">Yoana</p>
+        <p class="profileLevel">Level 4</p>
+        <img
+          id="addFriend"
+          src="../img/add-user.png"
+          alt="Add user icon"
+          width="45"
+          height="45"
+        />
+      </div>
     </div>
-    <div class="friends">
-        <div class="friend">
-            <div class="profile-friends">
-            </div>
-            <p class="profileName">Sesil</p>
-            <p class="profileLevel">Level 7</p>
-        </div>
-        <div class="friend">
-            <div class="profile-friends">
-            </div>
-            <p class="profileName">Sesil</p>
-            <p class="profileLevel">Level 7</p>
-        </div>
-        <div class="friend">
-            <div class="profile-friends">
-            </div>
-            <p class="profileName">Sesil</p>
-            <p class="profileLevel">Level 7</p>
-        </div>
-        <div class="friend">
-            <div class="profile-friends">
-            </div>
-            <p class="profileName">Sesil</p>
-            <p class="profileLevel">Level 7</p>
-        </div>
-        <div class="friend">
-            <div class="profile-friends">
-            </div>
-            <p class="profileName">Sesil</p>
-            <p class="profileLevel">Level 7</p>
-        </div>
-        <div class="friend">
-            <div class="profile-friends">
-            </div>
-            <p class="profileName">Sesil</p>
-            <p class="profileLevel">Level 7</p>
-        </div>
-        <div class="friend">
-            <div class="profile-friends">
-            </div>
-            <p class="profileName">Sesil</p>
-            <p class="profileLevel">Level 7</p>
-        </div>
-        <div class="friend">
-            <div class="profile-friends">
-            </div>
-            <p class="profileName">Sesil</p>
-            <p class="profileLevel">Level 7</p>
-        </div>
-        <div class="friend">
-            <div class="profile-friends">
-            </div>
-            <p class="profileName">Sesil</p>
-            <p class="profileLevel">Level 7</p>
-        </div>
+
+    <div class="showFriendInfo">
+
+    </div>
+
+    <div class="friends" id="friendSesil">
+      <div class="friend">
+        <div class="profile-friends" id="imageSesil"></div>
+        <p class="profileName">Sesil</p>
+        <p class="profileLevel">Level 7</p>
+      </div>
+      <div class="friend" id="friendAnge">
+        <div class="profile-friends" id="imageAnge"></div>
+        <p class="profileName">Ange</p>
+        <p class="profileLevel">Level 9</p>
+      </div>
+      <div class="friend" id="friendMomchil">
+        <div class="profile-friends" id="imageMomchil"></div>
+        <p class="profileName">Momchil</p>
+        <p class="profileLevel">Level 5</p>
+      </div>
+      <div class="friend" id="friendViktor">
+        <div class="profile-friends" id="imageVictor"></div>
+        <p class="profileName">Victor</p>
+        <p class="profileLevel">Level 2</p>
+      </div>
+      <div class="friend" id="friendSelena">
+        <div class="profile-friends" id="imageSelenaGomez"></div>
+        <p class="profileName">Selena</p>
+        <p class="profileLevel">Level 3</p>
+      </div>
+      <div class="friend" id="friendChris">
+        <div class="profile-friends" id="imageChris"></div>
+        <p class="profileName">Chris</p>
+        <p class="profileLevel">Level 5</p>
+      </div>
+      <div class="friend" id="friendCardiB">
+        <div class="profile-friends" id="imageCardiB"></div>
+        <p class="profileName">Cardi B</p>
+        <p class="profileLevel">Level 8</p>
+      </div>
+      <div class="friend" id="AddYoana">
+        <div class="profile-friends" id="imageYoana"></div>
+        <p class="profileName">Yoana</p>
+        <p class="profileLevel">Level 8</p>
+      </div>
     </div>
 
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                </div>
-                <div class="footer-col">
-                    <ul>
-                        
-                        <li><a href="https://www.myvue.com/about-vue/about-us" target="_blank">About us</a></li>
-                        <li><a href=" https://www.vuecinemas.nl/contact" target="_blank">Contact Us</a></li>
-                           <li><a href="https://vuexprojectblog.wordpress.com/home-2/" target="_blank">By Desend</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <div class="social-links">
-                       <a href="https://www.facebook.com/VueCinemas/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                          <a href="https://twitter.com/vuecinemas" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/vuecinemasnl/" target="_blank"><i class="fab fa-instagram"></i></a>
-                         <a href="https://www.youtube.com/c/VueCinema/featured" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <ul>
-                        <li><a href="../common/discalimer.html">Disclaimer</a></li>
-                        <li><a href="../common/privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col"></div>
+          <div class="footer-col">
+            <ul>
+              <li>
+                <a
+                  href="https://www.myvue.com/about-vue/about-us"
+                  target="_blank"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a href=" https://www.vuecinemas.nl/contact" target="_blank"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://vuexprojectblog.wordpress.com/home-2/"
+                  target="_blank"
+                  >By Desend</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="social-links">
+              <a href="https://www.facebook.com/VueCinemas/" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/vuecinemas" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/vuecinemasnl/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/c/VueCinema/featured"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
             </div>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="../common/discalimer.html">Disclaimer</a></li>
+              <li><a href="../common/privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="../js/friends.js"></script>
-</body>
-
+  </body>
 </html>

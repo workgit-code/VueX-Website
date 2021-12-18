@@ -51,33 +51,35 @@ body {
   opacity: 0;
   z-index: 1;
   border-radius: 5px;
-  transition: opacity .2s ease-out;
+  transition: opacity 0.2s ease-out;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.cls-btn{
+.cls-btn {
   position: absolute;
   right: 2%;
   top: 12px;
   cursor: pointer;
 }
 
-.cls-btn img{
+.cls-btn img {
   width: 20px;
 }
 
-.search-ico{
+.search-ico {
   position: absolute;
   left: 25%;
   top: 40px;
 }
 
-.search-bar-friends{
+.search-bar-friends {
   position: absolute;
   left: 38%;
   top: 43px;
 }
 
-.search-bar-friends input{
+.search-bar-friends input {
   font-family: Ubuntu;
   border-radius: 5px;
   background-color: #0a0a0a;
@@ -85,26 +87,26 @@ body {
   width: 150px;
 }
 
-.search-bar-friends input::placeholder{
+.search-bar-friends input::placeholder {
   color: #c5c5c5;
 }
 
-.search-ico img{
+.search-ico img {
   width: 30px;
 }
 
-.add-friends-icon{
+.add-friends-icon {
   position: absolute;
   top: 108px;
   right: 18%;
 }
 
-.add-friends-icon img{
+.add-friends-icon img {
   width: 40px;
   cursor: pointer;
 }
 
-.page-title{
+.page-title {
   position: absolute;
   color: #efefef;
   font-family: Ubuntu;
@@ -247,30 +249,73 @@ body {
   color: #efefef;
 }
 
-.profile-friends{
+.profile-friends {
   position: relative;
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-image: url('../img/MattStock.jpg');
-  background-size:cover;
+  background-image: url("../img/MattStock.jpg");
+  background-size: cover;
   top: 20px;
   left: 15px;
 }
 
-.profileName{
+#imageSesil {
+  background-image: url("../img/Mee.jpg");
+}
+
+#imageAnge {
+  background-image: url("../img/Ange.jpeg");
+}
+
+#imageVictor {
+  background-image: url("../img/victor.jpeg");
+}
+
+#imageYoana {
+  background-image: url("../img/me.png");
+}
+
+#imageSelenaGomez {
+  background-image: url("../img/Selena-Gomez.jpg");
+}
+
+#imageChris {
+  background-image: url("../img/Chris-Evans-1.jpg");
+}
+
+#imageCardiB {
+  background-image: url("../img/Cardi-B.jpg");
+}
+
+#friendYoana {
+  margin-top: 90px;
+}
+
+#AddYoana {
+  display: none;
+}
+
+#addFriend {
+  float: right;
+  margin-top: -50px;
+  margin-right: 20px;
+}
+
+.profileName {
   position: absolute;
   color: #efefef;
   margin-top: -49px;
 }
 
-.profileLevel{
+.profileLevel {
   position: absolute;
   color: #efefef;
   margin-top: -7px;
 }
 
-.profileName, .profileLevel{
+.profileName,
+.profileLevel {
   color: #efefef;
   font-family: Montserrat;
   font-size: 20px;
@@ -346,13 +391,13 @@ a {
   .challenges {
     left: 40.5%;
   }
-  .search-ico{
+  .search-ico {
     left: 10px;
   }
-  .search-bar-friends{
+  .search-bar-friends {
     left: 50px;
   }
-  .side{
+  .side {
     display: none;
   }
 }
@@ -369,7 +414,7 @@ a {
   .burger-menu {
     display: block;
   }
-  .side{
+  .side {
     display: none;
   }
   .friends {
@@ -378,15 +423,15 @@ a {
     min-width: 230px;
     top: 405px;
   }
-  .page-title{
+  .page-title {
     top: 90px;
     left: 10%;
   }
-  .add-friends-icon{
+  .add-friends-icon {
     top: 90px;
     right: 10%;
   }
-  .overlay{
+  .overlay {
     width: 80%;
     height: 80%;
     top: 100px;

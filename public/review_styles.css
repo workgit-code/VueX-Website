@@ -14,6 +14,8 @@ main {
 }
 
 .ReviewsContainer {
+  margin-top: 150px;
+  margin-bottom: 50px;
   display: grid;
   max-width: 1050px;
   grid-template-columns: 325px 1fr;
@@ -29,7 +31,7 @@ main {
   float: center;
 
   width: 325px;
-  height: 550px;
+  max-height: 550px;
 
   border: 2px solid #efefef;
   box-sizing: border-box;
@@ -181,9 +183,8 @@ button:hover {
 
 .review > h3 {
   font-family: Ubuntu;
-  font-style: normal;
-  font-weight: 300px;
-  font-size: 25px;
+  /* font-weight: 200px; */
+  font-size: 20px;
   line-height: 30px;
 
   margin-left: 20px;
@@ -191,7 +192,7 @@ button:hover {
 }
 .review > h4 {
   font-family: Ubuntu;
-  font-style: normal;
+  font-size: 15px;
 
   margin-left: 20px;
   color: white;
@@ -200,7 +201,7 @@ button:hover {
 .review {
   font-family: Ubuntu;
   font-style: Ubuntu;
-  font-weight: 300;
+  font-weight: 300px;
   font-size: 20px;
 
   line-height: 28px;

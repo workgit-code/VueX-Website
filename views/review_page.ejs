@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="../review_styles.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -101,13 +119,13 @@
           <!-- embed some js by getting info from the server, so that the reviews show up in the html -->
           <%reviewsList.reverse()%> <%reviewsList.forEach(review => {%>
           <div class="review">
-            <h3><em>"<%= review.title%>"</em></h3>
+            <h3>"<%= review.title%>"</h3>
             <h4><em><%= review.stars%></em><em> Stars</em></h4>
             <p><%= review.inputCommentArea%></p>
           </div>
           <%})%>
           <div class="review">
-            <h3><em>TITANIC</em></h3>
+            <h3>"TITANIC"</h3>
             <h4><em>5 Stars</em></h4>
             <!-- <h1>stars</h1> -->
             <p>
@@ -119,7 +137,7 @@
           </div>
 
           <div class="review">
-            <h3><em>TITANIC</em></h3>
+            <h3>"TITANIC"</h3>
             <h4><em>5 Stars</em></h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -130,7 +148,7 @@
           </div>
 
           <div class="review">
-            <h3><em>TITANIC</em></h3>
+            <h3>"TITANIC"</h3>
             <h4><em>5 Stars</em></h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -142,6 +160,61 @@
         </div>
       </div>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col"></div>
+          <div class="footer-col">
+            <ul>
+              <li>
+                <a
+                  href="https://www.myvue.com/about-vue/about-us"
+                  target="_blank"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a href=" https://www.vuecinemas.nl/contact" target="_blank"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://vuexprojectblog.wordpress.com/home-2/"
+                  target="_blank"
+                  >By Desend</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="social-links">
+              <a href="https://www.facebook.com/VueCinemas/" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/vuecinemas" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/vuecinemasnl/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/c/VueCinema/featured"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="../common/discalimer.html">Disclaimer</a></li>
+              <li><a href="../common/privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script>
       const myForm = document.getElementById("commentform");
