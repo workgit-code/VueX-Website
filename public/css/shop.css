@@ -3,7 +3,10 @@
   margin-top: 45px;
 }
 
-.normal, .normal1, .normal2, .normal3 {
+.normal,
+.normal1,
+.normal2,
+.normal3 {
   border: 1px solid #efefef;
   box-sizing: border-box;
   border-radius: 5px;
@@ -19,7 +22,10 @@
   margin-top: -10px;
 }
 
-#ModalNormal, #ModalNormal1, #ModalNormal2, #ModalNormal3  {
+#ModalNormal,
+#ModalNormal1,
+#ModalNormal2,
+#ModalNormal3 {
   display: none;
   /* Hidden by default */
   position: fixed;
@@ -41,7 +47,10 @@
   /* Black w/ opacity */
 }
 
-.modal-content-normal, .modal-content-normal1, .modal-content-normal2, .modal-content-normal3 {
+.modal-content-normal,
+.modal-content-normal1,
+.modal-content-normal2,
+.modal-content-normal3 {
   position: relative;
   margin: auto;
   padding: 0;
@@ -87,7 +96,7 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 23px;
-  
+
   margin-left: 140px;
   padding-left: 50px;
   margin-top: -140px;
@@ -275,7 +284,10 @@
 
 /* The Close Button */
 .close,
-.closeN, .closeN1, .closeN2, .closeN3  {
+.closeN,
+.closeN1,
+.closeN2,
+.closeN3 {
   color: black;
   float: right;
   font-size: 28px;
@@ -285,8 +297,14 @@
 
 .close:hover,
 .close:focus,
-.closeN:hover, .closeN1:hover, .closeN2:hover, .closeN3:hover,
-.closeN:focus, .closeN1:focus, .closeN2:focus, .closeN3:focus {
+.closeN:hover,
+.closeN1:hover,
+.closeN2:hover,
+.closeN3:hover,
+.closeN:focus,
+.closeN1:focus,
+.closeN2:focus,
+.closeN3:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -358,7 +376,7 @@
 }
 
 .dropdown-content-sort {
-  
+
   position: absolute;
   background-color: rgba(11, 12, 14, 0.8);
   border-radius: 10px;
@@ -414,7 +432,7 @@ main {
   right: 100px;
   position: relative;
   width: 300px;
-  grid-template-columns: 1fr 1fr 1fr 1fr  ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 35px;
   margin-bottom: 50px;
 }
@@ -448,7 +466,7 @@ main {
   font-size: 24px;
   padding-left: 35px;
   margin-top: 20px;
-  
+
 }
 
 .images {
@@ -540,45 +558,54 @@ main {
     margin-top: 155px;
     margin-left: 145px;
   }
-  #locations{
+
+  #locations {
     margin-left: 10px;
     margin-top: 185px;
   }
-  #big{
+
+  #big {
     top: 309px;
     left: 75px;
   }
-  .cb{
-    left:45px;
-    top:310px;
+
+  .cb {
+    left: 45px;
+    top: 310px;
     font-size: 20px;
     font-weight: 500;
   }
-  .bal{
-    top:310px;
-    left:255px;
+
+  .bal {
+    top: 310px;
+    left: 255px;
   }
-  .money{
-    top:350px;
-    left:268px;
+
+  .money {
+    top: 350px;
+    left: 268px;
   }
-  .nb{
-    top:400px;
+
+  .nb {
+    top: 400px;
     font-size: 20px;
     font-weight: 500;
   }
-  .left{
-    top:400px;
-    left:270px
+
+  .left {
+    top: 400px;
+    left: 270px
   }
-  #small{
-    top:400px;
-    left:220px;
+
+  #small {
+    top: 400px;
+    left: 220px;
     width: 135px;
   }
-  .confirm{
-    top:470px;
-    right:90px;
+
+  .confirm {
+    top: 470px;
+    right: 90px;
   }
 }
 
@@ -625,21 +652,94 @@ main {
     right: 150px;
   }
 
-  /* .sorting {
-    left: 135px;
-    top: 240px;
-  } */
   .balance {
     margin-right: 25px;
+  }
+
+  .purchase {
+    margin-left: 95px;
   }
 
   .sorting {
     top: 230px;
   }
 
+  .modal-content-normal,
+  .modal-content-normal1,
+  .modal-content-normal2,
+  .modal-content-normal3 {
+    width: 325px;
+    height: 525px;
+    margin-left: 0px
+  }
+
   .modal-content {
-    width: 250px;
-    left: -55px;
-    padding-left: 25px;
+   width: 115px;
+    height: 135px;
+  }
+
+  .images-purchase {
+    width: 140px;
+    height: 130px;
+    margin-left: -132px;
+  }
+
+  .desc-purchase {
+    color: #0B0C0E;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    margin-left: 124px;
+    padding-left: 50px;
+    margin-top: -120px;
+  }
+
+  .confirm {
+    top: 450px;
+  }
+
+  #locations {
+    margin-top: 40px;
+    margin-left: 55px;
+  }
+
+  .cb {
+    top: 275px;
+    left: 10px;
+  }
+
+  .price-purchase {
+    margin-left: 200px;
+  }
+
+  .nb {
+    top: 400px;
+    left: 5px;
+  }
+
+  .bal {
+    top: 275px;
+    left: 200px;
+  }
+  #big {
+    top: 270px;
+    left: 170px;
+    width: 46%;
+  }
+  .money{
+    top: 325px;
+    left: 212px;
+  }
+  .left{
+    top: 400px;
+    left: 220px;
+  }
+  #small{
+    top: 375px;
+    left: 160px;
+    width: 160px;
+    height: 0px;
   }
 }

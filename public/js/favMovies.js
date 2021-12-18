@@ -40,6 +40,7 @@ function showMovies(movies) {
                 <span class="${getClassByRate(
                     vote_average
                 )}">${vote_average}</span>
+                <button class="likeMovie">Add movie</button>
             </div>
             <div class="overview">
                 <h3>Overview:</h3>
