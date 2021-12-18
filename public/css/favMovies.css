@@ -45,6 +45,7 @@ main {
     position: relative;
     margin: 1rem;
     width: 270px;
+    height: 530px;
 }
 
 .movie img {
@@ -60,10 +61,23 @@ main {
     letter-spacing: 0.5px;
     font-family: Ubuntu;
 }
+.likeMovie{
+    font-family: Ubuntu;
+    color: #efefef;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #DE3A93 ;
+    padding:8px;
+    position: absolute;
+    margin: auto;
+    left: 90px;
+    top: 485px;
 
+}
 .movie-info h3 {
     margin: 0;
 }
+
 
 .movie-info span {
     background-color: #4D69B1;
