@@ -116,7 +116,9 @@ body {
 .notification {
   top: 80px;
 }
-
+.friends{
+  top: 110px;
+}
 .Perks-update {
   width: 1080px;
   height: 380px;
@@ -361,7 +363,7 @@ body {
 @media only screen and (max-width: 1080px) {
   .Perks-update {
     width: 65%;
-    height: 60%;
+    height: 475px;
     left: 31%;
   }
 
@@ -402,8 +404,8 @@ body {
 @media only screen and (max-width: 900px) {
   .Perks-update {
     width: 65%;
-    height: 60%;
-    left: 31%;
+    height: 475px;
+    left: 28%;
   }
 
   .perks-discount,

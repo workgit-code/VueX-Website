@@ -4,7 +4,7 @@
 
 .tasks_button {
   background-color: transparent;
-  color: #4D69B1;
+  color: #efefef;
   cursor: pointer;
   border: 3px solid #efefef;
   border-radius: 50%;
@@ -18,7 +18,7 @@
 
 .closeW {
   background-color: transparent;
-  color: #4D69B1;
+  color: #efefef;
   cursor: pointer;
   border: 3px solid #efefef;
   border-radius: 50%;
@@ -43,16 +43,16 @@
   transform: rotate(0.56deg);
 }
 
-.tasks,
-.task1 {
+.tasks{
   border: 2px solid #efefef;
   border-left: none;
   border-right: none;
-  background-color: rgb(11, 12, 14, 0.5);
+   background-color: rgba(140, 92, 166, 0.7);
+  /* background-color: rgb(11, 12, 14, 0.5); */
   border-radius: 10px;
   margin-top: 0px;
   top: 85px;
-  height: 65px;
+  height: 90px;
   position: relative;
   width: 100%;
   margin-top: 25px;
@@ -83,7 +83,7 @@
   padding: 100px 18px;
   background-color: transparent;
   overflow: hidden;
-  color: #4D69B1;
+  color: #efefef;
   position: absolute;
   top: -65px;
   font-family: Montserrat;
@@ -92,6 +92,7 @@
   font-weight: 600;
   z-index: 1;
   margin-top: 5px;
+  margin-right: 50px;
 }
 
 
@@ -111,7 +112,7 @@
   border: 2px solid #efefef;
   border-left: none;
   border-right: none;
-  background-color: rgb(11, 12, 14, 0.5);
+  background-color: rgba(140, 92, 166, 0.7);
   border-radius: 10px;
   margin-top: 0px;
   top: 85px;
@@ -148,7 +149,7 @@
   padding: 0 18px;
   background-color: transparent;
   overflow: hidden;
-  color: #4D69B1;
+  color: #efefef;
   position: relative;
   top: -80px;
   font-family: Montserrat;
