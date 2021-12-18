@@ -21,13 +21,13 @@ for (let bt of button) {
   bt.onclick = function() {
     modalNormal.style.display = "block";
   };
-} 
+}
 
 for (let bt1 of button1) {
   bt1.onclick = function() {
     modalNormal1.style.display = "block";
   };
-} 
+}
 
 for (let bt2 of button2) {
   bt2.onclick = function() {
@@ -88,7 +88,7 @@ for (let b of buttonLock) {
   b.onclick = function() {
     modalLock.style.display = "block";
   };
-} 
+}
 
 
 // When the user clicks on <span> (x), close the modal
@@ -102,5 +102,7 @@ window.onclick = function(event) {
     modalLock.style.display = "none";
   }
 }
-
-
+$(function() {
+  let stars = sessionStorage.getItem("stars")
+  document.querySelector("#stars").innerHTML = stars + '<img src="../img/Star.png" alt="stars">'
+})

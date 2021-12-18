@@ -86,9 +86,8 @@
           <i class="material-icons">edit</i></label>
 
             <input type="file" id="image_input" name="file">
-            <p id="level">Level 10</p>
-            <p id="stars">900 000
-                <img src="../img/Star.png" alt="stars">
+            <p id="level">Level</p>
+            <p id="stars">
             </p>
             <div class="progressing">
                 <div class="bar"></div>
@@ -98,7 +97,48 @@
         </div>
         <div class="status">
             <p id="skills">Movie Skills</p>
-            <img src="../img/spider-chart.png" alt="spider chart" id="spider-chart">
+            <!-- spider chart  -->
+                  <style>
+                      #spidergraphcontainer {
+                          position: relative;
+                          margin-top: 30px;
+                          margin-left: -50px;
+                          width: 303px;
+                          height: 303px;
+                          left: 457px;
+                         color: white;
+                      }
+                  </style>
+                  <div id="spidergraphcontainer"></div>
+              <script>
+              $(document).ready( function() {
+
+                  $('#spidergraphcontainer').spidergraph({
+                      'fields': ['Action and Adventure','Romance','Thriller','Comedy','Fantasy','Horror','black'],
+                      'gridcolor': '#ffffff'
+                  });
+                  var a = 3;
+                  var b= 4;
+                  var c = 1;
+                  var d = 5;
+                  var e = 7;
+                  var f = 10;
+              var d =3;
+
+
+                  $('#spidergraphcontainer').spidergraph('resetdata');
+
+                  $('#spidergraphcontainer').spidergraph('setactivedata', {
+                      'strokecolor': 'rgba(230,104,230,0.8)',
+                      'fillcolor': 'rgba(230,104,230,0.6)',
+                      'data': [a, b, c, d, e, f, d],
+                        'linear': true
+                  });
+
+
+              });
+              </script>
+
         </div>
         <div id='horizontal-1'></div>
         <div class="bracelet">
@@ -109,7 +149,7 @@
             <a href="../common/favMovies.html">
             <p id="favourite">Add favorite Movies
                     <img src="../img/Plus +.png" class="searchFav" alt="plus">
-                </p></a> 
+                </p></a>
             <p id="favList">Titanic <br>
                     Captain America <br>
                     Mr and Ms Smith <br>
@@ -163,62 +203,41 @@
         </p>
       </div>
     </div>
-    <br />
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col"></div>
-          <div class="footer-col">
-            <ul>
-              <li>
-                <a
-                  href="https://www.myvue.com/about-vue/about-us"
-                  target="_blank"
-                  >About us</a
-                >
-              </li>
-              <li>
-                <a href=" https://www.vuecinemas.nl/contact" target="_blank"
-                  >Contact Us</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://vuexprojectblog.wordpress.com/home-2/"
-                  target="_blank"
-                  >By Desend</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <div class="social-links">
-              <a href="https://www.facebook.com/VueCinemas/" target="_blank"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="https://twitter.com/vuecinemas" target="_blank"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="https://www.instagram.com/vuecinemasnl/" target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                href="https://www.youtube.com/c/VueCinema/featured"
-                target="_blank"
-                ><i class="fab fa-youtube"></i
-              ></a>
+        <br>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+
+                            <li><a href="https://www.myvue.com/about-vue/about-us" target="_blank">About us</a></li>
+                            <li><a href=" https://www.vuecinemas.nl/contact" target="_blank">Contact Us</a></li>
+                               <li><a href="https://vuexprojectblog.wordpress.com/home-2/" target="_blank">By Desend</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="social-links">
+                           <a href="https://www.facebook.com/VueCinemas/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                              <a href="https://twitter.com/vuecinemas" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/vuecinemasnl/" target="_blank"><i class="fab fa-instagram"></i></a>
+                             <a href="https://www.youtube.com/c/VueCinema/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="../common/discalimer.html">Disclaimer</a></li>
+                            <li><a href="../common/privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="footer-col">
-            <ul>
-              <li><a href="../common/discalimer.html">Disclaimer</a></li>
-              <li><a href="../common/privacy.html">Privacy Policy</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="../js/script.js"></script>
-    <script src="../js/sign_up_log_in.js"></script>
-  </body>
+        </footer>
+        <script src="../js/script.js"></script>
+        <script src="../js/sign_up_log_in.js"></script>
+        <script src="../js/jquery.spidergraph.js"></script>
+
+</body>
+
 </html>
