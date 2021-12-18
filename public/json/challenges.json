@@ -10,7 +10,7 @@
             "taskDescription": "Go to one of the Vue cinemas and watch one action movie",
             "stars": 1000, 
             "xp": 500,
-            "week": 50,
+            "week": 52,
             "year": 2021
         },
         {"taskName": "Watch a adventure movie",
@@ -478,15 +478,21 @@
                     "stars": 500,
                     "xp": 250
                 },
-                {"taskName": "Be active and earn points",
-                    "taskDescription": "As your are log in everyday you are receiving different amount",
-                    "Day 1": 100,
-                    "Day 2": 150,
-                    "Day 3": 200,
-                    "Day 4": 250,
-                    "Day 5": 300,
-                    "xp": ""
-                }     
+                {"taskName": "Go to Starbucks and earn a free ticket for the afternoon projection",
+                    "taskDescription": "Go to Starbucks and make a order for at least 10 euros and you can get a free ticket. ",
+                    "stars": 1000,
+                    "xp": 500
+                },
+                {"taskName": "Go to Happy Italy and earn a free ticket for the afternoon projection",
+                    "taskDescription": "Go to Happy Italy and make a order for at least 20 euros and you can get a free ticket. ",
+                    "stars": 1000,
+                    "xp": 500
+                },
+                {"taskName": "Go to Dadawan and earn a free ticket for the afternoon projection",
+                    "taskDescription": "Go to Dadawan and make a order for at least 20 euros and you can get a free ticket. ",
+                    "stars": 1000,
+                    "xp": 500
+                }             
             ]
         
     }
