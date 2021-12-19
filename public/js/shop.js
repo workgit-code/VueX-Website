@@ -132,7 +132,7 @@ $(document).ready(function() {
     //make POST request to server with the task name in the body as payload
     $.ajax({
         type:"POST",
-        url:"http://localhost:3031/stars",
+        url:"https://vueloyal.herokuapp.com/stars",
         data: dataStars,
         success: function(res) {
             console.log("success");

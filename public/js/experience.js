@@ -82,7 +82,7 @@ function Completed_task(taskName){
         type:"POST",
         //try in local
         // url:"http://localhost:3031/earnXpStars",
-        url:"https://vueloyal.herokuapp.com/user/task",
+        url:"https://vueloyal.herokuapp.com/earnXpStars",
         data: taskData,
         success: function() {
             window.location.href = "../common/experience.html"
@@ -108,7 +108,7 @@ function Completed_challenge(challengeName){
   $.ajax({
       type:"POST",
       // url:"http://localhost:3031/earnXpStars/challenge",
-        url:"https://vueloyal.herokuapp.com/user/challenge",
+        url:"https://vueloyal.herokuapp.com/earnXpStars/challenge",
       data: challengeData,
       success: function() {
           window.location.href = "../common/experience.html"

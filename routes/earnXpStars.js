@@ -37,7 +37,7 @@ const Challenge = mongoose.model("Challenge", ChallengeSchema);
 
 
 //endpoint to update the stars and xp given a task name
-router.post("/", jsonencodedParser, (req, res) => {
+router.post("/task", jsonencodedParser, (req, res) => {
     console.log("Processing xp and stars update");
     taskName = req.body.taskName; //retrieve task name from the request body
     username = req.body.username; //retrieve user name from the request body
