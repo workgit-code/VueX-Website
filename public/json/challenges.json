@@ -477,22 +477,7 @@
                     "taskDescription": "Share about it to your friends at least 3 and they have to create an account ",
                     "stars": 500,
                     "xp": 250
-                },
-                {"taskName": "Go to Starbucks and earn a free ticket for the afternoon projection",
-                    "taskDescription": "Go to Starbucks and make a order for at least 10 euros and you can get a free ticket. ",
-                    "stars": 1000,
-                    "xp": 500
-                },
-                {"taskName": "Go to Happy Italy and earn a free ticket for the afternoon projection",
-                    "taskDescription": "Go to Happy Italy and make a order for at least 20 euros and you can get a free ticket. ",
-                    "stars": 1000,
-                    "xp": 500
-                },
-                {"taskName": "Go to Dadawan and earn a free ticket for the afternoon projection",
-                    "taskDescription": "Go to Dadawan and make a order for at least 20 euros and you can get a free ticket. ",
-                    "stars": 1000,
-                    "xp": 500
-                }             
+                }            
             ]
         
     }
