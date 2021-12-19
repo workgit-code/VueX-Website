@@ -324,23 +324,28 @@ body {
 }
 
 .modal {
-  /* display: none; */
+  display: none;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 500px; /* Full width */
-  height: 300px; /* Full height */
+  left: 35%;
+  top: 25%;
+  width: 450px; /* Full width */
+  height: 290px; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(32, 32, 32);
 }
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
   margin: auto;
-  padding: 10px;
   width: 90%;
+}
+
+.hr {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
 }
 
 /* The Close Button */
@@ -356,6 +361,54 @@ body {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+#modalLevel {
+  font-family: Montserrat;
+  font-size: 15px;
+  color: #4d69b1;
+  margin-left: 120px;
+  margin-bottom: 20px;
+}
+
+#modalName {
+  font-family: Montserrat;
+  font-size: 21px;
+  color: white;
+  margin-left: 120px;
+  margin-bottom: 10px;
+  margin-top: -40px;
+}
+
+.vertical {
+  border-left: 2px solid grey;
+  height: 160px;
+  margin-top: 15px;
+  position: fixed;
+  left: 13%;
+}
+
+#favourite {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  color: #efefef;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#favList {
+  font-family: Ubuntu;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #efefef;
+  text-align: left;
+  padding-left: 100px;
+  padding-top: 20px;
 }
 
 a {
