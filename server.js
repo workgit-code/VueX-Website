@@ -19,5 +19,11 @@ app.use((req, res, next) => {
 // });
 app.use("/reviews", reviews);
 
+app.get("/", (req, res) => {
+  res.json({
+    message: "Backend is listening",
+  });
+});
+
 //NOTE: in order to start the server again, you need to run nodemon server.js and type localhost:3030
 app.listen(port, () => console.log(`Listening on port ${port}`));
