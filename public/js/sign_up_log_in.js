@@ -56,7 +56,7 @@ $(function(user) {
             sessionStorage.setItem('stars', stars);
             sessionStorage.setItem('level', level);
             // window.location.href = "../common/overview.html"
-            window.location.href = "./public/common/overview.html"
+            window.location.href = "../common/overview.html"
           },
           error: function(err) {
               if(err.responseJSON)
