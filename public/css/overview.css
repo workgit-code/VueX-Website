@@ -273,209 +273,231 @@
 }
 
 @media only screen and (max-width: 950px) {
-  body {
-    overflow-x: hidden;
-  }
-  .overviews {
-    height: 840px;
-  }
-  .bracelet {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 550px;
-    left: -500px;
-  }
+    body{
+        overflow-x: hidden;
+    }
+    .overviews{
+        height: 840px;
+    }
+    .bracelet {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 550px;
+        left: -500px;
+    }
 
-  #vertical {
-    display: none;
-  }
+    .status {
+        left: 10px;
+        top: 380px;
+        position: absolute;
+    }
 
-  #horizontal {
-    width: 450px;
-  }
+    #skills{
+        top: 8px;  
+    }
 
-  #horizontal-1 {
-    display: block;
-    position: absolute;
-    width: 450px;
-    height: 2px;
-    left: 327px;
-    top: 700px;
-    background: #efefef;
-  }
+    #vertical {
+        display: none
+    }
 
-  .favmovies {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 885px;
-    left: 375px;
-  }
+    #horizontal {
+        width: 450px;
+    }
 
-  .reviews {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 1185px;
-    left: 375px;
-  }
+    #horizontal-1 {
+        display: block;
+        position: absolute;
+        width: 450px;
+        height: 2px;
+        left: 327px;
+        top: 700px;
+        background: #efefef;
+    }
+
+    .favmovies {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 885px;
+        left: 375px;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 1280px;
+        left: 375px;
+    }
 }
 
 @media only screen and (max-width: 790px) {
-  body {
-    overflow-x: hidden;
-  }
-  .overviews {
-    height: 1300px;
-  }
-  .side {
-    display: none;
-  }
-  #spider-chart {
-    position: relative;
-    width: 213px;
-    height: 213px;
-    left: 457px;
-    top: 470px;
-  }
+    body{
+        overflow-x: hidden;
+    }
+    .overviews{
+        height: 1300px;
+    }
+    .side {
+        display: none;
+    }
+    #spider-chart {
+        position: relative;
+        width: 213px;
+        height: 213px;
+        left: 457px;
+        top: 470px;
+    }
 
-  .profileInfo {
-    position: absolute;
-    top: 0px;
-    left: -210px;
-  }
+    .profileInfo {
+        position: absolute;
+        top: 0px;
+        left: -210px;
+    }
 
-  .status {
-    left: -230px;
-    top: 0px;
-    position: absolute;
-  }
+    .status {
+        left: -230px;
+        top: 380px;
+        position: absolute;
+    }
 
-  #stars {
-    position: relative;
-    top: 210px;
-  }
+    #skills{
+        top: 8px;  
+        font-size: 20px;
+    }
 
-  .bracelet {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 550px;
-    left: -730px;
-  }
+    #stars {
+        position: relative;
+        top: 210px;
+    }
 
-  #vertical {
-    display: none;
-  }
+    .bracelet {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 550px;
+        left: -730px;
+    }
 
-  #horizontal {
-    width: 450px;
-  }
+    #vertical {
+        display: none
+    }
 
-  #horizontal-1 {
-    display: block;
-    position: absolute;
-    width: 350px;
-    height: 2px;
-    left: 150px;
-    top: 700px;
-    background: #efefef;
-  }
+    #horizontal {
+        width: 450px;
+    }
 
-  .favmovies {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 885px;
-    left: 150px;
-  }
+    #horizontal-1 {
+        display: block;
+        position: absolute;
+        width: 350px;
+        height: 2px;
+        left: 150px;
+        top: 700px;
+        background: #efefef;
+    }
 
-  .reviews {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 150px;
-  }
+    .favmovies {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 885px;
+        left: 150px;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 1280px;
+        left: 150px;
+    }
 }
 
 @media only screen and (max-width: 550px) {
-  body {
-    overflow-x: hidden;
-  }
-  .overviews {
-    /* position: relative; */
-    margin-bottom: 100px;
-    height: 1200px;
-    top: -40px;
-  }
-  .side {
-    display: none;
-  }
+    body{
+        overflow-x: hidden;
+    }
+    .overviews{
+        /* position: relative; */
+        margin-bottom: 100px;
+        height:1200px;
+        top: -40px;
+    }
+    .side {
+        display: none;
+    }
 
-  .profileInfo {
-    position: absolute;
-    top: 0px;
-    left: -310px;
-  }
+    .profileInfo {
+        position: absolute;
+        top: 0px;
+        left: -310px;
+    }
 
-  .status {
-    left: -348px;
-    top: 0px;
-    position: absolute;
-  }
+    .status {
+        left: -330px;
+        top: 380px;
+        position: absolute;
+    }
 
-  #stars {
-    position: relative;
-    top: 185px;
-  }
+    #skills{
+        top: 8px;  
+        font-size: 20px;
+    }
 
-  .bracelet {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 550px;
-    left: -835px;
-  }
-  #spider-chart {
-    position: relative;
-    width: 213px;
-    height: 213px;
-    left: 457px;
-    top: 470px;
-  }
+    #stars {
+        position: relative;
+        top: 185px;
+    }
 
-  #vertical {
-    display: none;
-  }
+    .bracelet {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 550px;
+        left: -835px;
+    }
+    #spider-chart {
+        position: relative;
+        width: 213px;
+        height: 213px;
+        left: 457px;
+        top: 470px;
+    }
+    
+    #vertical {
+        display: none
+    }
 
-  #horizontal {
-    width: 450px;
-  }
+    #horizontal {
+        width: 450px;
+    }
 
-  #horizontal-1 {
-    display: block;
-    position: absolute;
-    width: 350px;
-    height: 2px;
-    left: 70px;
-    top: 700px;
-    background: #efefef;
-  }
+    #horizontal-1 {
+        display: block;
+        position: absolute;
+        width: 350px;
+        height: 2px;
+        left: 70px;
+        top: 700px;
+        background: #efefef;
+    }
 
-  .favmovies {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 885px;
-    left: 50px;
-  }
-  .reviews {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 1170px;
-    left: 50px;
-    bottom: 200px;
-  }
-}
+
+    .favmovies {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 885px;
+        left: 50px;
+    }
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 1280px;
+        left: 50px;
+        bottom: 200px;
+    }
+}  

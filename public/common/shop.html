@@ -10,6 +10,7 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/shop.css">
 </head>
@@ -50,9 +51,7 @@
     <div class="burger-menu" onclick="openNav()">&#9776;</div>
 
     <div class="balance">
-        <p class="balanceText">Balance: 900 000
-            <img src="../img/Star.png" alt="stars">
-        </p>
+    <p id="stars"></p>
     </div>
     <div class="sorting">
         <!--<button class="sorting-text">Sorted by
@@ -89,6 +88,10 @@
                 <img src="../img/Star.png" alt="stars">
             </p>
             <button class="normal2">Buy</button>
+        <script>if userName xp > 3750{}
+        else {window.alert("te jodes que no tienes dinero y eres un pobre de mierda hijo puta, hodl stars para la prox bro");}
+
+        </script>
         </div>
         <div class="items">
             <p class="itemName">Medium Nachos</p>
@@ -192,8 +195,7 @@
                 </form>
                 <hr id="big">
                 <p class="cb">Current Balance:</p>
-                <p class="bal"> 900 000
-                    <img src="../img/blackStar.png" alt="stars"></p>
+              <p id="stars"></p>
                 <p class="money">-   2 500
                     <img src="../img/blackStar.png" alt="stars"></p>
                 <hr id="small">
@@ -239,8 +241,8 @@
                     </datalist>
                 </form>
                 <hr id="big">
-                <p class="cb">Current Balance:</p>
-                <p class="bal"> 900 000
+                <p class="cb" id="stars">Current Balance:</p>
+
                     <img src="../img/blackStar.png" alt="stars"></p>
                 <p class="money">-   5 000
                     <img src="../img/blackStar.png" alt="stars"></p>
@@ -287,8 +289,7 @@
                     </form>
                     <hr id="big">
                     <p class="cb">Current Balance:</p>
-                    <p class="bal"> 900 000
-                        <img src="../img/blackStar.png" alt="stars"></p>
+                  <p id="stars">
                     <p class="money">-   3 750
                         <img src="../img/blackStar.png" alt="stars"></p>
                     <hr id="small">
@@ -334,8 +335,7 @@
                         </form>
                         <hr id="big">
                         <p class="cb">Current Balance:</p>
-                        <p class="bal"> 900 000
-                            <img src="../img/blackStar.png" alt="stars"></p>
+                      <p id="stars">
                         <p class="money">-   3 750
                             <img src="../img/blackStar.png" alt="stars"></p>
                         <hr id="small">
@@ -355,7 +355,7 @@
                 </div>
                 <div class="footer-col">
                     <ul>
-                        
+
                         <li><a href="https://www.myvue.com/about-vue/about-us" target="_blank">About us</a></li>
                         <li><a href=" https://www.vuecinemas.nl/contact" target="_blank">Contact Us</a></li>
                            <li><a href="https://vuexprojectblog.wordpress.com/home-2/" target="_blank">By Desend</a></li>
@@ -378,7 +378,7 @@
             </div>
         </div>
     </footer>
-    <script src="../js/script.js"></script>
+    <!-- <script src="../js/script.js"></script> -->
     <script src="../js/shop.js"></script>
 </body>
 

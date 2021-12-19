@@ -4,6 +4,8 @@ const server = require("http").Server(app);
 const reviews = require("./routes/reviews");
 const port = process.env.PORT || 3030;
 const earnXpStars = require("./routes/earnXpStars");
+const stars = require("./routes/updateStars");
+
 //render the HTML & CSS
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -19,6 +21,7 @@ app.use((req, res, next) => {
 // });
 app.use("/reviews", reviews);
 app.use("/earnXpStars", earnXpStars);
+app.use("/stars", stars);
 
 app.get("/", (req, res) => {
   res.json({
