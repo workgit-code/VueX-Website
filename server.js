@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const server = require("http").Server(app);
 const reviews = require("./routes/reviews");
+const port = process.env.PORT || 3030;
 
 //render the HTML & CSS
 app.set("view engine", "ejs");
@@ -16,7 +17,7 @@ app.use((req, res, next) => {
 // app.get("/", (req, res) => {
 //   res.render("review_page");
 // });
-app.use("/reviews", reviews);
+app.use("/", reviews);
 
 //NOTE: in order to start the server again, you need to run nodemon server.js and type localhost:3030
-server.listen(3030);
+app.listen(port, () => console.log(`Listening on port ${port}`));

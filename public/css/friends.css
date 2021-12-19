@@ -323,6 +323,41 @@ body {
   margin-left: 140px;
 }
 
+.modal {
+  /* display: none; */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 500px; /* Full width */
+  height: 300px; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(32, 32, 32);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: #efefef;
