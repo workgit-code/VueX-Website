@@ -1,2 +1,3 @@
 .vscode
 /server/users/.gitignore
+/server/login_server/.git
