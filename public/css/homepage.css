@@ -94,15 +94,13 @@ a{
 
 .vue {
     display: block;
-    width: 250px;
-    height: 215px;
+    width: 300px;
     margin-top: -300px;
     margin-left: 780px;
 }
 
 .dobly {
     width: 150px;
-    height: 168px;
     margin-top: -170px;
     margin-left: 1105px;
 }
@@ -212,17 +210,6 @@ a{
         margin-left: 0px;
     }
 
-    .SignUp {
-        margin-left: 200px;
-    }
-    .vue{
-        margin-top: -60px;
-        margin-left: 110px;
-    }
-    .dobly{
-        margin-left: 160px;
-    }
-
 }
 @media screen and (min-width: 700px)and (max-width: 1350px) {
     body{
@@ -275,14 +262,13 @@ a{
     }
 
     .SignUp {
-        margin-left: 200px;
+        display: none;
     }
     .vue{
-        margin-top: -60px;
-        margin-left: 110px;
+        display: none;
     }
     .dobly{
-        margin-left: 160px;
+        display: none;
     }
 
 }
@@ -387,3 +373,4 @@ ul {
         margin-left: 120px;
     }
 }
+
