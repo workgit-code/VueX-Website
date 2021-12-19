@@ -82,7 +82,6 @@ document.querySelector("#image_input").addEventListener("change",(event)=>{
         //   url:"http://localhost:8000/user/upload",
         success: function(res) {
             window.location.href = "../common/overview.html"
-            alert("Evala pricheska")
         },
         error: function(err) {
             if(err.responseJSON)
