@@ -3,7 +3,7 @@ const app = express();
 const server = require("http").Server(app);
 const reviews = require("./routes/reviews");
 const port = process.env.PORT || 3030;
-
+const earnXpStars = require("./routes/earnXpStars");
 //render the HTML & CSS
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -18,6 +18,7 @@ app.use((req, res, next) => {
 //   res.render("review_page");
 // });
 app.use("/reviews", reviews);
+app.use("/earnXpStars", earnXpStars);
 
 app.get("/", (req, res) => {
   res.json({
