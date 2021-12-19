@@ -1,10 +1,12 @@
-
+//taking the data from JSON and representing it
 fetch("../json/challenges.json")
   .then(function (resp) {
     return resp.json();
   })
   .then(function (data) {
-    // this is for the weekly challenges
+    // this is for the weekly challenges where it has to be changed every week that's
+    //why we are seeing what is the current date and the saying in the json file which is 
+    //we are saying which date as number so it visualize
     let values = Object.values(data.weeklyChallenges).length
     console.log(values)
     let currentDate = new Date();
@@ -13,16 +15,14 @@ fetch("../json/challenges.json")
     var numberOfDays = Math.floor((currentDate - oneJan) / (24 * 60 * 60 * 1000));
     var currentWeek = Math.ceil((currentDate.getDay() + 1 + numberOfDays) / 7);
     data["weeklyChallenges"].forEach(challenge => {
-      console.log("gjgjgjgjg")
       if (currentYear === challenge.year && currentWeek === challenge.week) {
-
         document.querySelector(".weeklyChallenges").innerHTML += "<div class=\"weekly\"><div class=\"WtaskName\">" + challenge.taskName +
           "<div class=\"WstarsGiven\">" + challenge.stars + "</div></div><div class=\"panelW\">" +
           challenge.taskDescription + "</div><span class=\"closeW\">&#10003;</span></div>";
 
       }
-
     })
+    //if the person clicks the tick(he finished the weekly Challenge) it will disappear
     var closebtns = document.getElementsByClassName("closeW");
     let weekly = document.querySelector(".weekly")
     for (let i = 0; i < closebtns.length; i++) {
@@ -39,18 +39,7 @@ fetch("../json/challenges.json")
     let startPoint = 0
     let current_new_task_index=3;
     let endPoint = 3
-    // function taskManager(){
-    //   data["Tasks"].forEach(tasks => {
-    //     if (counters <= 3) {
-    //       document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "<div class=\"starsGiven\">" + tasks.stars + "</div></div><div class=\"panel\">" + tasks.taskDescription + "</div><span class=\"tasks_button\">&#10003;</span></div>";
-    //       counters++;
-    //     } else {
-    //       return;
-    //     }
-    //     var closebtn = document.getElementsByClassName("tasks_button");
-    //   });
-    // }
-
+    //for the task
     data["Tasks"].forEach(tasks => {
       if (counters <= 3) {
         document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "<div class=\"starsGiven\">" + tasks.stars + "</div></div><div class=\"panel\">" + tasks.taskDescription + "</div><span class=\"tasks_button\">&#10003;</span></div>";
@@ -59,9 +48,7 @@ fetch("../json/challenges.json")
       
     });
     add_delete_functionality();
-    
-    
-
+    //for removing tasks and to get a new one from the JSON file
     function deleteTask(event){
       //retrieve task name from element
       var taskName = $(this).prev().prev().text().replace(/[0-9]/g, '').trim();
@@ -94,8 +81,8 @@ function Completed_task(taskName){
     $.ajax({
         type:"POST",
         //try in local
-        url:"http://localhost:3031/earnXpStars",
-        //url:"https://vueloyal.herokuapp.com/user/task",
+        // url:"http://localhost:3031/earnXpStars",
+        url:"https://vueloyal.herokuapp.com/user/task",
         data: taskData,
         success: function() {
             window.location.href = "../common/experience.html"
@@ -120,7 +107,8 @@ function Completed_challenge(challengeName){
   console.log(challengeData);
   $.ajax({
       type:"POST",
-      url:"http://localhost:3031/earnXpStars/challenge",
+      // url:"http://localhost:3031/earnXpStars/challenge",
+        url:"https://vueloyal.herokuapp.com/user/challenge",
       data: challengeData,
       success: function() {
           window.location.href = "../common/experience.html"

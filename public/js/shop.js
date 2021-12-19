@@ -106,3 +106,44 @@ $(function() {
   let stars = sessionStorage.getItem("stars")
   document.querySelector("#stars").innerHTML = stars + '<img src="../img/Star.png" alt="stars">'
 })
+
+$(document).ready(function() {
+  //handler for click confirm
+  $(".confirm").on("click",function(){
+    //var title = $(this).prev().text().trim();
+    //convert to JSON format
+    var data = {};
+
+    data["username"] = sessionStorage.getItem("username");
+    // get the stars  .parseInt()
+    var ownedStars = Number.parseInt(sessionStorage.getItem("stars"));
+    var itemStars = Number.parseInt($(this).siblings(".money").text().trim().replace(/[^0-9.]/g, ''));
+    console.log(itemStars);
+    console.log(ownedStars);
+    if(ownedStars < itemStars){
+        alert("Not enough balance!!!!");
+        return;
+    }
+    var leftStars = ownedStars - itemStars;
+    data["stars"] = leftStars;
+    var dataStars = JSON.stringify(data);
+    console.log(dataStars);
+    sessionStorage.setItem('stars', leftStars);
+    //make POST request to server with the task name in the body as payload
+    $.ajax({
+        type:"POST",
+        url:"http://localhost:3031/stars",
+        data: dataStars,
+        success: function(res) {
+            console.log("success");
+            console.log(res.data[0]);
+        },
+        error: function(err) {
+            if(err.responseJSON)
+                alert(err.responseJSON.message);
+        },
+        dataType: "json",
+        contentType:"application/json"
+    });
+  });
+});
