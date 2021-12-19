@@ -289,6 +289,16 @@
         left: -500px;
     }
 
+    .status {
+        left: 10px;
+        top: 380px;
+        position: absolute;
+    }
+
+    #skills{
+        top: 8px;  
+    }
+
     #vertical {
         display: none
     }
@@ -319,7 +329,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 1185px;
+        top: 1280px;
         left: 375px;
     }
 }
@@ -350,8 +360,13 @@
 
     .status {
         left: -230px;
-        top: 0px;
+        top: 380px;
         position: absolute;
+    }
+
+    #skills{
+        top: 8px;  
+        font-size: 20px;
     }
 
     #stars {
@@ -397,6 +412,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
+        top: 1280px;
         left: 150px;
     }
 }
@@ -422,9 +438,14 @@
     }
 
     .status {
-        left: -348px;
-        top: 0px;
+        left: -330px;
+        top: 380px;
         position: absolute;
+    }
+
+    #skills{
+        top: 8px;  
+        font-size: 20px;
     }
 
     #stars {
@@ -477,7 +498,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 1170px;
+        top: 1280px;
         left: 50px;
         bottom: 200px;
     }

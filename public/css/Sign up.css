@@ -94,7 +94,10 @@ form .txt_field {
 .txt_field input:valid~span::before {
   width: 100%;
 }
-
+.term{
+  color: #E5E5E5;
+  font-size: 16px;
+}
 .Registration {
   padding-top: 15px;
 }
