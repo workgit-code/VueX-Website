@@ -5,7 +5,7 @@ const UserSchema = new Schema({
     username: String,
     email: String,
     password: String,
-    experience: Number,
+    xp: Number,
     stars: Number,
     level: Number,
     reviews: Array,

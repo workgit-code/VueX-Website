@@ -47,12 +47,12 @@ $(function(user) {
           success: function(res) {
             let username = $("input[name=username]").val();
             let email = res.data[0].email;
-            let experience = res.data[0].experience;
+            let xp = res.data[0].xp;
             let stars = res.data[0].stars;
             let level = res.data[0].level;
             sessionStorage.setItem('username', username);
             sessionStorage.setItem('email', email);
-            sessionStorage.setItem('experience', experience);
+            sessionStorage.setItem('xp', xp);
             sessionStorage.setItem('stars', stars);
             sessionStorage.setItem('level', level);
             // window.location.href = "../common/overview.html"
@@ -90,4 +90,3 @@ document.querySelector("#image_input").addEventListener("change",(event)=>{
         }
     })
 })
-

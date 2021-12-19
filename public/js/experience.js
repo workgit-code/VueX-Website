@@ -60,12 +60,15 @@ fetch("../json/challenges.json")
     
 
     function deleteTask(event){
+      //retrieve task name from element
+      var taskName = $(this).prev().prev().text().replace(/[0-9]/g, '').trim();
       event.target.parentElement.remove();
       let tasks=data["Tasks"][current_new_task_index];
       document.querySelector(".tasksBar").innerHTML += "<div class=\"tasks\"><div class=\"taskName\">" + tasks.taskName + "<div class=\"starsGiven\">" + tasks.stars + "</div></div><div class=\"panel\">" + tasks.taskDescription + "</div><span class=\"tasks_button\">&#10003;</span></div>";
       add_delete_functionality();
       current_new_task_index++;
       //Call function that updates task in datase
+      Completed_task(taskName);
       //Call function for retrieving task (not completed). and render again
   
     }
@@ -77,16 +80,19 @@ fetch("../json/challenges.json")
     }
   })
 
-
-
 ////code for the XP and STARS///
 //function for posting the xp and stars only tasks
-function Completed_task(){
-    var taskData =  JSON.stringify({"taskName":"Set a profile picture"});
+function Completed_task(taskName){
+    var data = {};
+    data["taskName"] = taskName;
+    data["username"] = sessionStorage.getItem("username");;
+    var taskData = JSON.stringify(data);
     console.log(taskData);
     $.ajax({
         type:"POST",
-        url:"https://vueloyal.herokuapp.com/user/task",
+        //try in local
+        url:"http://localhost:3031/earnXpStars",
+        //url:"https://vueloyal.herokuapp.com/user/task",
         data: taskData,
         success: function() {
             window.location.href = "../common/experience.html"
