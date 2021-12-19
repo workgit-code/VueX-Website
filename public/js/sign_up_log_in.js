@@ -25,7 +25,7 @@ $(function(user) {
         // url:"http://localhost:8000/user/signup",
         data: signUpData,
         success: function() {
-            window.location.href = "../common/LogIn.html"
+            window.location.href = "../common/Login.html"
         },
         error: function(err) {
             if(err.responseJSON)
@@ -56,7 +56,7 @@ $(function(user) {
             sessionStorage.setItem('stars', stars);
             sessionStorage.setItem('level', level);
             // window.location.href = "../common/overview.html"
-            window.location.href = "./public/common/overview.html"
+            window.location.href = "../common/overview.html"
           },
           error: function(err) {
               if(err.responseJSON)
