@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 // app.get("/", (req, res) => {
 //   res.render("review_page");
 // });
-app.use("/", reviews);
+app.use("/reviews", reviews);
 
 //NOTE: in order to start the server again, you need to run nodemon server.js and type localhost:3030
 app.listen(port, () => console.log(`Listening on port ${port}`));
