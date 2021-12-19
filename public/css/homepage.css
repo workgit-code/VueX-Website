@@ -60,7 +60,10 @@ body {
     margin-top: -55px;
     width: 110px;
 }
-
+a{
+    text-decoration: none;
+    color: #EFEFEF;
+}
 #title1 {
     font-family: Ubuntu;
     font-size: 26px;
@@ -112,7 +115,7 @@ body {
     text-align: right;
     margin-top: 120px;
     margin-right: 300px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 #secondLine {
@@ -120,19 +123,20 @@ body {
     box-shadow: inset 0px 4px 4px;
     width: 570px;
     margin-left: 946px;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 
 #stars {
     display: block;
     margin-left: 350px;
+    margin-top: -95px;
 }
 
 #gift {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -155px;
+    margin-top: -128px;
 
 }
 
@@ -140,7 +144,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: 370px;
-    margin-top: -155px;
+    margin-top: -128px;
+
 }
 
 #text-1 {
@@ -185,7 +190,10 @@ body {
     width: 110px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+    body{
+        overflow-x: hidden;
+    }
     .Sign-Up {
         margin-left: 165px;
         margin-top: 20px;
@@ -207,9 +215,77 @@ body {
     .SignUp {
         margin-left: 200px;
     }
+    .vue{
+        margin-top: -60px;
+        margin-left: 110px;
+    }
+    .dobly{
+        margin-left: 160px;
+    }
 
 }
+@media screen and (min-width: 700px)and (max-width: 1350px) {
+    body{
+        overflow-x: hidden;
+    }
+    .LogIn {
+        border: 5px solid #8C5CA6;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: transparent;
+        align-items: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 44px;
+        color: #EFEFEF;
+        display: block;
+        justify-content: center;
+        margin-left: 625px;
+        margin-top: 10px;
+        width: 110px;
+    }
+    
+    .Sign-Up {
+        border: 5px solid #4D69B1;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background: #4D69B1;
+        align-items: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 44px;
+        color: #EFEFEF;
+        display: block;
+        justify-content: center;
+        margin-left: 770px;
+        margin-top: -55px;
+        width: 110px;
+    }
 
+    #article {
+        margin-right: 0px;
+    }
+
+    #secondLine {
+        margin-left: 0px;
+    }
+
+    .SignUp {
+        margin-left: 200px;
+    }
+    .vue{
+        margin-top: -60px;
+        margin-left: 110px;
+    }
+    .dobly{
+        margin-left: 160px;
+    }
+
+}
 * {
     margin: 0;
     padding: 0;
