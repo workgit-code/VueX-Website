@@ -27,7 +27,10 @@ fetch("../json/challenges.json")
     let weekly = document.querySelector(".weekly")
     for (let i = 0; i < closebtns.length; i++) {
       closebtns[i].addEventListener("click", function () {
-        console.log(weekly)
+        console.log(weekly);
+        //retrieve challenge from element
+        var challengeName = $(this).prev().prev().text().replace(/[0-9]/g, '').trim();
+        Completed_challenge(challengeName);
         this.parentElement.style.display = 'none';
       });
     }
@@ -106,22 +109,27 @@ function Completed_task(taskName){
     })
 
 };
+
 //function for posting the xp and stars only challenge
-function Completed_challenge(){
-    var challengeData =  JSON.stringify({"challengeName":"Set a profile picture"});
-    console.log(taskData);
-    $.ajax({
-        type:"POST",
-        url:"https://vueloyal.herokuapp.com/user/challenge",
-        data: challengeData,
-        success: function() {
-            window.location.href = "../common/experience.html"
-        },
-        error: function(err) {
-            if(err.responseJSON)
-                alert(err.responseJSON.message);
-        },
-        dataType: "json",
-        contentType:"application/json"
+function Completed_challenge(challengeName){
+  var data = {};
+  data["challengeName"] = challengeName;
+  //sessionStorage.getItem("username");
+  data["username"] = "dr.who";
+  var challengeData = JSON.stringify(data);
+  console.log(challengeData);
+  $.ajax({
+      type:"POST",
+      url:"http://localhost:3031/earnXpStars/challenge",
+      data: challengeData,
+      success: function() {
+          window.location.href = "../common/experience.html"
+      },
+      error: function(err) {
+          if(err.responseJSON)
+              alert(err.responseJSON.message);
+      },
+      dataType: "json",
+      contentType:"application/json"
     })
 };
