@@ -7,6 +7,10 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+function deleteSession(){
+  sessionStorage.clear()
+}
+
 $(function() {
   let username = sessionStorage.getItem("username")
   let level = sessionStorage.getItem("level")
@@ -33,4 +37,3 @@ if(image_input!==null){
     reader.readAsDataURL(this.files[0]);
   });
 }
-

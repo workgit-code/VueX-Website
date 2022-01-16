@@ -147,3 +147,7 @@ $(document).ready(function() {
     });
   });
 });
+
+function deleteSession(){
+  sessionStorage.clear()
+}

@@ -67,6 +67,15 @@ body {
   left: 85%;
 }
 
+.exit{
+  position: absolute;
+  left: 95%;
+}
+
+.exit a img{
+  width: 30px;
+}
+
 .material-icons:hover {
   cursor: pointer;
   color: #7ba0ff;
@@ -282,3 +291,4 @@ ul {
     margin-left: 120px;
   }
 }
+

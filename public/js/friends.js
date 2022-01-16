@@ -12,6 +12,10 @@ function showFriendSearch() {
   else overlayDiv.style.opacity = 1;
 }
 
+function deleteSession(){
+  sessionStorage.clear()
+}
+
 //add the friend when the user clicks the icon and toggle
 const targetFriend = document.getElementById("AddYoana");
 const buttonIcon = document.getElementById("addFriend");
