@@ -26,6 +26,7 @@ app.use("/stars", stars);
 app.get("/", (req, res) => {
   res.json({
     message: "Backend is listening",
+    window.location.href = "index.html"
   });
 });
 
