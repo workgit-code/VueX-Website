@@ -26,8 +26,8 @@ app.use("/stars", stars);
 app.get("/", (req, res) => {
   res.json({
     message: "Backend is listening",
-    window.location.href = "index.html"
   });
+  window.location.href = "index.html";
 });
 
 //NOTE: in order to start the server again, you need to run nodemon server.js and type localhost:3030
