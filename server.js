@@ -24,9 +24,9 @@ app.use("/earnXpStars", earnXpStars);
 app.use("/stars", stars);
 
 app.get("/", (req, res) => {
-  res.json({
-    message: "Backend is listening",
-  });
+  // res.json({
+  //   message: "Backend is listening",
+  // });
   res.redirect("/index.html");
 });
 
