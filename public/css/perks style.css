@@ -113,11 +113,11 @@ body {
   font-weight: bold;
 }
 
-.notification {
+/* .notification {
   top: 80px;
-}
+} */
 .friends{
-  top: 110px;
+  top: 80px;
 }
 .Perks-update {
   width: 1080px;
