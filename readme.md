@@ -14,7 +14,9 @@ create a community that they can feel themselves and to do fun challenges with w
 they will win prizes. Moreover, what the students can do to make VUE better cinema
 and to become better than the competitors..
 ## Description of the project
+
 **Double Diamond**
+
 The double diamond is helpful at the begging when the team have to have to do
 brainstorm, research, design, prototyping and testing. It represents our design
 process.
@@ -47,12 +49,12 @@ and to manage at the end to show the best that the team can do.
 
 For using our product you have to have download Node.js and to have express
 ```javascript
-#'You have to run this in the terminal as from here you can download it https://nodejs.org/en/download/'
+'You have to run this in the terminal as from here you can download it https://nodejs.org/en/download/'
 
-#'You have to run this in the terminal'
+'You have to run this in the terminal'
 npm install express --save
 
-#'So if you have to run it, you have to run thr next command in the terminal'
+'So if you have to run it, you have to run thr next command in the terminal'
 node server.js
 ```
 
